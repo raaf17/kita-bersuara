@@ -2,13 +2,13 @@
 
 [Aplikasi Pengaduan Siswa]
 
-Selamat datang di Aplikasi Pengaduan Siswa! Kami adalah solusi inovatif yang memungkinkan siswa untuk berpartisipasi aktif dalam menciptakan lingkungan sekolah yang lebih baik. Dengan fitur-fitur canggih dan intuitif, kami memudahkan siswa untuk berinteraksi, berbagi, dan berkontribusi dalam upaya meningkatkan kualitas pendidikan.
+Selamat datang di Aplikasi Pengaduan Siswa! Kami adalah solusi inovatif yang memungkinkan siswa untuk berpartisipasi aktif dalam menciptakan lingkungan sekolah yang lebih baik. Dengan fitur-fitur canggih dan intuitif, kami memudahkan siswa untuk menyampaikan aspirasi nya dalam upaya meningkatkan kualitas pendidikan.
 
 ## Fitur Aplikasi
 ### Fitur Siswa 📚
 - **Login Siswa**: Siswa dapat dengan mudah masuk ke akun mereka untuk mengakses fitur eksklusif.
 - **Dashboard Siswa**: Dashboard pribadi yang memungkinkan siswa untuk membuat laporan, mengedit profil, dan melihat riwayat laporan mereka.
-- **Membuat Laporan**: Laporkan permasalahan, ide, atau pengalaman yang perlu diperhatikan oleh pihak sekolah.
+- **Membuat Laporan**: Laporkan berdasarkan kategori permasalahan atau pengalaman yang perlu diperhatikan oleh pihak sekolah.
 - **Mengedit Profil**: Personalisasikan profil Anda sesuai dengan kebutuhan.
 - **Melihat Riwayat Laporan**: Pantau perkembangan dan hasil laporan yang pernah Anda buat.
 
