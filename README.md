@@ -1,6 +1,6 @@
 # Selamat Datang di Aplikasi Pengaduan Siswa
 
-![Aplikasi Pengaduan Siswa]
+[Aplikasi Pengaduan Siswa]
 
 Selamat datang di Aplikasi Pengaduan Siswa! Kami adalah solusi inovatif yang memungkinkan siswa untuk berpartisipasi aktif dalam menciptakan lingkungan sekolah yang lebih baik. Dengan fitur-fitur canggih dan intuitif, kami memudahkan siswa untuk berinteraksi, berbagi, dan berkontribusi dalam upaya meningkatkan kualitas pendidikan.
 
