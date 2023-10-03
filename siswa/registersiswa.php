@@ -46,7 +46,7 @@
           <label for="password">Password</label>
           <div class="input-form">
             <img src="../assets/img/icons8-lock-24.png" alt="lock-icon" width="24px" />
-            <input type="text" name="password" id="password" />
+            <input type="password" name="password" id="password" />
           </div>
           <button type="submit" name="submit">Register Now</button>
           <a href="../admin/loginadmin.php">Login as Admin</a>

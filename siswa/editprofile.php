@@ -90,9 +90,9 @@ include '../admin/conn.php'
       color: #5E7C60;
     }
 
-    main .container form input:-moz-read-only {
+    /* main .container form input:-moz-read-only {
       background-color: #5E7C60;
-    }
+    } */
 
     main .container form>label,
     main .container form>input,
@@ -108,14 +108,14 @@ include '../admin/conn.php'
       box-sizing: border-box;
     }
 
-    main .container form>input {
+    /* main .container form>input {
       background-color: transparent;
       border: 3px solid #5E7C60;
       border-radius: 3px;
       outline: none;
       color: #5E7C60;
       font-weight: 500;
-    }
+    } */
 
     main .container form button {
       background-color: #5E7C60;
@@ -165,19 +165,12 @@ include '../admin/conn.php'
       <div class="container" style="color: #5E7C60; margin-top: 180px;">
         <h1 style="color: #5E7C60;">HALAMAN EDIT PROFILE</h1>
         <form action="" method="post" enctype="multipart/form-data">
-          <!-- <div class="image">
-              <img src="../assets/foto dashboardsiswa/<?php echo $_SESSION['nisn']['fotomhs'] ?>" alt="Profile siswa" />
-              <label for="foto">
-                <img src="../assets/img/camera.png" alt="icon-camera" />
-                <input type="file" name="foto" id="foto" />
-              </label>
-            </div> -->
           <label for="nama">Nama Siswa</label>
-          <input type="text" style="border: 3px solid #5E7C60" name="nama" value="<?php echo $_SESSION['nisn']['nama']; ?>" id="nama" readonly />
+          <input type="text" name="nama" value="<?php echo $_SESSION['nisn']['nama']; ?>" id="nama" readonly />
           <label for="username">Username</label>
-          <input type="text" style="border: 3px solid #5E7C60" name="username" value="<?php echo $_SESSION['nisn']['nisn']; ?>" id="username" readonly />
+          <input type="text" name="username" value="<?php echo $_SESSION['nisn']['nisn']; ?>" id="username" readonly />
           <label for="password">Password</label>
-          <input type="password" style="border: 3px solid #5E7C60" name="password" value="<?php echo $_SESSION['nisn']['password']; ?>" id="password" />
+          <input type="password" name="password" value="<?php echo $_SESSION['nisn']['password']; ?>" id="password" />
           <button type="submit" style="background-color: #5E7C60" name="submit">Edit Profile</button>
         </form>
       </div>

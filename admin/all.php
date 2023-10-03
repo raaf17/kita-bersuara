@@ -1,9 +1,11 @@
 <?php
 $ambil = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where status_laporan.status='approve' OR status_laporan.status='unapprove' OR status_laporan.status='terkirim' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori ");
-while ($perlaporan = $ambil->fetch_assoc()) { ?>
+while ($perlaporan = $ambil->fetch_assoc()) {;
+  $imagePath = ($laporanku['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
+?>
   <div>
     <div class="laporan">
-      <img src="../assets/fotobukti/<?php echo $perlaporan['foto'] ?>" alt="bukti_laporan" />
+      <img src="<?= $imagePath; ?>" alt="bukti_laporan" />
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span>Pengusul: <span><?php echo $perlaporan['nama']; ?></span></h3>
             <h4 class="category">#<span><?php echo $perlaporan['nama_kategori']; ?></span></h4>
