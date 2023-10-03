@@ -1,3 +1,8 @@
 <?php
-    $conn = mysqli_connect("localhost","root","","pengaduan_smea") or die ("gagal terkoneksi");
+    $hostname = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "pengaduan_smea";
+
+    $conn = mysqli_connect($hostname, $username, $password, $dbname) or die ("gagal terkoneksi");
 ?>

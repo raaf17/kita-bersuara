@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['nisn'] != true  or !isset($_SESSION['nisn'])) {
-  echo "<script>alert('login terlebih dahulu, agar dapat melapor');</script>";
+  echo "<script>alert('Login terlebih dahulu, agar dapat melapor');</script>";
   echo "<script>location='loginsiswa.php';</script>";
 }
 
@@ -25,14 +25,8 @@ include '../admin/conn.php';
         <img src="../assets/img/pre-logo.png" alt="Logo PUTI ONLINE" />
         <h4>Kita<br />Bersuara</h4>
       </div>
-      <!-- <ul class="list_link">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tatacara.html">Tata Cara</a></li>
-        </ul> -->
-      <!-- <a href="siswa/loginsiswa.html" class="btn_login">Login</a> -->
       <p>Dashboard Siswa</p>
       <div class="profile_siswa">
-        <!-- <img class="profile" src="../assets/foto dashboardsiswa/<?php echo $_SESSION['nisn']['fotomhs'] ?>" alt="Profile_Siswa" /> -->
         <div class="name">
           <p><?php echo $_SESSION['nisn']['nama'] ?></p>
           <img src="../assets/img/arrow-drop.png" alt="Arrow Drop" />
