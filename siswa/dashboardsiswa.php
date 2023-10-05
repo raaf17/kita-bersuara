@@ -63,7 +63,7 @@ if ($_SESSION['nisn'] != true) {
             $imagePath = ($laporanku['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
           ?>
             <div>
-              <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170" />
+              <img src="<?= $imagePath ?>" alt="bukti_laporan" width="170" height="170" />
               <div class="detail_laporan">
                 <h4 class="pengusul">Pengusul: <span>Saya Sendiri</span></h4>
                 <h4 class="category">#<span><?php echo $laporanku['nama_kategori']; ?></span></h4>
