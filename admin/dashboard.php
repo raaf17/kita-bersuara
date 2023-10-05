@@ -27,7 +27,7 @@ if ($_SESSION['status_login'] != true) {
         <h4>Kita<br />Bersuara</h4>
       </div>
       <p>Dashboard Admin</p>
-      <div class="profile_mhs">
+      <div class="profile_siswa">
         <div class="name">
           <p><span>Selamat Datang, </span>Admin</p>
           <img src="../assets/img/arrow-drop.png" alt="Arrow Drop" />
@@ -86,7 +86,7 @@ if ($_SESSION['status_login'] != true) {
       </div>
   </main>
 
-  <footer style="background-color: #5E7C60;">
+  <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
   </footer>
 

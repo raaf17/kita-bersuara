@@ -14,36 +14,6 @@ if ($_SESSION['nisn'] != true) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard Siswa</title>
   <link rel="stylesheet" href="../style/profile.css?version=<?php echo filemtime('../style/profile.css'); ?>">
-  <style>
-    nav .container .profile_siswa .name ul {
-      display: none;
-      position: absolute;
-      background-color: white;
-      top: 40px;
-      list-style: none;
-      border-radius: 5px;
-      border: 2.5px solid #5E7C60;
-      -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
-    }
-
-    nav .container .profile_siswa .name ul li:not(:last-child) {
-      border-bottom: 2.5px solid #5E7C60;
-    }
-
-    nav .container .profile_siswa .name ul li a {
-      display: block;
-      padding: 5px 20px;
-      text-decoration: none;
-      color: #5E7C60;
-      font-weight: 600;
-    }
-
-    nav .container .profile_siswa .name ul li a:hover {
-      background-color: #5E7C60;
-      color: white;
-    }
-  </style>
 </head>
 
 <body>
@@ -93,7 +63,7 @@ if ($_SESSION['nisn'] != true) {
             $imagePath = ($laporanku['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
           ?>
             <div>
-              <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170" />
+              <img src="<?= $imagePath ?>" alt="bukti_laporan" width="170" height="170" />
               <div class="detail_laporan">
                 <h4 class="pengusul">Pengusul: <span>Saya Sendiri</span></h4>
                 <h4 class="category">#<span><?php echo $laporanku['nama_kategori']; ?></span></h4>
@@ -148,7 +118,7 @@ if ($_SESSION['nisn'] != true) {
   <?php  } ?>
   </main>
 
-  <footer style="background-color: #5E7C60;">
+  <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
   </footer>
 </body>

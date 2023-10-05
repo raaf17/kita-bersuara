@@ -103,7 +103,7 @@
       </div>
     </section>
   </main>
-  <footer style="background-color: #5E7C60;">
+  <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
   </footer>
   <script src="siswa/script.js"></script>

@@ -11,120 +11,10 @@ session_start();
   <title>Home | KitaBersuara</title>
   <link rel="stylesheet" href="style/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <style>
-    nav .container .btn {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-
-    @media screen and (max-width: 700px) {
-      nav .container .btn {
-        display: none;
-      }
-    }
-
-    nav .container .btn a {
-      display: inline-block;
-      text-decoration: none;
-      color: white;
-      padding: 5px 10px;
-      border: 1px solid white;
-      font-weight: 600;
-      border-radius: 3px;
-      font-size: 18px;
-      -webkit-transition: all ease-in-out 0.3s;
-      transition: all ease-in-out 0.3s;
-    }
-
-    nav .container .btn a:hover {
-      background-color: white;
-      color: #5E7C60;
-    }
-
-    /* tim Expert */
-    .tim-expert {
-      color: #5e7c60;
-      font-family: Poppins;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      text-align: center;
-      margin-top: 60px;
-
-    }
-
-    .orang-web-crafters {
-      color: #5e7c60;
-      font-family: Poppins;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-
-    .container.tim-expert {
-      display: flex;
-      justify-content: space-evenly;
-      margin-bottom: 120px;
-    }
-
-    .tim {
-      width: 250px;
-      height: 350px;
-      background-color: #d9d9d9;
-      border-radius: 5px;
-      box-shadow: 0px 0px 10px black;
-    }
-
-    .tim.reyhan img,
-    .rafi img,
-    .dalta img,
-    .yuma img {
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      object-fit: cover;
-    }
-
-    .pre-profil {
-      display: flex;
-    }
-
-    .profil {
-      margin: auto;
-    }
-
-    .profil .nama {
-      margin-top: 10px;
-      font-size: 20px;
-      color: #5e7c60;
-      text-align: center;
-    }
-
-    .profil .jobdesk {
-      font-size: 16px;
-      color: #5e7c60;
-      opacity: 0.7;
-      text-align: center;
-    }
-
-    /* akhir dari style tim Expert */
-  </style>
 </head>
 
 <body>
-  <nav style="background-color: #5E7C60;">
+  <nav>
     <div class="container">
       <div class="nav_brand">
         <img src="assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
@@ -151,7 +41,7 @@ session_start();
       <?php } ?>
     </div>
   </nav>
-  <main style="background-color: #F9F5F2;">
+  <main>
     <div class="container">
       <section class="left">
         <h1 style="color: #5E7C60;">Layanan Pengaduan Siswa Esemkita Online</h1>
@@ -240,7 +130,7 @@ session_start();
     </div>
   </div>
   <!-- end of tim expert -->
-  <footer style="background-color: #5E7C60;">
+  <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
   </footer>
   <script src="siswa/script.js"></script>
