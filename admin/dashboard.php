@@ -27,7 +27,7 @@ if ($_SESSION['status_login'] != true) {
         <h4>Kita<br />Bersuara</h4>
       </div>
       <p>Dashboard Admin</p>
-      <div class="profile_mhs">
+      <div class="profile_siswa">
         <div class="name">
           <p><span>Selamat Datang, </span>Admin</p>
           <img src="../assets/img/arrow-drop.png" alt="Arrow Drop" />
