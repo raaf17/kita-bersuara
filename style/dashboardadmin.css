@@ -167,7 +167,7 @@ nav .container p {
   color: white;
 }
 
-nav .container .profile_mhs {
+nav .container .profile_siswa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +180,7 @@ nav .container .profile_mhs {
   gap: 10px;
 }
 
-nav .container .profile_mhs img.profile {
+nav .container .profile_siswa img.profile {
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
@@ -189,7 +189,7 @@ nav .container .profile_mhs img.profile {
   border: 3px solid #F2EDD7;
 }
 
-nav .container .profile_mhs .name {
+nav .container .profile_siswa .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +205,7 @@ nav .container .profile_mhs .name {
   position: relative;
 }
 
-nav .container .profile_mhs .name input[type="checkbox"] {
+nav .container .profile_siswa .name input[type="checkbox"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -217,11 +217,11 @@ nav .container .profile_mhs .name input[type="checkbox"] {
   height: 100%;
 }
 
-nav .container .profile_mhs .name input[type="checkbox"]:checked ~ ul {
+nav .container .profile_siswa .name input[type="checkbox"]:checked ~ ul {
   display: block;
 }
 
-nav .container .profile_mhs .name ul {
+nav .container .profile_siswa .name ul {
   display: none;
   position: absolute;
   background-color: white;
@@ -233,11 +233,11 @@ nav .container .profile_mhs .name ul {
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
 }
 
-nav .container .profile_mhs .name ul li:not(:last-child) {
+nav .container .profile_siswa .name ul li:not(:last-child) {
   border-bottom: 2.5px solid #5E7C60;
 }
 
-nav .container .profile_mhs .name ul li a {
+nav .container .profile_siswa .name ul li a {
   display: block;
   padding: 5px 20px;
   text-decoration: none;
@@ -245,7 +245,7 @@ nav .container .profile_mhs .name ul li a {
   font-weight: 600;
 }
 
-nav .container .profile_mhs .name ul li a:hover {
+nav .container .profile_siswa .name ul li a:hover {
   background-color: #5E7C60;
   color: white;
 }
@@ -392,7 +392,7 @@ main .container form .category_search span input {
 main .container form .category_search span input:checked ~ label {
   background-color: #5E7C60 !important;
   color: white;
-  background-color: #F2EDD7;
+  background-color: #f2deba;
 }
 
 main .container form .category_search span label {
@@ -453,15 +453,12 @@ main .container .riwayat_laporan > div .laporan .detail_laporan {
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
   row-gap: 10px;
-      grid-template-areas: "left right"
- "area area";
+      grid-template-areas: "left right" "area area";
 }
 
 @media screen and (max-width: 860px) {
   main .container .riwayat_laporan > div .laporan .detail_laporan {
-        grid-template-areas: "left left"
- "right right"
- "area area";
+        grid-template-areas: "left left" "right right" "area area";
   }
 }
 

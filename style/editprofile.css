@@ -151,7 +151,7 @@ nav .container .profile_siswa img.profile {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #f2deba;
+  border: 3px solid #F2EDD7;
 }
 
 nav .container .profile_siswa .name {
@@ -308,7 +308,7 @@ main .container form .image:hover label img {
 main .container form .image label {
   display: block;
   position: absolute;
-  background-color: #5E7C60;
+  background-color: #0e5d6f5b;
   top: 0;
   right: 0;
   bottom: 1000;
@@ -332,13 +332,13 @@ main .container form .image label input[type="file"] {
   display: none;
 }
 
-/* main .container form input:-moz-read-only {
-  background-color: #5E7C60;
+main .container form input:-moz-read-only {
+  background-color: #0e5d6f3d;
 }
 
 main .container form input:read-only {
-  background-color: #5E7C60;
-} */
+  background-color: #0e5d6f3d;
+}
 
 main .container form > label,
 main .container form > input,

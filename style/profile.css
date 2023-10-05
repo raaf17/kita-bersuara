@@ -151,7 +151,7 @@ nav .container .profile_siswa img.profile {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #f2deba;
+  border: 3px solid #F2EDD7;
 }
 
 nav .container .profile_siswa .name {
@@ -359,9 +359,7 @@ main .container .riwayat_laporan .laporan > div {
     -ms-grid-columns: 1fr max-content;
         grid-template-columns: 1fr -webkit-max-content;
         grid-template-columns: 1fr max-content;
-        grid-template-areas: "foto foto"
- "deskripsi deskripsi"
- "icon icon";
+        grid-template-areas: "foto foto" "deskripsi deskripsi" "icon icon";
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
@@ -381,16 +379,13 @@ main .container .riwayat_laporan .laporan > div .detail_laporan {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   row-gap: 10px;
-      grid-template-areas: "left right"
- "area area";
+      grid-template-areas: "left right" "area area";
 }
 
 @media screen and (max-width: 1100px) {
   main .container .riwayat_laporan .laporan > div .detail_laporan {
     grid-area: deskripsi !important;
-        grid-template-areas: "left left"
- "right right"
- "area area";
+        grid-template-areas: "left left" "right right" "area area";
   }
   main .container .riwayat_laporan .laporan > div .detail_laporan p {
     font-size: 12px !important;
