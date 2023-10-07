@@ -1,8 +1,7 @@
-# Selamat Datang di Aplikasi Pengaduan Siswa
+# Selamat Datang di Kita Bersuara
 
-[Aplikasi Pengaduan Siswa]
-
-Selamat datang di Aplikasi Pengaduan Siswa! Kami adalah solusi inovatif yang memungkinkan siswa untuk berpartisipasi aktif dalam menciptakan lingkungan sekolah yang lebih baik. Dengan fitur-fitur canggih dan intuitif, kami memudahkan siswa untuk menyampaikan aspirasi nya dalam upaya meningkatkan kualitas pendidikan.
+Selamat datang di Kita Bersuara! Aplikasi ini meruapakan aplikasi pengaduan keluhan bagi siswa. Dengan fitur-fitur canggih dan intuitif, kami memudahkan siswa untuk menyampaikan aspirasi nya dalam upaya meningkatkan kualitas pendidikan.
+Aplikasi ini merupakan tugas akhir semester dari sekolah pada kelas XI PPLG 2.
 
 ## Fitur Aplikasi
 ### Fitur Siswa 📚
@@ -30,4 +29,10 @@ Selamat datang di Aplikasi Pengaduan Siswa! Kami adalah solusi inovatif yang mem
 4. **Kembangkan Ide Anda**: Buat perubahan, komit, dan dorong ke repositori Anda.
 5. **Ajukan Pull Request**: Untuk mengintegrasikan ide Anda ke proyek utama.
 
-Terima kasih atas kontribusi Anda dalam menciptakan lingkungan sekolah yang lebih baik melalui Aplikasi Pengaduan Siswa. Mari bersama-sama membangun masa depan pendidikan yang lebih baik! 💪📝
+## Tim Kami
+- Muhammad Rafi
+- Yuma Aji Pangestu
+- Savero Dalta Saladin
+- Reyhan Surya Refalda
+
+Terima kasih atas kontribusi Anda dalam menciptakan lingkungan sekolah yang lebih baik melalui Aplikasi Pengaduan Siswa ini. Mari bersama-sama membangun masa depan pendidikan yang lebih baik! 💪📝
