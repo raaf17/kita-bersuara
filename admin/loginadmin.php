@@ -45,8 +45,8 @@
           <img src="../assets/img/icons8-lock-24.png" alt="lock-icon" width="24px" />
           <input type="password" name="password" id="password" required />
         </div>
-        <button type="submit" style="background-color: #5E7C60" name="submit">Login Now</button>
-        <a href="../siswa/loginsiswa.php" style="color: #5E7C60; text-decoration: none;">Login as siswa</a>
+        <button type="submit" name="submit">Login Now</button>
+        <a href="../siswa/loginsiswa.php">Login as siswa</a>
       </form>
     </main>
   </div>

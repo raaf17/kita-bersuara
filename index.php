@@ -51,7 +51,7 @@ session_start();
         <a href="siswa/pengaduan.php" style="background-color: #5E7C60; color: white">Laporkan!</a>
       </section>
       <section class="right">
-        <img src="assets/img/speaker.png" alt="Speaker" />
+        <img src="assets/img/young-man-holding-megaphone-removebg-preview.png" style="margin-top: 60px;" alt="Speaker" />
       </section>
     </div>
   </main>
@@ -101,7 +101,7 @@ session_start();
       <img src="./assets/img/yuma.jpg" alt="" />
       <div class="pre-profil">
         <div class="profil">
-          <h6 class="nama">Yuma Aji</h6>
+          <h6 class="nama">Yuma Aji P.</h6>
           <h6 class="jobdesk">Frontend Developer</h6>
         </div>
       </div>
@@ -112,7 +112,7 @@ session_start();
       <img src="./assets/img/dalta.jpg" alt="" />
       <div class="pre-profil">
         <div class="profil">
-          <h6 class="nama">Savero Dalta</h6>
+          <h6 class="nama">Savero Dalta S.</h6>
           <h6 class="jobdesk">UI/UX Designer</h6>
         </div>
       </div>
@@ -123,7 +123,7 @@ session_start();
       <img src="./assets/img/reyhan.png" alt="" />
       <div class="pre-profil">
         <div class="profil">
-          <h6 class="nama">Reyhan Surya</h6>
+          <h6 class="nama">Reyhan Surya R.</h6>
           <h6 class="jobdesk">Backend Developer</h6>
         </div>
       </div>

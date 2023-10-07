@@ -10,7 +10,7 @@ $second-color: #F2EDD7;
 }
 
 body {
-  background-color: $second-color;
+  background-color: white;
   max-height: max-content;
 }
 
@@ -21,6 +21,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
+
   @media screen and (max-width: 860px) {
     width: 98%;
   }
@@ -36,41 +37,50 @@ nav {
   z-index: 1;
   box-sizing: border-box;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
+
   .container {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
     position: relative;
     padding: 10px 0;
+
     @media screen and (min-width: 700px) {
       justify-content: space-evenly !important;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: "brand link button";
     }
+
     .nav_brand {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
+
       @media screen and (min-width: 700px) {
         justify-content: flex-start !important;
         grid-area: brand;
       }
+
       img {
         width: 50px;
       }
+
       h4 {
         font-weight: 800;
         font-size: 20px;
         color: white;
+
         br {
           display: none;
+
           @media screen and (min-width: 700px) {
             display: block;
           }
         }
       }
     }
+
     .burger_menu {
       background-image: url(../assets/img/menu.png);
       width: 35px;
@@ -79,20 +89,25 @@ nav {
       position: absolute;
       top: 10px;
       right: 10px;
+
       @media screen and (min-width: 700px) {
         display: none;
       }
     }
+
     input {
       // display: none;
       opacity: 0;
     }
+
     #label {
       cursor: pointer;
     }
+
     .grid {
       display: grid !important;
     }
+
     .list_link {
       display: none;
       width: 100%;
@@ -102,12 +117,15 @@ nav {
         "left right"
         "button button";
       box-sizing: border-box;
+
       @media screen and (min-width: 700px) {
         display: grid;
       }
+
       li {
         text-align: center;
         list-style: none;
+
         a {
           text-decoration: none;
           color: white;
@@ -116,8 +134,10 @@ nav {
           border-radius: 3px;
           padding: 7px;
           transition: all ease-in-out 0.3s;
+
           &:hover {
             background-color: #104f5d;
+
             @media screen and (min-width: 700px) {
               background: none;
               font-weight: bold;
@@ -129,23 +149,29 @@ nav {
       .home {
         grid-area: left;
       }
+
       .cara {
         grid-area: right;
       }
+
       .btn_login {
         grid-area: button;
+
         @media screen and (min-width: 700px) {
           display: none;
         }
       }
     }
+
     .btn {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+
       @media screen and (max-width: 700px) {
         display: none;
       }
+
       a {
         display: inline-block;
         text-decoration: none;
@@ -156,6 +182,7 @@ nav {
         border-radius: 3px;
         font-size: 18px;
         transition: all ease-in-out 0.3s;
+
         &:hover {
           background-color: white;
           color: $primary-color;
@@ -167,38 +194,45 @@ nav {
 
 main {
   margin: 214px 0 0;
-  background-color: white;
+  background-color: $second-color;
   border-top: 10px solid $primary-color;
   border-radius: 5px;
   padding: 50px 115px;
   color: $primary-color;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
   @media screen and (max-width: 1100px) {
     margin: 214px 10px 0;
     padding: 50px 20px;
   }
+
   h2 {
     font-weight: 900;
     font-size: 40px;
     text-align: center;
+
     @media screen and (max-width: 1100px) {
       font-size: 28px;
     }
   }
+
   p {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
     margin: 10px auto 44px;
+
     @media screen and (max-width: 1100px) {
       font-size: 16px;
     }
   }
+
   form {
     label {
       font-weight: 600;
       font-size: 15px;
     }
+
     .input-form {
       outline: 1px solid $primary-color;
       border-radius: 3px;
@@ -206,10 +240,12 @@ main {
       align-items: center;
       box-sizing: border-box;
       margin-bottom: 20px;
+
       img {
         padding: 10px;
         border-right: 1px solid $primary-color;
       }
+
       input {
         padding: 10px;
         width: 100%;
@@ -222,6 +258,7 @@ main {
         box-sizing: border-box;
       }
     }
+
     button {
       width: 100%;
       font-size: 20px;
@@ -233,10 +270,12 @@ main {
       color: white;
       margin-bottom: 10px;
       cursor: pointer;
+
       @media screen and (max-width: 1100px) {
         font-size: 16px;
       }
     }
+
     a {
       display: block;
       max-width: max-content;
@@ -245,6 +284,8 @@ main {
       color: $primary-color;
       font-weight: 600;
       margin: auto;
+      text-decoration: none;
+
       @media screen and (max-width: 1100px) {
         font-size: 14px;
       }
@@ -256,12 +297,14 @@ footer {
   background-color: $primary-color;
   overflow-x: hidden;
   margin-top: 100px;
+
   p {
     padding: 14px;
     text-align: center;
     font-size: 15px;
     color: white;
     font-weight: 800;
+
     @media screen and (max-width: 1100px) {
       font-size: 12px;
       font-weight: 600;
