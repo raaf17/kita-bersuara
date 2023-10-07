@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #F2EDD7;
+  background-color: white;
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
@@ -243,7 +243,7 @@ nav .container .btn a:hover {
 
 main {
   margin: 214px 0 0;
-  background-color: white;
+  background-color: #F2EDD7;
   border-top: 10px solid #5E7C60;
   border-radius: 5px;
   padding: 50px 115px;
@@ -350,6 +350,7 @@ main form a {
   color: #5E7C60;
   font-weight: 600;
   margin: auto;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1100px) {
