@@ -20,7 +20,7 @@ if ($_SESSION['nisn'] != true) {
   <nav>
     <div class="container">
       <div class="nav_brand">
-        <img src="../assets/img/pre-logo.png" alt="Logo PUTI ONLINE" />
+        <img src="../assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
         <h4>Kita<br />Bersuara</h4>
       </div>
       <p>Dashboard Siswa</p>

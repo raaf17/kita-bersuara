@@ -14,7 +14,7 @@
   <nav style="background-color: #5E7C60;">
     <div class="container">
       <div class="nav_brand">
-        <img src="../assets/img/pre-logo.png" alt="Logo PUTI ONLINE" />
+        <img src="../assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
         <h4>
           Kita<br />
           Bersuara
