@@ -20,7 +20,7 @@ if ($_SESSION['nisn'] != true) {
   <nav>
     <div class="container">
       <div class="nav_brand">
-        <img src="../assets/img/pre-logo.png" alt="Logo PUTI ONLINE" />
+        <img src="../assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
         <h4>Kita<br />Bersuara</h4>
       </div>
       <p>Dashboard Siswa</p>
@@ -58,7 +58,7 @@ if ($_SESSION['nisn'] != true) {
         <div class="laporan">
           <?php
           $akun = $_SESSION['nisn']['nisn'];
-          $ambil = $conn->query("SELECT * FROM laporan AS lp LEFT JOIN siswa AS siswa ON lp.nisn = siswa.nisn LEFT JOIN kategori AS kat ON lp.id_kategori = kat.id_kategori LEFT JOIN status_laporan AS sl ON lp.id_status = sl.id_status WHERE lp.nisn='$akun' ORDER BY lp.id_laporan DESC ");
+          $ambil = $conn->query("SELECT * FROM laporan AS lp LEFT JOIN siswa AS siswa ON lp.nisn = siswa.nisn LEFT JOIN kategori AS kat ON lp.id_kategori = kat.id_kategori LEFT JOIN status_laporan AS sl ON lp.id_status = sl.id_status WHERE lp.nisn='$akun' ORDER BY lp.id_laporan DESC");
           while ($laporanku = $ambil->fetch_assoc()) {;
             $imagePath = ($laporanku['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
           ?>

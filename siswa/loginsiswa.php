@@ -12,7 +12,7 @@
     <nav>
       <div class="container">
         <div class="nav_brand">
-          <img src="../assets/img/pre-logo.png" alt="Logo PUTI ONLINE" />
+          <img src="../assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
           <h4>
             Kita<br />
             Bersuara
@@ -62,7 +62,7 @@
 
         echo "<script>location='dashboardsiswa.php';</script>";
       }else{
-        echo "<script>alert('username atau password salah!');</script>";
+        echo "<script>alert('Username atau Password Salah!');</script>";
         echo "<script>location='loginsiswa.php';</script>";
       }
     }

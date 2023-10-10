@@ -22,7 +22,7 @@ include '../admin/conn.php';
   <nav>
     <div class="container">
       <div class="nav_brand">
-        <img src="../assets/img/pre-logo.png" alt="Logo PUTI ONLINE" />
+        <img src="../assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
         <h4>Kita<br />Bersuara</h4>
       </div>
       <p>Dashboard Siswa</p>
@@ -86,12 +86,12 @@ include '../admin/conn.php';
         //mengambil id dari status
         $status_barusan = $conn->insert_id;
         $hasil = $conn->query("INSERT INTO laporan (foto,keluhan,id_kategori,nisn,id_status) VALUE ('$nama_foto','$keluhan','$_POST[kategori]','$nisn','$status_barusan')");
-        echo "<script>alert('laporan terkirim')</script>";
+        echo "<script>alert('Laporan Terkirim')</script>";
       } else {
-        echo "<script>alert('UKURAN FILE TERLALU BESAR')</script>";
+        echo "<script>alert('Ukuran File Terlalu Besar')</script>";
       }
     } else {
-      echo "<script>alert('EKSTENSI FILE YANG DI UPLOAD TIDAK DI PERBOLEHKAN')</script>";
+      echo "<script>alert('Ekstensi File yang di Upload Tidak Diperbolehkan')</script>";
     }
     echo "<script>location='dashboardsiswa.php';</script>";
   }

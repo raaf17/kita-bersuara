@@ -14,7 +14,7 @@
   <nav style="background-color: #5E7C60;">
     <div class="container">
       <div class="nav_brand">
-        <img src="../assets/img/pre-logo.png" alt="Logo PUTI ONLINE" />
+        <img src="../assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
         <h4>
           Kita<br />
           Bersuara
@@ -65,7 +65,7 @@
       $_SESSION['id'] = $d->id_admin;
       echo '<script>window.location="dashboard.php"</script>';
     } else {
-      echo '<script>alert("username atau password anda salah!")</script>';
+      echo '<script>alert("Username atau Password Anda Salah!")</script>';
     }
   }
 
