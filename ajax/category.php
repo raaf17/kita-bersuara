@@ -26,7 +26,7 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras") { ?>
                     <button type="submit" name="unapprove" class="delete">DELETE</button>
             </div>
             <div class="form">
-                <textarea placeholder="Ketikkan feedback anda disini..." name="feedback" id="feedback" cols="10" rows="1"></textarea>
+                <textarea placeholder="Silahkan ketik feedback disini..." name="feedback" id="feedback" cols="10" rows="1"></textarea>
             </div>
             </form>
         </div>

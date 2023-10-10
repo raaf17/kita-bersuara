@@ -62,7 +62,7 @@
 
         echo "<script>location='dashboardsiswa.php';</script>";
       }else{
-        echo "<script>alert('username atau password salah!');</script>";
+        echo "<script>alert('Username atau Password Salah!');</script>";
         echo "<script>location='loginsiswa.php';</script>";
       }
     }

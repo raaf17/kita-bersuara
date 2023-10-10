@@ -75,8 +75,8 @@ include '../admin/conn.php'
       const nama = document.getElementById("nama")
       const username = document.getElementById("username")
 
-      nama.addEventListener("click", () => alert("Nama tidak dapat diubah!"))
-      username.addEventListener("click", () => alert("Username tidak dapat diubah!"))
+      nama.addEventListener("click", () => alert("Nama Tidak Dapat Diubah!"))
+      username.addEventListener("click", () => alert("Username Tidak Dapat Diubah!"))
     </script>
   </body>
 </body>
