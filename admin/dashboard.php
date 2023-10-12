@@ -70,6 +70,10 @@ if ($_SESSION['status_login'] != true) {
             <label for="kesiswaan" class="kesiswaan">Kesiswaan</label>
           </span>
           <span>
+            <input type="checkbox" name="humas" id="humas">
+            <label for="humas" class="humas">Humas</label>
+          </span>
+          <span>
             <input type="checkbox" name="setuju" id="setuju">
             <label for="setuju" class="setuju">Setuju</label>
           </span>
