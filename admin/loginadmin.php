@@ -58,11 +58,13 @@
     $pass = $_POST['password'];
 
     $cek = mysqli_query($conn, "SELECT * FROM admin WHERE nisn='" . $username . "' AND password='" . $pass . "'");
+    $akun = $cek->fetch_assoc();
     if (mysqli_num_rows($cek) > 0) {
       $d = mysqli_fetch_object($cek);
       $_SESSION['status_login'] = true;
       $_SESSION['a_global'] = $d;
       $_SESSION['id'] = $d->id_admin;
+      $_SESSION['nisn'] = $akun;
       echo '<script>window.location="dashboard.php"</script>';
     } else {
       echo '<script>alert("Username atau Password Anda Salah!")</script>';
