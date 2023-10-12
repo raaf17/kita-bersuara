@@ -25,10 +25,12 @@ while ($pecah3 = $unapprove->fetch_assoc()) {
 <?php endif ?>
 
 <!-- laporan dengan status terkirim -->
-<?php foreach ($semuadata1 as $key => $value) : ?>
+<?php foreach ($semuadata1 as $key => $value) :
+  $imagePath = ($semuadata1['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
+?>
   <div>
     <div class="laporan">
-      <img src="../assets/foto bukti laporan/<?php echo $value['foto']?>" alt="bukti_laporan" width="170" height="170"/>
+      <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170"/>
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span> <?php echo $value['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $value['nama_kategori']; ?></span></h4>
@@ -69,10 +71,12 @@ while ($pecah3 = $unapprove->fetch_assoc()) {
   
 
 <!-- laporan dengan status approve -->
-<?php foreach ($semuadata2 as $key => $value) : ?>
+<?php foreach ($semuadata2 as $key => $value) :
+  $imagePath = ($semuadata2['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
+?>
   <div>
     <div class="laporan">
-      <img src="../assets/foto bukti laporan/<?php echo $value['foto']?>" alt="bukti_laporan" width="170" height="170"/>
+      <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170"/>
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span> <?php echo $value['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $value['nama_kategori']; ?></span></h4>
@@ -95,10 +99,12 @@ while ($pecah3 = $unapprove->fetch_assoc()) {
 <?php endforeach ?>
 
 <!-- laporan dengan status unapprove -->
-<?php foreach ($semuadata3 as $key => $value) : ?>
+<?php foreach ($semuadata3 as $key => $value) :
+  $imagePath = ($semuadata3['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
+?>
   <div>
     <div class="laporan">
-      <img src="../assets/foto bukti laporan/<?php echo $value['foto']?>" alt="bukti_laporan" width="170" height="170"/>
+      <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170"/>
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span> <?php echo $value['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $value['nama_kategori']; ?></span></h4>

@@ -8,10 +8,12 @@ $unapprove = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan w
 
 if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
 <!-- laporan dengan status terkirim -->
-    <?php while ($perlaporan = $terkirim->fetch_assoc()) { ?>
+    <?php while ($perlaporan = $terkirim->fetch_assoc()) {;
+        $imagePath = ($perlaporan['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
+    ?>
         <div>
             <div class="laporan">
-                <img src="../assets/foto bukti laporan/<?php echo $perlaporan['foto']?>" alt="bukti_laporan" />
+                <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170" />
                 <div class="detail_laporan">
                     <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan['nama']; ?></span></h3>
                             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan['nama_kategori']; ?></span></h4>
@@ -51,10 +53,12 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
             ?>
 
     <!-- kondisi approve -->
-    <?php while ($perlaporan1 = $approve->fetch_assoc()) { ?>
+    <?php while ($perlaporan1 = $approve->fetch_assoc()) {;
+        $imagePath = ($perlaporan1['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
+    ?>
     <div>
         <div class="laporan">
-        <img src="../assets/foto bukti laporan/<?php echo $perlaporan1['foto']?>" alt="bukti_laporan"/>
+        <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170" />
         <div class="detail_laporan">
             <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan1['nama']; ?></span></h3>
                 <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan1['nama_kategori']; ?></span></h4>
@@ -76,10 +80,12 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
     <?php } ?>
 
     <!-- kondisi unapprove -->
-    <?php while ($perlaporan2 = $unapprove->fetch_assoc()) { ?>
+    <?php while ($perlaporan2 = $unapprove->fetch_assoc()) {;
+        $imagePath = ($perlaporan2['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
+    ?>
     <div>
         <div class="laporan">
-        <img src="../assets/foto bukti laporan/<?php echo $perlaporan2['foto']?>" alt="bukti_laporan"/>
+        <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170" />
         <div class="detail_laporan">
             <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan2['nama']; ?></span></h3>
                 <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan2['nama_kategori']; ?></span></h4>

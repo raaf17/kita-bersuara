@@ -42,9 +42,10 @@ include '../admin/conn.php'
     <main style="margin-top: 60px;">
       <div class="container" style="color: #5E7C60; margin-top: 180px;">
         <h1 style="color: #5E7C60;">HALAMAN EDIT PROFILE</h1>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="" method="post">
+          <input type="hidden" name="nisn" value="<?= $_SESSION['nisn']['nisn']; ?>">
           <label for="nama">Nama Siswa</label>
-          <input type="text" name="nama" value="<?php echo $_SESSION['nisn']['nama']; ?>" id="nama" readonly />
+          <input type="text" name="nama" value="<?php echo $_SESSION['nisn']['nama']; ?>" id="nama" />
           <label for="username">Username</label>
           <input type="text" name="username" value="<?php echo $_SESSION['nisn']['nisn']; ?>" id="username" readonly />
           <label for="password">Password</label>
@@ -53,16 +54,16 @@ include '../admin/conn.php'
         </form>
       </div>
     </main>
-    <?php if (isset($_POST['submit'])) {
-      $nisn = $_SESSION['nisn']['nisn'];
-      $nama_foto = $_FILES['foto']['name'];
-      $lokasi = $_FILES['foto']['tmp_name'];
-      if (!empty($lokasi)) {
-        move_uploaded_file($lokasi, "../assets/foto dashboardsiswa/$nama_foto");
-        $conn->query("UPDATE siswa SET password='$_POST[password]', fotomhs='$nama_foto' where nisn='$nisn'");
-      } else {
-        $conn->query("UPDATE siswa SET password='$pass' WHERE nisn='$id'");
-      }
+    <?php
+      if (isset($_POST['submit'])) {
+      $nama = $_POST['nama'];
+      $nisn = $_POST['nisn'];
+      $password = $_POST['password'];
+
+      $query = "UPDATE siswa SET nama='$nama', nisn='$nisn', password='$password' WHERE nisn='$nisn'";
+
+      $conn->query($query);
+      
       echo "<script>alert('Data Berhasil Diubah')</script>";
       echo "<script>location='loginsiswa.php';</script>";
     } ?>
@@ -72,10 +73,8 @@ include '../admin/conn.php'
       <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
     </footer>
     <script>
-      const nama = document.getElementById("nama")
       const username = document.getElementById("username")
 
-      nama.addEventListener("click", () => alert("Nama Tidak Dapat Diubah!"))
       username.addEventListener("click", () => alert("Username Tidak Dapat Diubah!"))
     </script>
   </body>
