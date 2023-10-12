@@ -136,7 +136,7 @@ nav {
           transition: all ease-in-out 0.3s;
 
           &:hover {
-            background-color: #104f5d;
+            background-color: $second-color;
 
             @media screen and (min-width: 700px) {
               background: none;

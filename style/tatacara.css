@@ -163,7 +163,7 @@ nav .container .list_link li a {
 }
 
 nav .container .list_link li a:hover {
-  background-color: #104f5d;
+  background-color: #F2EDD7;
 }
 
 @media screen and (min-width: 700px) {
@@ -322,6 +322,7 @@ main section .description .desc ul {
 
 footer {
   background-color: #5E7C60;
+  margin-top: 60px;
   overflow-x: hidden;
 }
 
