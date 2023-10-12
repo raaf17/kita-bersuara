@@ -112,7 +112,7 @@ nav {
           padding: 7px;
           transition: all ease-in-out 0.3s;
           &:hover {
-            background-color: #104f5d;
+            background-color: $second-color;
             @media screen and (min-width: 700px) {
               background: none;
               font-weight: bold;
@@ -223,6 +223,7 @@ main {
 
 footer {
   background-color: $primary-color;
+  margin-top: 60px;
   overflow-x: hidden;
   p {
     padding: 14px;

@@ -163,7 +163,7 @@ nav .container .list_link li a {
 }
 
 nav .container .list_link li a:hover {
-  background-color: #104f5d;
+  background-color: #F2EDD7;
 }
 
 @media screen and (min-width: 700px) {
@@ -323,7 +323,7 @@ main .container .left a {
 }
 
 main .container .right img {
-  margin-top: 21px;
+  margin-top: 30px;
 }
 
 .category_laporan h2 {
