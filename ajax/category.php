@@ -6,7 +6,7 @@ $terkirim = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan wh
 $approve  = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where kategori.nama_kategori='$keyword' and status_laporan.status='approve' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori ");
 $unapprove = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where kategori.nama_kategori='$keyword' and status_laporan.status='unapprove' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori ");
 
-if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras") { ?>
+if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
 <!-- laporan dengan status terkirim -->
     <?php while ($perlaporan = $terkirim->fetch_assoc()) { ?>
         <div>
