@@ -39,9 +39,9 @@
       <?php } ?>
     </div>
   </nav>
-  <main>
+  <main >
     <div class="container">
-      <section class="left">
+      <section class="left" data-aos="fade-up" data-aos-duration="1500">
         <h1 style="color: #5E7C60;">Layanan Pengaduan Siswa Esemkita Online</h1>
         <p style="color: #5E7C60;">
           Suarakan keluhan anda disini, kami siap memprosesnya dengan cepat
@@ -50,29 +50,33 @@
       </section>
       <section class="right">
         <img src="assets/img/speaker.png" style="margin-top: 68px;" alt="Speaker" />
+      <section class="right" data-aos="fade-up" data-aos-duration="1500">
+        <img src="assets/img/young-man-holding-megaphone-removebg-preview.png" style="margin-top: 60px;" alt="Speaker" />
       </section>
     </div>
   </main>
   <div class="category_laporan">
-    <h2 style="color: #5E7C60;">HAL YANG BISA ANDA LAPORKAN</h2>
-    <section class="category container">
+    <h2 style="color: #5E7C60;"  data-aos="fade-up" data-aos-duration="1500">HAL YANG BISA ANDA LAPORKAN</h2>
+    <section class="category container" data-aos="fade-up" data-aos-duration="1500">
       <div class="sarpras" style="background-color: F2EDD7;">
-        <div class="kotak" style="background-color: grey;"></div>
         <img src="assets/img/sarpras.png" width="153" alt="" />
         <h3>SARPRAS</h3>
-        <p>Anda dapat melaporkan kerusakan fasilitas sekolah yang ada di Esemkita</p>
+        <p>Perlatan Sekolah <br>Kualitas Gedung <br>Ruang Kelas</p>
       </div>
       <div class="kurikulum" style="background-color: F2EDD7;">
-        <div class="kotak" style="background-color: grey;"></div>
         <img src="assets/img/kurikulum.png" width="154" alt="" />
         <h3>KURIKULUM</h3>
-        <p>Anda dapat melaporkan hal yang berkaitan dengan program / pendidikan sekolah yang ada di Esemkita</p>
+        <p>Bimbingan Kegiatan <br>Koordinasi Acara <br>Pengawasan Kegiatan</p>
       </div>
       <div class="kesiswaan" style="background-color: F2EDD7;">
-        <div class="kotak" style="background-color: grey;"></div>
         <img src="assets/img/kesiswaan.png" width="154" alt="" />
         <h3>KESISWAAN</h3>
-        <p>Anda dapat melaporkan hal yang berkaitan dengan pembinaan siswa sekolah yang ada di Esemkita</p>
+        <p>Penyusunan Jadwal <br>Laporan Kegiatan <br> Koordinasi Kegiatan </p>
+      </div>
+      <div class="humas" style="background-color: F2EDD7;">
+        <img src="assets/img/humas.png" width="154" alt="" />
+        <h3>HUMAS</h3>
+        <p>Hubungan Antar Sekolah <br>Laporan Kemajuan Sekolah <br>Kerjasama Dengan Lembaga / Instansi</p>
       </div>
     </section>
   </div>
