@@ -54,6 +54,7 @@ include '../admin/conn.php';
             <option value="1">Sarpras</option>
             <option value="2">Kurikulum</option>
             <option value="3">Kesiswaan</option>
+            <option value="4">Humas</option>
           </select>
         </div>
         <label for="bukti">Bukti Foto</label>

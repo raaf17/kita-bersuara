@@ -3,10 +3,11 @@ $terkirim = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan wh
 $approve  = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where status_laporan.status='approve' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori ");
 $unapprove = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where status_laporan.status='unapprove' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori ");
 // kondisi terkirim
-while ($perlaporan = $terkirim->fetch_assoc()) { ?>
+while ($perlaporan = $terkirim->fetch_assoc()) {;
+?>
   <div>
     <div class="laporan">
-      <img src="../assets/foto bukti laporan/<?php echo $perlaporan['foto']?>" alt="bukti_laporan" />
+      <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan['nama_kategori']; ?></span></h4>
@@ -48,10 +49,10 @@ while ($perlaporan = $terkirim->fetch_assoc()) { ?>
       ?>
 
 <!-- kondisi approve -->
-<?php while ($perlaporan1 = $approve->fetch_assoc()) { ?>
+<?php while ($perlaporan1 = $approve->fetch_assoc()) {; ?>
   <div>
     <div class="laporan">
-      <img src="../assets/foto bukti laporan/<?php echo $perlaporan1['foto']?>" alt="bukti_laporan"  />
+      <img src="../assets/fotobukti/<?= $perlaporan1['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan1['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan1['nama_kategori']; ?></span></h4>
@@ -74,11 +75,10 @@ while ($perlaporan = $terkirim->fetch_assoc()) { ?>
 <?php } ?>
 
 <!-- kondisi unapprove -->
-<?php while ($perlaporan2 = $unapprove->fetch_assoc()) { ?>
-  <!-- <?php var_dump($perlaporan2) ?> -->
+<?php while ($perlaporan2 = $unapprove->fetch_assoc()) {; ?>
   <div>
     <div class="laporan">
-      <img src="../assets/foto bukti laporan/<?php echo $perlaporan2['foto']?>" alt="bukti_laporan" />
+      <img src="../assets/fotobukti/<?= $perlaporan2['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan2['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan2['nama_kategori']; ?></span></h4>

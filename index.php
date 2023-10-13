@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,6 +48,8 @@ session_start();
         </p>
         <a href="siswa/pengaduan.php" style="background-color: #5E7C60; color: white">Laporkan!</a>
       </section>
+      <section class="right">
+        <img src="assets/img/speaker.png" style="margin-top: 68px;" alt="Speaker" />
       <section class="right" data-aos="fade-up" data-aos-duration="1500">
         <img src="assets/img/young-man-holding-megaphone-removebg-preview.png" style="margin-top: 60px;" alt="Speaker" />
       </section>

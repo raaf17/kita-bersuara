@@ -29,7 +29,7 @@ if ($_SESSION['status_login'] != true) {
       <p>Dashboard Admin</p>
       <div class="profile_siswa">
         <div class="name">
-          <p><span>Selamat Datang, </span>Admin</p>
+          <p><span>Selamat Datang, </span><?php echo $_SESSION['nisn']['nama']; ?></p>
           <img src="../assets/img/arrow-drop.png" alt="Arrow Drop" />
           <input type="checkbox" name="check" id="check" />
           <ul>
@@ -68,6 +68,10 @@ if ($_SESSION['status_login'] != true) {
           <span>
             <input type="checkbox" name="kesiswaan" id="kesiswaan">
             <label for="kesiswaan" class="kesiswaan">Kesiswaan</label>
+          </span>
+          <span>
+            <input type="checkbox" name="humas" id="humas">
+            <label for="humas" class="humas">Humas</label>
           </span>
           <span>
             <input type="checkbox" name="setuju" id="setuju">

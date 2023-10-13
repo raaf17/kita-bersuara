@@ -27,7 +27,7 @@ CREATE TABLE `admin` (
   `password` varchar(15) NOT NULL,
   `nama` varchar(35) NOT NULL,
   PRIMARY KEY (`nisn`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES ('0000000001','12121212','KipliDev');
+INSERT INTO `admin` VALUES ('0000000001','12121212','KipliDev'),('0000000002','12345678','Reyhan Surya Refalda'),('0000000003','12345678','Savero Dalta Saladin'),('0000000004','12345678','Yuma Aji Pangestu');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ CREATE TABLE `kategori` (
   `id_kategori` int NOT NULL AUTO_INCREMENT,
   `nama_kategori` varchar(45) NOT NULL,
   PRIMARY KEY (`id_kategori`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +60,7 @@ CREATE TABLE `kategori` (
 
 LOCK TABLES `kategori` WRITE;
 /*!40000 ALTER TABLE `kategori` DISABLE KEYS */;
-INSERT INTO `kategori` VALUES (1,'Sarpras'),(2,'Kurikulum'),(3,'Kesiswaan');
+INSERT INTO `kategori` VALUES (1,'Sarpras'),(2,'Kurikulum'),(3,'Kesiswaan'),(4,'Humas');
 /*!40000 ALTER TABLE `kategori` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,7 +85,7 @@ CREATE TABLE `laporan` (
   CONSTRAINT `laporan_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`),
   CONSTRAINT `laporan_ibfk_2` FOREIGN KEY (`nisn`) REFERENCES `siswa` (`nisn`),
   CONSTRAINT `laporan_ibfk_3` FOREIGN KEY (`id_status`) REFERENCES `status_laporan` (`id_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,7 +94,7 @@ CREATE TABLE `laporan` (
 
 LOCK TABLES `laporan` WRITE;
 /*!40000 ALTER TABLE `laporan` DISABLE KEYS */;
-INSERT INTO `laporan` VALUES (14,'code.png','AC ne lab ra kenek pakkkk....',1,'0000000002',11),(15,'code2.png','coba',1,'0000000002',12);
+INSERT INTO `laporan` VALUES (14,'code.png','AC ne lab ra kenek pakkkk....',1,'0000000002',11),(19,'images (8).jpg','coba dulu pakkk....',2,'0000000002',16);
 /*!40000 ALTER TABLE `laporan` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -111,7 +111,7 @@ CREATE TABLE `siswa` (
   `nama` varchar(35) NOT NULL,
   `foto` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`nisn`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -120,7 +120,7 @@ CREATE TABLE `siswa` (
 
 LOCK TABLES `siswa` WRITE;
 /*!40000 ALTER TABLE `siswa` DISABLE KEYS */;
-INSERT INTO `siswa` VALUES ('0000000002','123','Yuma Aji Pangestu',NULL);
+INSERT INTO `siswa` VALUES ('0000000002','123','Yuma Aji Pangestu',NULL),('0000000009','123','Kimpleng',NULL),('90','asdfg','gopeng',NULL);
 /*!40000 ALTER TABLE `siswa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,7 +136,7 @@ CREATE TABLE `status_laporan` (
   `status` varchar(30) NOT NULL DEFAULT 'terkirim',
   `feedback` varchar(100) NOT NULL,
   PRIMARY KEY (`id_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -145,7 +145,7 @@ CREATE TABLE `status_laporan` (
 
 LOCK TABLES `status_laporan` WRITE;
 /*!40000 ALTER TABLE `status_laporan` DISABLE KEYS */;
-INSERT INTO `status_laporan` VALUES (11,'terkirim',' '),(12,'terkirim',''),(13,'terkirim',' ');
+INSERT INTO `status_laporan` VALUES (11,'approve','Ok, nanti coba saya cek..'),(16,'unapprove','');
 /*!40000 ALTER TABLE `status_laporan` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -158,4 +158,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-02 13:37:46
+-- Dump completed on 2023-10-12 18:40:18
