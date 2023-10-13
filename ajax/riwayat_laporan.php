@@ -6,12 +6,10 @@ $setuju = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan wher
 $tidak = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where status_laporan.status='unapprove' and laporan.id_status=status_laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori");
 if ($keyword == "setuju") { ?>
  <?php if (mysqli_num_rows($setuju) != 0){?>
-    <?php while ($perlaporan = $setuju->fetch_assoc()) {;
-        $imagePath = ($perlaporan['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
-    ?>
+    <?php while ($perlaporan = $setuju->fetch_assoc()) {; ?>
         <div>
             <div class="laporan">
-                <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170" />
+                <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
                 <div class="detail_laporan">
                     <h4 class="pengusul">Pengusul: <span> <?php echo $perlaporan['nama']; ?></span></h3>
                             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan['nama_kategori']; ?></span></h4>
@@ -40,12 +38,10 @@ if ($keyword == "setuju") { ?>
 
 if ($keyword == "tidakSetuju") { ?>
  <?php if (mysqli_num_rows($setuju) != 0){?>
-    <?php while ($perlaporan = $tidak->fetch_assoc()) {;
-        $imagePath = ($perlaporan['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
-    ?>
+    <?php while ($perlaporan = $tidak->fetch_assoc()) {; ?>
         <div>
             <div class="laporan">
-                <img src="<?= $imagePath; ?>" alt="bukti_laporan" width="170" height="170" />
+                <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
                 <div class="detail_laporan">
                     <h4 class="pengusul">Pengusul: <span> <?php echo $perlaporan['nama']; ?></span></h3>
                             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan['nama_kategori']; ?></span></h4>

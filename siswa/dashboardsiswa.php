@@ -60,10 +60,9 @@ if ($_SESSION['nisn'] != true) {
           $akun = $_SESSION['nisn']['nisn'];
           $ambil = $conn->query("SELECT * FROM laporan AS lp LEFT JOIN siswa AS siswa ON lp.nisn = siswa.nisn LEFT JOIN kategori AS kat ON lp.id_kategori = kat.id_kategori LEFT JOIN status_laporan AS sl ON lp.id_status = sl.id_status WHERE lp.nisn='$akun' ORDER BY lp.id_laporan DESC");
           while ($laporanku = $ambil->fetch_assoc()) {;
-            $imagePath = ($laporanku['foto']) ? "../assets/fotobukti/" . $laporanku['foto'] : "../assets/img/image-default.png";
           ?>
             <div>
-              <img src="<?= $imagePath ?>" alt="bukti_laporan" width="170" height="170" />
+              <img src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
               <div class="detail_laporan">
                 <h4 class="pengusul">Pengusul: <span>Saya Sendiri</span></h4>
                 <h4 class="category">#<span><?php echo $laporanku['nama_kategori']; ?></span></h4>
