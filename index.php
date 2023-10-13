@@ -76,7 +76,7 @@
       <div class="humas" style="background-color: F2EDD7;">
         <img src="assets/img/humas.png" width="154" alt="" />
         <h3>HUMAS</h3>
-        <p>Hubungan Antar Sekolah <br>Laporan Kemajuan Sekolah <br>Kerjasama Dengan Lembaga</p>
+        <p>Hubungan Antar Sekolah <br>Laporan Kemajuan Sekolah <br>Kerjasama Dengan Lembaga / Instansi</p>
       </div>
     </section>
   </div>
