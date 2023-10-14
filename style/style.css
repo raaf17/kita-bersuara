@@ -9,109 +9,109 @@
   display: none;
 }
 
-/* container untuk navbar & main */
 .container {
   width: 80%;
   margin: auto;
 }
-/* akhir container navbar dan main */
+@media screen and (max-width: 860px) {
+  .container {
+    width: 85%;
+  }
+}
 
-/* bagian 1 - style navbar */
 nav {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
-  background-color: #5e7c60;
+  background-color: #5E7C60;
   z-index: 1;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
 }
-
 nav .container {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   position: relative;
   padding: 10px 0;
 }
-
+@media screen and (min-width: 700px) {
+  nav .container {
+    justify-content: space-evenly !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "brand link button";
+  }
+}
 nav .container .nav_brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 10px;
 }
-
+@media screen and (min-width: 700px) {
+  nav .container .nav_brand {
+    justify-content: flex-start !important;
+    grid-area: brand;
+  }
+}
 nav .container .nav_brand img {
   width: 50px;
 }
-
 nav .container .nav_brand h4 {
   font-weight: 800;
   font-size: 20px;
   color: white;
 }
-
 nav .container .nav_brand h4 br {
   display: none;
 }
-
+@media screen and (min-width: 700px) {
+  nav .container .nav_brand h4 br {
+    display: block;
+  }
+}
 nav .container .burger_menu {
   background-image: url(../assets/img/menu.png);
   width: 35px;
   height: 35px;
   background-size: cover;
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 10px;
 }
-
+@media screen and (min-width: 700px) {
+  nav .container .burger_menu {
+    display: none;
+  }
+}
 nav .container input {
   opacity: 0;
 }
-
 nav .container #label {
   cursor: pointer;
 }
-
 nav .container .grid {
-  display: -ms-grid !important;
   display: grid !important;
 }
-
 nav .container .list_link {
   display: none;
   width: 100%;
   margin-top: 10px;
-  -ms-grid-columns: (1fr) [2];
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "left right"
-    "button button";
-  -webkit-box-sizing: border-box;
+  grid-template-areas: "left right" "button button";
   box-sizing: border-box;
 }
-
-
+@media screen and (min-width: 700px) {
+  nav .container .list_link {
+    display: grid;
+  }
+}
 nav .container .list_link li {
   text-align: center;
   list-style: none;
 }
-
 nav .container .list_link li a {
   text-decoration: none;
   color: white;
@@ -119,45 +119,41 @@ nav .container .list_link li a {
   display: block;
   border-radius: 3px;
   padding: 7px;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
-
 nav .container .list_link li a:hover {
-  background-color: #f2edd7;
+  background-color: #F2EDD7;
 }
-
+@media screen and (min-width: 700px) {
+  nav .container .list_link li a:hover {
+    background: none;
+    font-weight: bold;
+  }
+}
 nav .container .list_link .home {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: left;
 }
-
 nav .container .list_link .cara {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: right;
 }
-
 nav .container .list_link .btn_login {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: button;
 }
-
+@media screen and (min-width: 700px) {
+  nav .container .list_link .btn_login {
+    display: none;
+  }
+}
 nav .container .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
+@media screen and (max-width: 700px) {
+  nav .container .btn {
+    display: none;
+  }
+}
 nav .container .btn a {
   display: inline-block;
   text-decoration: none;
@@ -167,284 +163,22 @@ nav .container .btn a {
   font-weight: 600;
   border-radius: 3px;
   font-size: 18px;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
-
 nav .container .btn a:hover {
   background-color: white;
-  color: #5e7c60;
+  color: #5E7C60;
 }
-/* akhir bagian 1 - sytle navbar */
 
-/* bagian 2 - style main */
 main {
   margin-top: 68px !important;
-  background-color: #f9f5f2;
+  background-color: #F9F5F2;
   color: white;
-  font-size: 2.1vw;
+  font-size: 38px;
   font-weight: 800;
   height: 476px;
   overflow-y: hidden;
 }
-
-main .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  overflow-y: hidden;
-}
-
-main .container .left {
-  width: 60%;
-  overflow-y: hidden;
-}
-
-main .container .left p {
-  width: 80%;
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 18px;
-  margin-bottom: 25px;
-}
-
-main .container .left a {
-  font-size: 22px;
-  font-weight: 700;
-  padding: 10px 16px;
-  text-decoration: none;
-  color: #5e7c60;
-  background-color: #f2edd7;
-  border-radius: 5px;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-main .container .right img {
-  margin-top: 30px;
-}
-/* akhir bagian 2 - style main */
-
-/* bagian 3 - style kategori laporan */
-.category_laporan h2 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 35px;
-  font-size: 36px;
-  font-weight: 900;
-  color: #5e7c60;
-}
-
-.category_laporan section.category{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 150px;
-  column-gap: 20px;
-}
-
-.category_laporan section.category div {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 285px;
-  height: 285px;
-  background-color: #f2edd7;
-  border-radius: 5px;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 27px;
-}
-
-.category_laporan section.category div h3 {
-  font-size: 22px;
-  color: #5e7c60;
-  font-weight: 900;
-  margin-top: 11px;
-  margin-bottom: 5px;
-}
-
-.category_laporan section.category div p {
-  font-size: 10px;
-  font-weight: 500;
-  text-align: center;
-}
-/* akhir bagian 3 - style kategori laporan */
-
-/* bagian 4 - style tim expert */
-.tim-expert{
-  color: #5e7c60;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.orang-web-crafters {
-  color: #5e7c60;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.container.tim-expert {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 150px;
-  column-gap: 90px;
-}
-
-.tim {
-  width: 250px;
-  height: 350px;
-  background-color: #d9d9d9;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px black;
-  box-shadow: 0px 0px 10px black;
-  margin-bottom: 20px;
-}
-
-.tim.reyhan img,
-.rafi img,
-.dalta img,
-.yuma img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-.pre-profil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.profil {
-  margin: auto;
-}
-
-.profil .nama {
-  margin-top: 10px;
-  font-size: 20px;
-  color: #5e7c60;
-  text-align: center;
-}
-
-.profil .jobdesk {
-  font-size: 16px;
-  color: #5e7c60;
-  opacity: 0.7;
-  text-align: center;
-}
-/* akhir bagian 4 - style tim expert */
-
-/* bagian 5 - style footer */
-footer {
-  background-color: #5e7c60;
-  overflow-x: hidden;
-}
-
-footer p {
-  padding: 14px;
-  text-align: center;
-  font-size: 15px;
-  color: white;
-  font-weight: 800;
-}
-
-/* akhir bagian 5 - style footer */
-
-/* responsive track point */
-/* navbar & main width */
-@media screen and (max-width: 860px) {
-  .container {
-    width: 85%;
-  }
-}
-
-/* navbar responsive */
-@media screen and (min-width: 700px) {
-  nav .container {
-    -webkit-box-pack: space-evenly !important;
-    -ms-flex-pack: space-evenly !important;
-    justify-content: space-evenly !important;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "brand link button";
-  }
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .nav_brand {
-    -webkit-box-pack: start !important;
-    -ms-flex-pack: start !important;
-    justify-content: flex-start !important;
-    grid-area: brand;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .nav_brand h4 br {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .burger_menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .list_link {
-    display: -ms-grid;
-    display: grid;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .list_link li a:hover {
-    background: none;
-    font-weight: bold;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .list_link .btn_login {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  nav .container .btn {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1052px) {
   main {
     height: 100%;
@@ -452,8 +186,13 @@ footer p {
     padding: 20px;
   }
 }
-
-/* main responsive */
+main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+}
 @media screen and (max-width: 1052px) {
   main .container .left {
     width: 100% !important;
@@ -474,60 +213,190 @@ footer p {
     font-weight: 700;
     padding: 5px 8px !important;
     text-decoration: none;
-    color: #5e7c60;
-    background-color: #f2edd7;
+    color: #5E7C60;
+    background-color: #F2EDD7;
     border-radius: 2px !important;
-    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   }
   main .container .right {
     display: none;
   }
 }
-
-@media screen and (min-width: 1500px) {
-  .container .left h1{
-    font-size: 65px;
-  }
+main .container .left {
+  width: 60%;
+  overflow-y: hidden;
+}
+main .container .left p {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+main .container .left a {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #5E7C60;
+  background-color: #F2EDD7;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main .container .right img {
+  margin-top: 30px;
 }
 
-/* kategori laporan responsive */
-
+.category_laporan h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #5E7C60;
+}
 @media screen and (max-width: 1052px) {
   .category_laporan h2 {
     font-size: 25px;
   }
 }
-
-@media screen and (max-width: 450px) {
-  .category_laporan h2{
-    font-size: 20px;
+.category_laporan section.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media screen and (max-width: 1052px) {
+  .category_laporan section.category {
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
-
-@media screen and (max-width: 1200px) {
-  .category_laporan section.category{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
-    justify-items: center;
-    row-gap: 80px;
-  }
+.category_laporan section.category div {
+  position: relative;
+  display: flex;
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.25);
+  width: 285px;
+  height: 285px;
+  background-color: #F2EDD7;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 27px;
+}
+.category_laporan section.category div .kotak {
+  z-index: -1;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: #5E7C60;
+  border-radius: 5px;
+}
+.category_laporan section.category div h3 {
+  font-size: 22px;
+  color: #5E7C60;
+  font-weight: 900;
+  margin-top: 11px;
+  margin-bottom: 5px;
+}
+.category_laporan section.category div p {
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-  .container.tim-expert{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
-    justify-items: center;
-    row-gap: 80px;
-  }
+.tim-expert {
+  color: #5e7c60;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-top: 60px;
 }
 
-/* footer responsive */
+.orang-web-crafters {
+  color: #5e7c60;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container.tim-expert {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.tim {
+  width: 250px;
+  height: 350px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.tim.reyhan img,
+.rafi img,
+.dalta img,
+.yuma img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pre-profil {
+  display: flex;
+}
+
+.profil {
+  margin: auto;
+}
+
+.profil .nama {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #5e7c60;
+  text-align: center;
+}
+
+.profil .jobdesk {
+  font-size: 16px;
+  color: #5e7c60;
+  opacity: 0.7;
+  text-align: center;
+}
+
+footer {
+  background-color: #5E7C60;
+  overflow-x: hidden;
+}
+footer p {
+  padding: 14px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 800;
+}
 @media screen and (max-width: 1100px) {
   footer p {
     font-size: 12px;
     font-weight: 600;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
