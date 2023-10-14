@@ -13,14 +13,17 @@ $second-color: #F2EDD7;
   display: none;
 }
 
+// container nav & main
 .container {
   width: 80%;
   margin: auto;
   @media screen and (max-width: 860px) {
-    width: 98%;
+    width: 85%;
   }
 }
+// akhir container nav & main
 
+// bagian 1 - navbar
 nav {
   position: fixed;
   top: 0;
@@ -159,7 +162,9 @@ nav {
     }
   }
 }
+// akhir bagian 1 - navbar
 
+// bagian 2 - main
 main {
   margin-top: 68px !important;
   background-color: #F9F5F2;
@@ -238,6 +243,9 @@ main {
     }
   }
 }
+// akhir bagian 2 - main
+
+// bagian 3 - kategori laporan
 .category_laporan {
   h2 {
     text-align: center;
@@ -302,7 +310,9 @@ main {
     }
   }
 }
+// akhir bagian 3 - kategori laporan
 
+// bagian 4 - tim expert
 .tim-expert {
   color: #5e7c60;
   font-family: Poppins;
@@ -370,7 +380,10 @@ main {
   opacity: 0.7;
   text-align: center;
 }
+// akhir bagian 4 - tim expert
 
+
+// bagian 5 - footer
 footer {
   background-color: $primary-color;
   overflow-x: hidden;
@@ -386,3 +399,4 @@ footer {
     }
   }
 }
+// akhir bagian 5 - footer

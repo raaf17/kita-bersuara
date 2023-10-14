@@ -9,52 +9,38 @@
   display: none;
 }
 
+/* container untuk navbar & main */
 .container {
   width: 80%;
   margin: auto;
 }
+/* akhir container navbar dan main */
 
-@media screen and (max-width: 860px) {
-  .container {
-    width: 98%;
-  }
-}
-
+/* bagian 1 - style navbar */
 nav {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
-  background-color: #5E7C60;
+  background-color: #5e7c60;
   z-index: 1;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.222);
 }
 
 nav .container {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   position: relative;
   padding: 10px 0;
-}
-
-@media screen and (min-width: 700px) {
-  nav .container {
-    -webkit-box-pack: space-evenly !important;
-        -ms-flex-pack: space-evenly !important;
-            justify-content: space-evenly !important;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "brand link button";
-  }
 }
 
 nav .container .nav_brand {
@@ -62,21 +48,12 @@ nav .container .nav_brand {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .nav_brand {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
-    grid-area: brand;
-  }
 }
 
 nav .container .nav_brand img {
@@ -93,26 +70,14 @@ nav .container .nav_brand h4 br {
   display: none;
 }
 
-@media screen and (min-width: 700px) {
-  nav .container .nav_brand h4 br {
-    display: block;
-  }
-}
-
 nav .container .burger_menu {
   background-image: url(../assets/img/menu.png);
   width: 35px;
   height: 35px;
   background-size: cover;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .burger_menu {
-    display: none;
-  }
 }
 
 nav .container input {
@@ -132,20 +97,15 @@ nav .container .list_link {
   display: none;
   width: 100%;
   margin-top: 10px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "left right"
- "button button";
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "left right"
+    "button button";
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 700px) {
-  nav .container .list_link {
-    display: -ms-grid;
-    display: grid;
-  }
-}
 
 nav .container .list_link li {
   text-align: center;
@@ -164,14 +124,7 @@ nav .container .list_link li a {
 }
 
 nav .container .list_link li a:hover {
-  background-color: #F2EDD7;
-}
-
-@media screen and (min-width: 700px) {
-  nav .container .list_link li a:hover {
-    background: none;
-    font-weight: bold;
-  }
+  background-color: #f2edd7;
 }
 
 nav .container .list_link .home {
@@ -193,28 +146,16 @@ nav .container .list_link .btn_login {
   grid-area: button;
 }
 
-@media screen and (min-width: 700px) {
-  nav .container .list_link .btn_login {
-    display: none;
-  }
-}
-
 nav .container .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 700px) {
-  nav .container .btn {
-    display: none;
-  }
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .container .btn a {
@@ -232,25 +173,19 @@ nav .container .btn a {
 
 nav .container .btn a:hover {
   background-color: white;
-  color: #5E7C60;
+  color: #5e7c60;
 }
+/* akhir bagian 1 - sytle navbar */
 
+/* bagian 2 - style main */
 main {
   margin-top: 68px !important;
-  background-color: #F9F5F2;
+  background-color: #f9f5f2;
   color: white;
-  font-size: 38px;
+  font-size: 2.1vw;
   font-weight: 800;
   height: 476px;
   overflow-y: hidden;
-}
-
-@media screen and (max-width: 1052px) {
-  main {
-    height: 100%;
-    margin-top: 80px;
-    padding: 20px;
-  }
 }
 
 main .container {
@@ -258,44 +193,13 @@ main .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   overflow-y: hidden;
-}
-
-@media screen and (max-width: 1052px) {
-  main .container .left {
-    width: 100% !important;
-    text-align: center;
-  }
-  main .container .left h1 {
-    font-size: 36px;
-    font-weight: 900;
-  }
-  main .container .left p {
-    text-align: center;
-    margin: auto;
-    font-size: 14px !important;
-    margin-bottom: 15px !important;
-  }
-  main .container .left a {
-    font-size: 12px !important;
-    font-weight: 700;
-    padding: 5px 8px !important;
-    text-decoration: none;
-    color: #5E7C60;
-    background-color: #F2EDD7;
-    border-radius: 2px !important;
-    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  main .container .right {
-    display: none;
-  }
 }
 
 main .container .left {
@@ -316,55 +220,33 @@ main .container .left a {
   font-weight: 700;
   padding: 10px 16px;
   text-decoration: none;
-  color: #5E7C60;
-  background-color: #F2EDD7;
+  color: #5e7c60;
+  background-color: #f2edd7;
   border-radius: 5px;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 main .container .right img {
   margin-top: 30px;
 }
+/* akhir bagian 2 - style main */
 
+/* bagian 3 - style kategori laporan */
 .category_laporan h2 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 35px;
   font-size: 36px;
   font-weight: 900;
-  color: #5E7C60;
+  color: #5e7c60;
 }
 
-@media screen and (max-width: 1052px) {
-  .category_laporan h2 {
-    font-size: 25px;
-  }
-}
-
-.category_laporan section.category {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.category_laporan section.category{
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-}
-
-@media screen and (max-width: 1052px) {
-  .category_laporan section.category {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 20px;
-  }
+  justify-content: center;
+  margin-bottom: 150px;
+  column-gap: 20px;
 }
 
 .category_laporan section.category div {
@@ -374,41 +256,27 @@ main .container .right img {
   display: flex;
   width: 285px;
   height: 285px;
-  background-color: #F2EDD7;
+  background-color: #f2edd7;
   border-radius: 5px;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 27px;
-}
-
-.category_laporan section.category div .kotak {
-  z-index: -1;
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 5px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  background-color: #5E7C60;
-  border-radius: 5px;
 }
 
 .category_laporan section.category div h3 {
   font-size: 22px;
-  color: #5E7C60;
+  color: #5e7c60;
   font-weight: 900;
   margin-top: 11px;
   margin-bottom: 5px;
@@ -419,10 +287,11 @@ main .container .right img {
   font-weight: 500;
   text-align: center;
 }
+/* akhir bagian 3 - style kategori laporan */
 
-.tim-expert {
+/* bagian 4 - style tim expert */
+.tim-expert{
   color: #5e7c60;
-  font-family: Poppins;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -433,7 +302,6 @@ main .container .right img {
 
 .orang-web-crafters {
   color: #5e7c60;
-  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -443,9 +311,10 @@ main .container .right img {
 }
 
 .container.tim-expert {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+  column-gap: 90px;
 }
 
 .tim {
@@ -454,8 +323,8 @@ main .container .right img {
   background-color: #d9d9d9;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px black;
-          box-shadow: 0px 0px 10px black;
-  margin-bottom: 150px;
+  box-shadow: 0px 0px 10px black;
+  margin-bottom: 20px;
 }
 
 .tim.reyhan img,
@@ -465,8 +334,7 @@ main .container .right img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .pre-profil {
@@ -492,9 +360,11 @@ main .container .right img {
   opacity: 0.7;
   text-align: center;
 }
+/* akhir bagian 4 - style tim expert */
 
+/* bagian 5 - style footer */
 footer {
-  background-color: #5E7C60;
+  background-color: #5e7c60;
   overflow-x: hidden;
 }
 
@@ -506,6 +376,154 @@ footer p {
   font-weight: 800;
 }
 
+/* akhir bagian 5 - style footer */
+
+/* responsive track point */
+/* navbar & main width */
+@media screen and (max-width: 860px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/* navbar responsive */
+@media screen and (min-width: 700px) {
+  nav .container {
+    -webkit-box-pack: space-evenly !important;
+    -ms-flex-pack: space-evenly !important;
+    justify-content: space-evenly !important;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "brand link button";
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav .container .nav_brand {
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    grid-area: brand;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav .container .nav_brand h4 br {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav .container .burger_menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav .container .list_link {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav .container .list_link li a:hover {
+    background: none;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav .container .list_link .btn_login {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav .container .btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  main {
+    height: 100%;
+    margin-top: 80px;
+    padding: 20px;
+  }
+}
+
+/* main responsive */
+@media screen and (max-width: 1052px) {
+  main .container .left {
+    width: 100% !important;
+    text-align: center;
+  }
+  main .container .left h1 {
+    font-size: 36px;
+    font-weight: 900;
+  }
+  main .container .left p {
+    text-align: center;
+    margin: auto;
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
+  }
+  main .container .left a {
+    font-size: 12px !important;
+    font-weight: 700;
+    padding: 5px 8px !important;
+    text-decoration: none;
+    color: #5e7c60;
+    background-color: #f2edd7;
+    border-radius: 2px !important;
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  main .container .right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .container .left h1{
+    font-size: 65px;
+  }
+}
+
+/* kategori laporan responsive */
+
+@media screen and (max-width: 1052px) {
+  .category_laporan h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .category_laporan h2{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .category_laporan section.category{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+    justify-items: center;
+    row-gap: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container.tim-expert{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+    justify-items: center;
+    row-gap: 80px;
+  }
+}
+
+/* footer responsive */
 @media screen and (max-width: 1100px) {
   footer p {
     font-size: 12px;
