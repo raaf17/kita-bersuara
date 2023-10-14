@@ -12,12 +12,14 @@
 </head>
 
 <body>
+
+  <!-- bagian 1 - navbar -->
   <nav>
     <div class="container">
       <div class="nav_brand">
         <img src="assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
         <h4>
-          Kita<br />Bersuara
+          Kita<br / >Bersuara
         </h4>
       </div>
       <label class="burger_menu" for="burger" id="label">
@@ -39,22 +41,31 @@
       <?php } ?>
     </div>
   </nav>
+  <!-- akhir bagian 1 - navbar -->
+
+  <!-- bagian 2 - hero konten -->
   <main >
     <div class="container">
-      <section class="left" data-aos="fade-up" data-aos-duration="1500">
+      <!-- hero konten - Kiri -->
+      <sect ion class="left" data-aos="fade-up" data-aos-duration="1500">
         <h1 style="color: #5E7C60;">Layanan Pengaduan Siswa Esemkita Online</h1>
         <p style="color: #5E7C60;">
           Suarakan keluhan anda disini, kami siap memprosesnya dengan cepat
         </p>
         <a href="siswa/pengaduan.php" style="background-color: #5E7C60; color: white">Laporkan!</a>
-      </section>
-      <section class="right">
-        <img src="assets/img/speaker.png" style="margin-top: 68px;" alt="Speaker" />
+      </sect>
+      <!-- akhir hero konten - kiri -->
+
+      <!-- hero konten - Kanan -->
       <section class="right" data-aos="fade-up" data-aos-duration="1500">
-        <img src="assets/img/young-man-holding-megaphone-removebg-preview.png" style="margin-top: 60px;" alt="Speaker" />
+        <img src="assets/img/speaker.png" style="margin-top: 68px;" alt="Speaker" />
       </section>
+      <!-- akhir hero konten - Kanan -->
     </div>
   </main>
+  <!-- akhir bagian 2 - hero konten -->
+
+  <!-- bagian 3 - kategori laporan -->
   <div class="category_laporan">
     <h2 style="color: #5E7C60;"  data-aos="fade-up" data-aos-duration="1500">HAL YANG BISA ANDA LAPORKAN</h2>
     <section class="category container" data-aos="fade-up" data-aos-duration="1500">
@@ -80,12 +91,16 @@
       </div>
     </section>
   </div>
-  <!-- bagian 4 - tim expert -->
+  <!-- akhir bagian 3 - kategori laporan -->
+
+  <!-- bagian 4 - pre-tim expert -->
   <div class="tim-expert-title" data-aos="fade-up" data-aos-duration="1500">
     <h1 class="tim-expert">Tim Expert</h1>
     <h3 class="orang-web-crafters">Orang-orang dari WebCrafters</h3>
   </div>
+  <!-- akhir bagian 4 - pre-tim expert -->
 
+  <!-- bagian 5 - Tim Expert -->
   <div class="container tim-expert" data-aos="fade-up" data-aos-duration="1500">
     <!-- rafi -->
     <div class="tim rafi">
@@ -131,18 +146,24 @@
       </div>
     </div>
   </div>
-  <!-- end of tim expert -->
+  <!-- akhir bagian 5 - Tim Expert -->
+
+  <!-- bagian 6 - Footer -->
   <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
   </footer>
+  <!-- akhir bagian 6 - Footer -->
+
+  <!-- responsive hamburger -->
   <script src="siswa/script.js"></script>
-  <!-- script untuk scroll animation -->
-  <script src="siswa/script.js"></script>
+  <!-- akhir responsive hamburger -->
+
+  <!-- scroll animation -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <!-- end of script untuk sroll animation -->
+  <!-- akhir scroll animation -->
 </body>
 
 </html>
