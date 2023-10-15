@@ -14,6 +14,8 @@ Aplikasi ini merupakan tugas akhir semester dari sekolah pada kelas XI PPLG 2.
 ### Fitur Admin 📊
 - **Login Admin**: Admin memiliki akses khusus ke dashboard admin untuk mengelola laporan siswa.
 - **Dashboard Admin**: Dashboard yang dilengkapi fitur pencarian untuk mengelola laporan siswa dengan efisien.
+- **Tambah Data**: Menambah Data Siswa.
+- **Import Data**: Memudahkah admin atau petugas dalam memasukkan data siswa dalam jumlah banyak.
 - **Pengelompokan Berdasarkan Kategori**: Susun laporan siswa berdasarkan kategori untuk analisis yang lebih baik.
 - **Evaluasi Laporan**: Admin dapat mengevaluasi laporan dan memberikan tanggapan yang diperlukan.
 - **Memberikan Feedback**: Dukung perkembangan siswa dengan memberikan umpan balik yang berharga.
