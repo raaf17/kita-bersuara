@@ -130,14 +130,14 @@ if ($_SESSION['status_login'] != true) {
     $file_data = $_FILES['filexls']['tmp_name']; // Untuk mendapatkan temporary data
   
     if (empty($file_name)) {
-      $err .= "<li>Silahkan masukkan file yang kamu inginkan</li>";
+      $err .= "Silahkan masukkan file yang kamu inginkan";
     } else {
       $ekstensi = pathinfo($file_name)['extension'];
     }
 
     $ekstensi_allowed = array("xls", "xlsx");
     if (!in_array($ekstensi, $ekstensi_allowed)) {
-      $err .= "<li>Silahkan masukkan file tipe xls atau xlsx. File yang kamu masukkan <b>$file_name</b> punya tipe <b>$ekstensi</b></li>";
+      $err .= "Silahkan masukkan file tipe xls atau xlsx. File $file_name yang kamu masukkan punya tipe $ekstensi";
     }
 
     if (empty($err)) {
