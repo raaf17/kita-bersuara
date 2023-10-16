@@ -48,25 +48,30 @@ if ($_SESSION['status_login'] != true) {
     <div class="container">
       <h1>LAPORAN SISWA</h1>
 
-      <button class="show-modal">Import Data Siswa</button>
-      <span class="overlay"></span>
+      <div class="buttonTambahDataSiswa">
+        <div>
+          <button class="show-modal">Import Data Siswa</button>
+          <span class="overlay"></span>
+          <div class="modal-box">
+            <h2>Tambah Data Siswa</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+              <div class="file-wrapper">
+                <input type="file" name="filexls" id="formFile" required />
+                <span>Pilih File Excel</span>
+              </div>
+              <div class="buttons">
+                <button type="submit" name="submit" class="submit-btn">Tambah</button>
+                <button class="close-btn">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
 
-      <div class="modal-box">
-        <h2>Tambah Data Siswa</h2>
-        <form action="" method="post" enctype="multipart/form-data">
-          <div class="file-wrapper">
-            <input type="file" name="filexls" id="formFile" required />
-            <span>Pilih File Excel</span>
-          </div>
-          <div class="buttons">
-            <button type="submit" name="submit" class="submit-btn">Tambah</button>
-            <button class="close-btn">Close</button>
-          </div>
-        </form>
+        <div>
+          <button type="submit">Tambah Data</button>
+        </div>
       </div>
-      <div>
-        <button type="submit">Tambah Data</button>
-      </div>
+      
 
       <form action="hasilpencarian.php" method="get">
         <div class="search">
