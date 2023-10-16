@@ -7,7 +7,7 @@ while ($perlaporan = $terkirim->fetch_assoc()) {;
 ?>
   <div>
     <div class="laporan">
-      <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
+      <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="1~70px" height="170px" />
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan['nama_kategori']; ?></span></h4>

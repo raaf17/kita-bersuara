@@ -13,6 +13,7 @@
   width: 80%;
   margin: auto;
 }
+
 @media screen and (max-width: 1100px) {
   .container {
     width: 95%;
@@ -22,25 +23,43 @@
 nav {
   background-color: #5E7C60;
   height: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #5E7C60;
   z-index: 999;
   padding: 15px 0;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.205);
+  -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.205);
+          box-shadow: 0 0 4px rgba(255, 255, 255, 0.205);
 }
+
 nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media screen and (max-width: 860px) {
   nav .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   nav .container > p {
     display: none;
@@ -53,50 +72,79 @@ nav .container {
     display: none;
   }
 }
+
 nav .container .nav_brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 nav .container .nav_brand img {
   width: 55px;
   margin-right: 15px;
 }
+
 nav .container .nav_brand h4 {
   font-size: 24px;
   font-weight: 900;
   color: white;
   line-height: 113.5%;
 }
+
 nav .container .list_link {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 nav .container .list_link li:not(:last-child) {
   margin-right: 64px;
 }
+
 nav .container .list_link li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-weight: 500;
 }
+
 nav .container .list_link li a:hover {
   font-weight: 800;
 }
+
 nav .container p {
   font-weight: 700;
   color: white;
 }
+
 nav .container .profile_siswa {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
+
 nav .container .profile_siswa img.profile {
   width: 50px;
   height: 50px;
@@ -105,16 +153,24 @@ nav .container .profile_siswa img.profile {
   border-radius: 50%;
   border: 3px solid #F2EDD7;
 }
+
 nav .container .profile_siswa .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   cursor: pointer;
   position: relative;
 }
-nav .container .profile_siswa .name input[type=checkbox] {
+
+nav .container .profile_siswa .name input[type="checkbox"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -125,9 +181,11 @@ nav .container .profile_siswa .name input[type=checkbox] {
   cursor: pointer;
   height: 100%;
 }
-nav .container .profile_siswa .name input[type=checkbox]:checked ~ ul {
+
+nav .container .profile_siswa .name input[type="checkbox"]:checked ~ ul {
   display: block;
 }
+
 nav .container .profile_siswa .name ul {
   display: none;
   position: absolute;
@@ -136,11 +194,14 @@ nav .container .profile_siswa .name ul {
   list-style: none;
   border-radius: 5px;
   border: 2.5px solid #5E7C60;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
 }
+
 nav .container .profile_siswa .name ul li:not(:last-child) {
   border-bottom: 2.5px solid #5E7C60;
 }
+
 nav .container .profile_siswa .name ul li a {
   display: block;
   padding: 5px 20px;
@@ -148,10 +209,12 @@ nav .container .profile_siswa .name ul li a {
   color: #5E7C60;
   font-weight: 600;
 }
+
 nav .container .profile_siswa .name ul li a:hover {
   background-color: #5E7C60;
   color: white;
 }
+
 nav .container .btn_login {
   padding: 4px 26px;
   border: 2px solid white;
@@ -160,8 +223,10 @@ nav .container .btn_login {
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
+  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
+
 nav .container .btn_login:hover {
   background-color: white;
   color: #5E7C60;
@@ -171,20 +236,32 @@ main .container {
   margin: 120px auto;
   color: #5E7C60;
 }
+
 main .container .profile {
   margin: 220px 0 180px;
   padding: 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
 }
+
 @media screen and (max-width: 1100px) {
   main .container .profile {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+
 main .container .profile img {
   width: 130px;
   height: 130px;
@@ -193,23 +270,32 @@ main .container .profile img {
   border-radius: 5px;
   border: 5px solid #5E7C60;
 }
+
 @media screen and (max-width: 1100px) {
   main .container .profile .detail {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main .container .profile .detail a {
     margin: 0 0 10px !important;
   }
 }
+
 main .container .profile .detail h1 {
   font-weight: 800;
 }
+
 main .container .profile .detail p {
   font-weight: 700;
   margin: 6px 0 24px;
 }
+
 main .container .profile .detail a {
   padding: 9px 24px;
   background: #000;
@@ -218,92 +304,137 @@ main .container .profile .detail a {
   text-decoration: none;
   font-weight: 700;
 }
+
 main .container .profile .detail a.lapor {
   background-color: #5E7C60;
   color: white;
   margin-right: 10px;
 }
+
 main .container .profile .detail a.edit {
   background-color: #cff7ff;
   color: #5E7C60;
 }
+
 main .container .riwayat_laporan {
   padding: 0 10%;
 }
+
 main .container .riwayat_laporan h3 {
   text-align: center;
   font-weight: 800;
   font-size: 24px;
   margin: -50px 0 44px;
 }
+
 main .container .riwayat_laporan h1 {
   text-align: center;
   font-size: 22px;
   font-weight: bold;
 }
+
 main .container .riwayat_laporan .laporan > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 25px;
   background-color: #F2EDD7;
   border: 2px solid #5E7C60;
   border-radius: 5px;
   padding: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 @media screen and (max-width: 1100px) {
   main .container .riwayat_laporan .laporan > div {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr max-content;
-    grid-template-areas: "foto foto" "deskripsi deskripsi" "icon icon";
-    align-items: end;
+    -ms-grid-columns: 1fr max-content;
+        grid-template-columns: 1fr -webkit-max-content;
+        grid-template-columns: 1fr max-content;
+        grid-template-areas: "foto foto" "deskripsi deskripsi" "icon icon";
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
 }
+
 @media screen and (max-width: 1100px) {
   main .container .riwayat_laporan .laporan > div img {
     grid-area: foto !important;
     margin: auto;
   }
 }
+
 main .container .riwayat_laporan .laporan > div .detail_laporan {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   row-gap: 10px;
-  grid-template-areas: "left right" "area area";
+      grid-template-areas: "left right" "area area";
 }
+
 @media screen and (max-width: 1100px) {
   main .container .riwayat_laporan .laporan > div .detail_laporan {
     grid-area: deskripsi !important;
-    grid-template-areas: "left left" "right right" "area area";
+        grid-template-areas: "left left" "right right" "area area";
   }
   main .container .riwayat_laporan .laporan > div .detail_laporan p {
     font-size: 12px !important;
   }
 }
+
 main .container .riwayat_laporan .laporan > div .detail_laporan h4 {
   font-weight: 800;
   font-size: 14px;
 }
+
 main .container .riwayat_laporan .laporan > div .detail_laporan .pengusul {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: left;
 }
+
 main .container .riwayat_laporan .laporan > div .detail_laporan .category {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: right;
   opacity: 0.7;
   font-size: 12px !important;
 }
+
 main .container .riwayat_laporan .laporan > div .detail_laporan p {
   font-weight: 600;
   font-size: 12px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: area;
   text-align: justify;
 }
+
 main .container .riwayat_laporan .laporan > div .icon_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
   font-weight: 600;
   font-size: 12px;
@@ -311,11 +442,17 @@ main .container .riwayat_laporan .laporan > div .icon_status {
   padding: 10px 25px;
   border-radius: 3px;
 }
+
 @media screen and (max-width: 1100px) {
   main .container .riwayat_laporan .laporan > div .icon_status {
     grid-area: icon !important;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 5px;
     gap: 3px;
   }
@@ -324,18 +461,22 @@ main .container .riwayat_laporan .laporan > div .icon_status {
     width: 16px;
   }
 }
+
 main .container .riwayat_laporan .laporan > div .approved {
   background-color: #5E7C60;
 }
+
 main .container .riwayat_laporan .laporan > div .unapproved {
   background-color: red;
 }
+
 main .container .riwayat_laporan .laporan form {
   width: 100%;
   margin-bottom: 10px;
   position: relative;
   z-index: 99;
 }
+
 main .container .riwayat_laporan .laporan form textarea {
   width: 100%;
   margin-top: -5px;
@@ -347,8 +488,10 @@ main .container .riwayat_laporan .laporan form textarea {
   font-weight: 600;
   outline: none;
   z-index: 999;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 main .container .riwayat_laporan .laporan form button {
   position: absolute;
   right: 0;
@@ -369,6 +512,7 @@ footer {
   overflow-x: hidden;
   margin-top: 100px;
 }
+
 footer p {
   padding: 14px;
   text-align: center;
@@ -376,9 +520,11 @@ footer p {
   color: white;
   font-weight: 800;
 }
+
 @media screen and (max-width: 1100px) {
   footer p {
     font-size: 12px;
     font-weight: 600;
   }
-}/*# sourceMappingURL=profile.css.map */
+}
+/*# sourceMappingURL=profile.css.map */
