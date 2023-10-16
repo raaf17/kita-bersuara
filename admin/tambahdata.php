@@ -48,7 +48,7 @@
             <input type="password" name="password" id="password" />
           </div>
           <button type="submit" name="submit">Tambah Data</button>
-          <button><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
+          <button><a href="datasiswa.php" style="text-decoration: none; color: white;">Kembali</a></button>
         </form>
       </main>
     </div>
@@ -59,9 +59,9 @@
       $username = $_POST['username'];
       $password = $_POST['password'];
 
-      $query = "INSERT INTO siswa (nisn, password, nama, foto) VALUES('$username', '$password', '$name', NULL)";
+      $query = "INSERT INTO siswa (nisn, password, nama) VALUES('$username', '$password', '$name')";
       mysqli_query($conn, $query);
-      echo "<script>location='dashboard.php';</script>";
+      echo "<script>location='datasiswa.php';</script>";
     }
     ?>
 

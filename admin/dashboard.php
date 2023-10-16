@@ -13,8 +13,7 @@ if ($_SESSION['status_login'] != true) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Admin</title>
-  <link rel="stylesheet"
-    href="../style/dashboardadmin.css?version=<?php echo filemtime('../style/dashboardadmin.css'); ?>">
+  <link rel="stylesheet" href="../style/dashboardadmin.css?version=<?php echo filemtime('../style/dashboardadmin.css'); ?>">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
 
@@ -50,38 +49,20 @@ if ($_SESSION['status_login'] != true) {
 
       <div class="buttonTambahDataSiswa">
         <div>
-          <button class="show-modal">Import Data Siswa</button>
-          <span class="overlay"></span>
-          <div class="modal-box">
-            <h2>Tambah Data Siswa</h2>
-            <form action="" method="post" enctype="multipart/form-data">
-              <div class="file-wrapper">
-                <input type="file" name="filexls" id="formFile" required />
-                <span>Pilih File Excel</span>
-              </div>
-              <div class="buttons">
-                <button type="submit" name="submit" class="submit-btn">Tambah</button>
-                <button class="close-btn">Close</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div>
-          <button><a href="tambahdata.php" style="text-decoration: none; color: white;">Tambah</a></button>
+          <button><a href="datasiswa.php" style="text-decoration: none; color: white;">Data Siswa</a></button>
         </div>
       </div>
-      
+
 
       <form action="hasilpencarian.php" method="get">
         <div class="search">
-          <label for="search" class="bold">Search: </label>
+          <label for="search" class="bold">Search : </label>
           <input type="text" placeholder="cari laporan..." name="search" id="search" name="search">
         </div>
       </form>
       <form>
         <div class="category_search">
-          <label for="category" class="bold">Select Category:</label>
+          <label for="category" class="bold">Select Category :</label>
           <span>
             <input type="checkbox" name="all" id="all">
             <label for="all" class="all">ALL</label>
@@ -118,79 +99,6 @@ if ($_SESSION['status_login'] != true) {
         <?php include '../ajax/all.php' ?>
       </div>
   </main>
-  <?php
-  require "../assets/library/vendor/autoload.php";
-
-  if (isset($_POST['submit'])) {
-    $err = "";
-    $ekstensi = "";
-    $success = "";
-
-    $file_name = $_FILES['filexls']['name']; // Untuk mendapatkan nama file yang diupload
-    $file_data = $_FILES['filexls']['tmp_name']; // Untuk mendapatkan temporary data
-  
-    if (empty($file_name)) {
-      $err .= "Silahkan masukkan file yang kamu inginkan";
-    } else {
-      $ekstensi = pathinfo($file_name)['extension'];
-    }
-
-    $ekstensi_allowed = array("xls", "xlsx");
-    if (!in_array($ekstensi, $ekstensi_allowed)) {
-      $err .= "Silahkan masukkan file tipe xls atau xlsx. File $file_name yang kamu masukkan punya tipe $ekstensi";
-    }
-
-    if (empty($err)) {
-      $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile($file_data);
-      $spreadsheet = $reader->load($file_data);
-      $sheetData = $spreadsheet->getActiveSheet()->toArray();
-
-      $jumlahData = 0;
-      for ($i = 1; $i < count($sheetData); $i++) {
-        $nisn = $sheetData[$i]['0'];
-        $password = $sheetData[$i]['1'];
-        $nama = $sheetData[$i]['2'];
-
-        $query_check = "SELECT COUNT(*) FROM siswa WHERE nisn = '$nisn'";
-        $result_check = mysqli_query($conn, $query_check);
-        $row = mysqli_fetch_row($result_check);
-
-        if ($row[0] == 0) {
-          $sql1 = "INSERT INTO siswa (nisn, password, nama) VALUES ('$nisn', '$password', '$nama')";
-          mysqli_query($conn, $sql1);
-          $jumlahData++;
-        } else {
-          continue;
-        }
-      }
-
-      if ($jumlahData > 0) {
-        $success = "Jumlah Data Berhasil Dimasukkan";
-      }
-    }
-
-
-    if ($err) {
-      ?>
-      <div>
-        <?php
-        echo "<script>alert('$err')</script>";
-        ?>
-      </div>
-      <?php
-    }
-
-    if ($success) {
-      ?>
-      <div>
-        <?php
-        echo "<script>alert('$success')</script>";
-        ?>
-      </div>
-      <?php
-    }
-  }
-  ?>
 
   <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
@@ -206,7 +114,7 @@ if ($_SESSION['status_login'] != true) {
     search.addEventListener("keyup", (e) => {
       let xhr = new XMLHttpRequest()
 
-      xhr.onreadystatechange = function () {
+      xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
           riwayat.innerHTML = `${xhr.responseText}`
         }
@@ -222,7 +130,7 @@ if ($_SESSION['status_login'] != true) {
         console.log(e)
         let xhr = new XMLHttpRequest()
 
-        xhr.onreadystatechange = function () {
+        xhr.onreadystatechange = function() {
           if (xhr.readyState == 4 && xhr.status == 200) {
             riwayat.innerHTML = `${xhr.responseText}`
           }
