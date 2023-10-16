@@ -30,8 +30,7 @@
 
     <div class="container">
       <main>
-        <h2>REGISTER SISWA</h2>
-        <p>Please login with your account</p>
+        <h2>TAMBAH DATA SISWA</h2>
         <form action="" method="post">
           <label for="username">Nama Lengkap</label>
           <div class="input-form">
@@ -48,9 +47,8 @@
             <img src="../assets/img/icons8-lock-24.png" alt="lock-icon" width="24px" />
             <input type="password" name="password" id="password" />
           </div>
-          <button type="submit" name="submit">Register Now</button>
-          <a href="../admin/loginadmin.php">Login as Admin</a>
-          <a href="../admin/loginadmin.php">Register</a>
+          <button type="submit" name="submit">Tambah Data</button>
+          <button><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
         </form>
       </main>
     </div>
@@ -63,7 +61,7 @@
 
       $query = "INSERT INTO siswa (nisn, password, nama, foto) VALUES('$username', '$password', '$name', NULL)";
       mysqli_query($conn, $query);
-      echo "<script>location='loginsiswa.php';</script>";
+      echo "<script>location='dashboard.php';</script>";
     }
     ?>
 

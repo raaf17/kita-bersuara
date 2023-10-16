@@ -68,7 +68,7 @@ if ($_SESSION['status_login'] != true) {
         </div>
 
         <div>
-          <button type="submit">Tambah Data</button>
+          <button><a href="tambahdata.php" style="text-decoration: none; color: white;">Tambah</a></button>
         </div>
       </div>
       
