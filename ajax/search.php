@@ -28,7 +28,7 @@ while ($pecah3 = $unapprove->fetch_assoc()) {
 <?php foreach ($semuadata1 as $key => $value) : ?>
   <div>
     <div class="laporan">
-      <img src="../assets/fotobukti/<?= $semuadata1['foto']; ?>" alt="bukti_laporan" width="170" height="170"/>
+      <img src="../assets/fotobukti/<?= $value['foto']; ?>" alt="bukti_laporan" width="170" height="170"/>
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span> <?php echo $value['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $value['nama_kategori']; ?></span></h4>
@@ -72,7 +72,7 @@ while ($pecah3 = $unapprove->fetch_assoc()) {
 <?php foreach ($semuadata2 as $key => $value) : ?>
   <div>
     <div class="laporan">
-      <img src="../assets/fotobukti/<?= $semuadata2['foto']; ?>" alt="bukti_laporan" width="170" height="170"/>
+      <img src="../assets/fotobukti/<?= $value['foto']; ?>" alt="bukti_laporan" width="170" height="170"/>
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span> <?php echo $value['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $value['nama_kategori']; ?></span></h4>
@@ -98,7 +98,7 @@ while ($pecah3 = $unapprove->fetch_assoc()) {
 <?php foreach ($semuadata3 as $key => $value) : ?>
   <div>
     <div class="laporan">
-      <img src="../assets/fotobukti/<?= $semuadata3['foto']; ?>" alt="bukti_laporan" width="170" height="170"/>
+      <img src="../assets/fotobukti/<?= $value['foto']; ?>" alt="bukti_laporan" width="170" height="170"/>
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span> <?php echo $value['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $value['nama_kategori']; ?></span></h4>
