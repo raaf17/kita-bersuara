@@ -45,7 +45,6 @@
           </div>
           <button type="submit" name="submit">Login Now</button>
           <a href="../admin/loginadmin.php">Login as Admin</a>
-          <a href="../siswa/registersiswa.php">Register</a>
         </form>
       </main>
     </div>
