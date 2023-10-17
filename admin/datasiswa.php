@@ -13,18 +13,62 @@ if ($_SESSION['status_login'] != true) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Admin</title>
-  <link rel="stylesheet" href="../style/dashboardadmin.css?version=<?php echo filemtime('../style/dashboardadmin.css'); ?>">
-  <link rel="stylesheet" href="../style/dashboardadmin.css?version=<?php echo filemtime('../style/datasiswa.css'); ?>">
+  <link rel="stylesheet" href="../style/datasiswa.css?version=<?php echo filemtime('../style/datasiswa.css'); ?>">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tabel1').DataTable();
     });
   </script>
+  <style>
+  .table-container {
+      padding: 20px;
+      max-width: 100%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      overflow-x: auto;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .data-table th {
+      background-color: #f8f9fa;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .data-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .data-table tbody tr:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .table-container {
+        max-width: 100%;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -174,11 +218,11 @@ if ($_SESSION['status_login'] != true) {
 
     if ($success) {
     ?>
-      <div>
+      <di>
         <?php
         echo "<script>alert('$success')</script>";
         ?>
-      </div>
+      </di>
   <?php
     }
   }

@@ -490,6 +490,7 @@ main .container .riwayat_laporan .laporan form textarea {
   z-index: 999;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  resize: vertical;
 }
 
 main .container .riwayat_laporan .laporan form button {

@@ -348,6 +348,7 @@ main {
             outline: none;
             z-index: 999;
             box-sizing: border-box;
+            resize: vertical;
           }
           button {
             position: absolute;

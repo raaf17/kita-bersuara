@@ -29,7 +29,7 @@ if ($_SESSION['status_login'] != true) {
       <p>Dashboard Admin</p>
       <div class="profile_siswa">
         <div class="name">
-          <p><span>Selamat Datang, </span>
+          <p><span>Selamat Datang(Admin), </span>
             <?php echo $_SESSION['nisn']['nama']; ?>
           </p>
           <img src="../assets/img/arrow-drop.png" alt="Arrow Drop" />
