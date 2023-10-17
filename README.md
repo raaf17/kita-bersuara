@@ -7,10 +7,10 @@
 <p></p>
 
 <p align="center">
-	<img src="https://img.shields.io/github/issues/raaf17/learnify?style=flat-square">
-	<img src="https://img.shields.io/github/stars/raaf17/learnify?style=flat-square"> 
-	<img src="https://img.shields.io/github/forks/raaf17/learnify?style=flat-square">
-	<img src="https://img.shields.io/github/license/raaf17/learnify?style=flat-square">
+	<img src="https://img.shields.io/github/issues/raaf17/kita-bersuara?style=flat-square">
+	<img src="https://img.shields.io/github/stars/raaf17/kita-bersuara?style=flat-square"> 
+	<img src="https://img.shields.io/github/forks/raaf17/kita-bersuara?style=flat-square">
+	<img src="https://img.shields.io/github/license/raaf17/kita-bersuara?style=flat-square">
 	<img src="https://img.shields.io/badge/maintained%3F-no-red.svg?style=flat-square">
 	<img src="https://img.shields.io/github/followers/raaf17.svg?style=flat-square&label=followers">
 </p>
