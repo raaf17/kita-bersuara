@@ -13,33 +13,24 @@ if ($_SESSION['status_login'] != true) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Admin</title>
-  <link rel="stylesheet" href="../style/dashboardadmin.css?version=<?php echo filemtime('../style/dashboardadmin.css'); ?>">
-  <link rel="stylesheet" href="../style/dashboardadmin.css?version=<?php echo filemtime('../style/datasiswa.css'); ?>">
+  <link rel="stylesheet" href="../style/datasiswa.css?version=<?php echo filemtime('../style/datasiswa.css'); ?>">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tabel1').DataTable();
     });
   </script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    .table-container {
+  .table-container {
       padding: 20px;
       max-width: 100%;
       margin: 0 auto;
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       overflow-x: auto;
     }
 
@@ -227,11 +218,11 @@ if ($_SESSION['status_login'] != true) {
 
     if ($success) {
     ?>
-      <div>
+      <di>
         <?php
         echo "<script>alert('$success')</script>";
         ?>
-      </div>
+      </di>
   <?php
     }
   }
