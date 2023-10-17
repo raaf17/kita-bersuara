@@ -355,11 +355,10 @@ main .container .right img {
 }
 
 .category_laporan section.category div {
-  position: relative;
   -webkit-box-shadow: 7px 7px rgba(0, 0, 0, 0.25);
           box-shadow: 7px 7px rgba(0, 0, 0, 0.25);
-  width: 100%;
   max-width: 285px;
+  height: 285px;
   background-color: #f2edd7;
   border-radius: 5px;
   display: -webkit-box;
@@ -380,6 +379,10 @@ main .container .right img {
           box-sizing: border-box;
   padding: 27px;
   justify-items: center;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .category_laporan section.category div h3 {
@@ -390,10 +393,39 @@ main .container .right img {
   margin-bottom: 5px;
 }
 
+.category_laporan section.category div div:hover h3 {
+  font-size: 25px;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
 .category_laporan section.category div p {
   font-size: 10px;
   font-weight: 500;
   text-align: center;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.category_laporan section.category div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  /* Memperbesar item saat dihover */
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  /* Menambahkan bayangan saat dihover */
+}
+
+.category_laporan section.category div:hover img {
+  width: 160px;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .tim-expert {
