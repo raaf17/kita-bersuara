@@ -25,59 +25,6 @@ if ($_SESSION['status_login'] != true) {
       $('#tabel1').DataTable();
     });
   </script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    .table-container {
-      padding: 20px;
-      max-width: 100%;
-      margin: 0 auto;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      overflow-x: auto;
-    }
-
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    .data-table th,
-    .data-table td {
-      padding: 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .data-table th {
-      background-color: #f8f9fa;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .data-table tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    .data-table tbody tr:hover {
-      background-color: #f0f0f0;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .table-container {
-        max-width: 100%;
-      }
-    }
-  </style>
-
 </head>
 
 <body>
