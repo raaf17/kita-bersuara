@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1100px) {
   .container {
-    width: 95%;
+    width: 85%;
   }
 }
 
@@ -269,7 +269,8 @@ nav .container .btn_login:hover {
 }
 
 main {
-  min-height: 90vh;
+  min-height: 100%;
+  width: 100%;
 }
 
 main .active .show-modal {
@@ -282,6 +283,7 @@ main .buttonTambahDataSiswa {
   display: flex;
   -webkit-column-gap: 10px;
           column-gap: 10px;
+  margin: 0 auto;
 }
 
 main .container {
@@ -692,6 +694,8 @@ main.active .modal-box {
 
 footer {
   background-color: #5E7C60;
+  width: 100%;
+  position: fixed;
 }
 
 footer p {
