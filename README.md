@@ -57,7 +57,7 @@ Halaman demo untuk sementara tidak ada dikarenakan layanan hosting yang tidak te
 
 <h2 id="akun">🔑 Daftar Akun Tersedia</h2>
 
-Berikut adalah daftar akun untuk keperluan testing saat anda mencoba aplikasi pertama kali, namun anda juga bisa membuat akun dengan daftar di halaman pendaftaran
+Berikut adalah daftar akun untuk keperluan testing saat anda mencoba aplikasi pertama kali, namun anda juga bisa menambah kan data lewat fitur import atau tambah data manual
 
 | Role  | NISN                   | Password |
 | ----- | ---------------------- | -------- |
