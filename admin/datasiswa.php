@@ -23,51 +23,6 @@ if ($_SESSION['status_login'] != true) {
       $('#tabel1').DataTable();
     });
   </script>
-  <style>
-  .table-container {
-      padding: 20px;
-      max-width: 100%;
-      margin: 0 auto;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      overflow-x: auto;
-    }
-
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    .data-table th,
-    .data-table td {
-      padding: 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .data-table th {
-      background-color: #f8f9fa;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .data-table tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    .data-table tbody tr:hover {
-      background-color: #f0f0f0;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .table-container {
-        max-width: 100%;
-      }
-    }
-  </style>
 
 </head>
 
@@ -99,31 +54,34 @@ if ($_SESSION['status_login'] != true) {
     <div class="container">
       <h1>DATA SISWA</h1>
 
-      <div class="buttonTambahDataSiswa">
-        <div>
-          <button class="show-modal">Import Data Siswa</button>
-          <span class="overlay"></span>
-          <div class="modal-box">
-            <h2>Tambah Data Siswa</h2>
-            <form action="" method="post" enctype="multipart/form-data">
-              <div class="file-wrapper">
-                <input type="file" name="filexls" id="formFile" required />
-                <span>Pilih File Excel</span>
+      <div class="grup-button">
+        <div class="grup-button-1">
+            <div>
+              <button class="show-modal">Import Data Siswa</button>
+                <div class="modal-box">
+                  <h2>Tambah Data Siswa</h2>
+                  <form action="" method="post" enctype="multipart/form-data">
+                    <div class="file-wrapper">
+                      <input type="file" name="filexls" id="formFile" required />
+                      <span>Pilih File Excel</span>
+                    </div>
+                    <div class="buttons">
+                      <button type="submit" name="submit" class="submit-btn">Tambah</button>
+                      <button class="close-btn">Close</button>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="buttons">
-                <button type="submit" name="submit" class="submit-btn">Tambah</button>
-                <button class="close-btn">Close</button>
+              <div>
+                <button><a href="tambahdata.php" style="text-decoration: none; color: white;">Tambah Data Siswa</a></button>
               </div>
-            </form>
-          </div>
         </div>
-        <div>
-          <button><a href="tambahdata.php" style="text-decoration: none; color: white;">Tambah Data Siswa</a></button>
-        </div>
-        <div>
-          <button><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
+        
+        <div class="grup-button-2">
+            <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
         </div>
       </div>
+
 
       <div class="table-container">
         <table class="data-table" id="tabel1">

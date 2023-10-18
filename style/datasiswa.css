@@ -5,8 +5,10 @@
   font-family: Poppins, sans-serif;
 }
 
+html,
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +22,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .container {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -36,7 +38,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: #5E7C60;
@@ -235,6 +238,10 @@ nav .container .btn_login:hover {
   color: #5E7C60;
 }
 
+main {
+  min-height: 90vh;
+}
+
 main .active .show-modal {
   display: none;
 }
@@ -261,13 +268,22 @@ main .container {
   }
 }
 
-main .container .overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  pointer-events: none;
+main .container .grup-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .grup-button .group-button-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .grup-button .show-modal-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .container button {
@@ -351,6 +367,51 @@ main .container .modal-box form .file-wrapper {
   padding: 10px 10px;
   margin-right: 10px;
   border-radius: 5px;
+}
+
+main .container .table-container {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+}
+
+main .container .table-container .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  /* Responsive styles */
+}
+
+main .container .table-container .data-table th,
+main .container .table-container .data-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+main .container .table-container .data-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+}
+
+main .container .table-container .data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+main .container .table-container .data-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  main .container .table-container .data-table .table-container {
+    max-width: 100%;
+  }
 }
 
 main .container h1 {
