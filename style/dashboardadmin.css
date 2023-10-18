@@ -385,7 +385,6 @@ main .container .modal-box button {
 }
 
 main .container .modal-box form .file-wrapper {
-  /* display: block; */
   background-color: aquamarine;
   padding: 10px 10px;
   margin-right: 10px;
@@ -393,6 +392,8 @@ main .container .modal-box form .file-wrapper {
 }
 
 main .container h1 {
+  margin-top: -120px;
+  margin-bottom: -25px;
   font-weight: 800;
   text-align: center;
   padding: 42px 0 75px;
@@ -694,8 +695,6 @@ main.active .modal-box {
 
 footer {
   background-color: #5E7C60;
-  width: 100%;
-  position: fixed;
 }
 
 footer p {

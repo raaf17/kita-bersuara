@@ -365,6 +365,7 @@ main .container .table-container {
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
+  margin-top: 10px;
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -407,6 +408,8 @@ main .container .table-container .data-table tbody tr:hover {
 }
 
 main .container h1 {
+  margin-top: -120px;
+  margin-bottom: -40px;
   font-weight: 800;
   text-align: center;
   padding: 42px 0 75px;

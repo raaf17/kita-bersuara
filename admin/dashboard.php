@@ -14,8 +14,7 @@ if ($_SESSION['status_login'] != true) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Admin</title>
   <link rel="stylesheet" href="../style/dashboardadmin.css?version=<?php echo filemtime('../style/dashboardadmin.css'); ?>">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 
@@ -49,7 +48,7 @@ if ($_SESSION['status_login'] != true) {
 
       <div class="buttonTambahDataSiswa">
         <div>
-          <button><a href="datasiswa.php" style="text-decoration: none; color: white;">Data Siswa</a></button>
+          <button></i><a href="datasiswa.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-user"></i> Data Semua Siswa</a></button>
         </div>
       </div>
 
