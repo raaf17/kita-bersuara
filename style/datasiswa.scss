@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-$primary-color: #5E7C60;
-$second-color: #F2EDD7;
-
+$primary-color: #5e7c60;
+$second-color: #f2edd7;
 
 * {
   margin: 0 auto;
@@ -54,18 +53,23 @@ nav {
     @media screen and (max-width: 860px) {
       flex-direction: column;
 
-      &>p {
+      & > p {
         display: none;
       }
 
       .nav_brand {
-        width: 100%;
         margin-bottom: 10px;
 
         h4 br {
           display: none;
         }
+
+        img{
+          margin-right: -15px;
+        }
       }
+      
+
     }
 
     .nav_brand {
@@ -149,7 +153,7 @@ nav {
           cursor: pointer;
           height: 100%;
 
-          &:checked~ul {
+          &:checked ~ ul {
             display: block;
           }
         }
@@ -205,15 +209,8 @@ nav {
 }
 
 main {
-
-  min-height: 100vh - 10vh;
-  .active .show-modal {
-    display: none
-  }
-
-  .buttonTambahDataSiswa {
-    display: flex;
-    column-gap: 10px;
+  @media screen and (max-width: 860px) {
+    width: 98%;
   }
 
   .container {
@@ -222,35 +219,32 @@ main {
     padding: 0 10%;
     box-sizing: border-box;
 
-    @media screen and (max-width: 860px) {
-      width: 98%;
-    }
-
-    .grup-button{
+    .container-button {
       display: flex;
 
-      .group-button-1{
+      .group-button-1 {
+        width: 70%;
         display: flex;
+        gap: 8px;
       }
 
-      .show-modal-2{
+      .group-button-2 {
+        width: 30%;
         display: flex;
+        justify-content: flex-end;
       }
     }
 
-    
-
-    
     button {
       font-size: 10.3px;
       font-weight: 500;
       color: #fff;
       padding: 10px 18px;
       border: none;
-      background-color: #5E7C60;
+      background-color: #5e7c60;
       border-radius: 6px;
       cursor: pointer;
-      margin-bottom: 20px;
+      margin: 20px 0;
 
       .show-modal {
         /* position: absolute; */
@@ -260,8 +254,8 @@ main {
     }
 
     button:hover {
-      background-color: #B5CB99;
-      color: #5E7C60;
+      background-color: #b5cb99;
+      color: #5e7c60;
       transition: all 0.3s;
       font-weight: 500;
     }
@@ -274,7 +268,7 @@ main {
       max-width: 600px;
       width: 100%;
       border-radius: 10px;
-      background-color: #F2EDD7;
+      background-color: #f2edd7;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -285,14 +279,13 @@ main {
       pointer-events: none;
       transition: all 0.3s ease;
       transform: translate(-50%, -50%) scale(1.2);
-
       position: fixed;
 
       h2 {
         margin-top: 20px;
         font-size: 25px;
         font-weight: 500;
-        color: #5E7C60;
+        color: #5e7c60;
         margin-bottom: 60px;
       }
 

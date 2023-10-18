@@ -27,7 +27,7 @@ body {
 }
 
 nav {
-  background-color: #5E7C60;
+  background-color: #5e7c60;
   height: 114px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +42,7 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #5E7C60;
+  background-color: #5e7c60;
   z-index: 999;
   -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.205);
           box-shadow: 0 0 4px rgba(255, 255, 255, 0.205);
@@ -71,11 +71,13 @@ nav .container {
     display: none;
   }
   nav .container .nav_brand {
-    width: 100%;
     margin-bottom: 10px;
   }
   nav .container .nav_brand h4 br {
     display: none;
+  }
+  nav .container .nav_brand img {
+    margin-right: -15px;
   }
 }
 
@@ -157,7 +159,7 @@ nav .container .profile_siswa img.profile {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #F2EDD7;
+  border: 3px solid #f2edd7;
 }
 
 nav .container .profile_siswa .name {
@@ -199,25 +201,25 @@ nav .container .profile_siswa .name ul {
   top: 40px;
   list-style: none;
   border-radius: 5px;
-  border: 2.5px solid #5E7C60;
+  border: 2.5px solid #5e7c60;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
 }
 
 nav .container .profile_siswa .name ul li:not(:last-child) {
-  border-bottom: 2.5px solid #5E7C60;
+  border-bottom: 2.5px solid #5e7c60;
 }
 
 nav .container .profile_siswa .name ul li a {
   display: block;
   padding: 5px 20px;
   text-decoration: none;
-  color: #5E7C60;
+  color: #5e7c60;
   font-weight: 600;
 }
 
 nav .container .profile_siswa .name ul li a:hover {
-  background-color: #5E7C60;
+  background-color: #5e7c60;
   color: white;
 }
 
@@ -235,55 +237,45 @@ nav .container .btn_login {
 
 nav .container .btn_login:hover {
   background-color: white;
-  color: #5E7C60;
+  color: #5e7c60;
 }
 
-main {
-  min-height: 90vh;
-}
-
-main .active .show-modal {
-  display: none;
-}
-
-main .buttonTambahDataSiswa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+@media screen and (max-width: 860px) {
+  main {
+    width: 98%;
+  }
 }
 
 main .container {
   margin: 120px auto;
-  color: #5E7C60;
+  color: #5e7c60;
   padding: 0 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 860px) {
-  main .container {
-    width: 98%;
-  }
-}
-
-main .container .grup-button {
+main .container .container-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .container .grup-button .group-button-1 {
+main .container .container-button .group-button-1 {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 8px;
 }
 
-main .container .grup-button .show-modal-2 {
+main .container .container-button .group-button-2 {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 main .container button {
@@ -292,10 +284,10 @@ main .container button {
   color: #fff;
   padding: 10px 18px;
   border: none;
-  background-color: #5E7C60;
+  background-color: #5e7c60;
   border-radius: 6px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 main .container button .show-modal {
@@ -306,8 +298,8 @@ main .container button .show-modal {
 }
 
 main .container button:hover {
-  background-color: #B5CB99;
-  color: #5E7C60;
+  background-color: #b5cb99;
+  color: #5e7c60;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 500;
@@ -328,7 +320,7 @@ main .container .modal-box {
   max-width: 600px;
   width: 100%;
   border-radius: 10px;
-  background-color: #F2EDD7;
+  background-color: #f2edd7;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -350,7 +342,7 @@ main .container .modal-box h2 {
   margin-top: 20px;
   font-size: 25px;
   font-weight: 500;
-  color: #5E7C60;
+  color: #5e7c60;
   margin-bottom: 60px;
 }
 
@@ -434,7 +426,7 @@ main.active .modal-box {
 }
 
 footer {
-  background-color: #5E7C60;
+  background-color: #5e7c60;
 }
 
 footer p {

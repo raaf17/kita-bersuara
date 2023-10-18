@@ -53,10 +53,8 @@ if ($_SESSION['status_login'] != true) {
   <main>
     <div class="container">
       <h1>DATA SISWA</h1>
-
-      <div class="grup-button">
-        <div class="grup-button-1">
-            <div>
+      <div class="container-button">
+        <div class="group-button-1">
               <button class="show-modal">Import Data Siswa</button>
                 <div class="modal-box">
                   <h2>Tambah Data Siswa</h2>
@@ -71,13 +69,12 @@ if ($_SESSION['status_login'] != true) {
                     </div>
                   </form>
                 </div>
-              </div>
-              <div>
+
                 <button><a href="tambahdata.php" style="text-decoration: none; color: white;">Tambah Data Siswa</a></button>
-              </div>
+
         </div>
         
-        <div class="grup-button-2">
+        <div class="group-button-2">
             <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
         </div>
       </div>
