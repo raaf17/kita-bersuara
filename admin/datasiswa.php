@@ -56,27 +56,27 @@ if ($_SESSION['status_login'] != true) {
       <h1>DATA SISWA</h1>
       <div class="container-button">
         <div class="group-button-1">
-              <button class="show-modal"><i class="fa-solid fa-download"></i> Import Data Siswa</button>
-                <div class="modal-box">
-                  <h2>Tambah Data Siswa</h2>
-                  <form action="" method="post" enctype="multipart/form-data">
-                    <div class="file-wrapper">
-                      <input type="file" name="filexls" id="formFile" required />
-                      <span>Pilih File Excel</span>
-                    </div>
-                    <div class="buttons">
-                      <button type="submit" name="submit" class="submit-btn">Tambah</button>
-                      <button class="close-btn">Close</button>
-                    </div>
-                  </form>
-                </div>
+          <button class="show-modal"><i class="fa-solid fa-download"></i> Import Data Siswa</button>
+          <div class="modal-box">
+            <h2>Tambah Data Siswa</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+              <div class="file-wrapper">
+                <input type="file" name="filexls" id="formFile" required />
+                <span>Pilih File Excel</span>
+              </div>
+              <div class="buttons">
+                <button type="submit" name="submit" class="submit-btn">Tambah</button>
+                <button class="close-btn">Close</button>
+              </div>
+            </form>
+          </div>
 
-                <button><a href="tambahdata.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-plus"></i> Tambah Data Siswa</a></button>
+          <button><a href="tambahdata.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-plus"></i> Tambah Data Siswa</a></button>
 
         </div>
-        
+
         <div class="group-button-2">
-            <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-arrow-left"></i> Kembali</a></button>
+          <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-arrow-left"></i> Kembali</a></button>
         </div>
       </div>
 
@@ -88,6 +88,7 @@ if ($_SESSION['status_login'] != true) {
               <th>No</th>
               <th>NISN</th>
               <th>Nama</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody id="table-body">
@@ -102,6 +103,9 @@ if ($_SESSION['status_login'] != true) {
                 <td><?= $no++; ?>.</td>
                 <td><?= $data['nisn']; ?></td>
                 <td><?= $data['nama']; ?></td>
+                <td>
+                  <a href="datasiswa.php?hapus=<?= $data['nisn']; ?>" onclick="return confirm('Yakin mau hapus?');"><button class="show-modal"><i class="fa-solid fa-trash"></i> Hapus</button></a>
+                </td>
               </tr>
             <?php endwhile; ?>
           </tbody>
@@ -161,27 +165,25 @@ if ($_SESSION['status_login'] != true) {
       }
     }
 
-
     if ($err) {
   ?>
-      <div>
-        <?php
-        echo "<script>alert('$err')</script>";
-        ?>
-      </div>
+      <?php echo "<script>alert('$err')</script>"; ?>
     <?php
     }
 
     if ($success) {
     ?>
-      <di>
-        <?php
-        echo "<script>alert('$success')</script>";
-        ?>
-      </di>
+      <?php echo "<script>alert('$success')</script>"; ?>
   <?php
     }
   }
+
+  if (isset($_GET['hapus'])) {
+    $nisn = $_GET['hapus'];
+    $query = "DELETE FROM siswa WHERE nisn = '$nisn'";
+    $q1 = mysqli_query($conn, $query);
+  }
+
   ?>
 
   <footer>
@@ -190,15 +192,11 @@ if ($_SESSION['status_login'] != true) {
 
   <script type="text/javascript">
     const main = document.querySelector("main"),
-      overlay = document.querySelector(".overlay"),
       showBtn = document.querySelector(".show-modal"),
       closeBtn = document.querySelector(".close-btn");
 
     showBtn.addEventListener("click", () =>
       main.classList.add("active")
-    );
-    overlay.addEventListener("click", () =>
-      main.classList.remove("active")
     );
     closeBtn.addEventListener("click", () =>
       main.classList.remove("active")
