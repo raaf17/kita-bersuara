@@ -276,7 +276,6 @@ main {
       }
       form {
         .file-wrapper {
-          /* display: block; */
           background-color: aquamarine;
           padding: 10px 10px;
           margin-right: 10px;
@@ -285,6 +284,8 @@ main {
       }
     }
     h1 {
+      margin-top: -120px;
+      margin-bottom: -25px;
       font-weight: 800;
       text-align: center;
       padding: 42px 0 75px;
@@ -507,8 +508,8 @@ main.active .modal-box {
 
 footer {
   background-color: $primary-color;
-  width: 100%;
-  position: fixed;
+  // width: 100%;
+  // position: fixed;
   p {
     padding: 14px;
     text-align: center;

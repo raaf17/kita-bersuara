@@ -18,6 +18,7 @@ if ($_SESSION['status_login'] != true) {
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tabel1').DataTable();
@@ -36,7 +37,7 @@ if ($_SESSION['status_login'] != true) {
       <p>Dashboard Admin</p>
       <div class="profile_siswa">
         <div class="name">
-          <p><span>Selamat Datang, </span>
+          <p><span>Selamat Datang(Admin), </span>
             <?php echo $_SESSION['nisn']['nama']; ?>
           </p>
           <img src="../assets/img/arrow-drop.png" alt="Arrow Drop" />
@@ -55,7 +56,7 @@ if ($_SESSION['status_login'] != true) {
       <h1>DATA SISWA</h1>
       <div class="container-button">
         <div class="group-button-1">
-              <button class="show-modal">Import Data Siswa</button>
+              <button class="show-modal"><i class="fa-solid fa-download"></i> Import Data Siswa</button>
                 <div class="modal-box">
                   <h2>Tambah Data Siswa</h2>
                   <form action="" method="post" enctype="multipart/form-data">
@@ -70,12 +71,12 @@ if ($_SESSION['status_login'] != true) {
                   </form>
                 </div>
 
-                <button><a href="tambahdata.php" style="text-decoration: none; color: white;">Tambah Data Siswa</a></button>
+                <button><a href="tambahdata.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-plus"></i> Tambah Data Siswa</a></button>
 
         </div>
         
         <div class="group-button-2">
-            <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
+            <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-arrow-left"></i> Kembali</a></button>
         </div>
       </div>
 
