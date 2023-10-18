@@ -147,21 +147,6 @@ if ($_SESSION['status_login'] != true) {
         button.style.display = "none"
       }
     })
-
-    const main = document.querySelector("main"),
-      overlay = document.querySelector(".overlay"),
-      showBtn = document.querySelector(".show-modal"),
-      closeBtn = document.querySelector(".close-btn");
-
-    showBtn.addEventListener("click", () =>
-      main.classList.add("active")
-    );
-    overlay.addEventListener("click", () =>
-      main.classList.remove("active")
-    );
-    closeBtn.addEventListener("click", () =>
-      main.classList.remove("active")
-    );
   </script>
 </body>
 

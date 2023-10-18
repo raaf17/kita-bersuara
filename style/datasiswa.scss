@@ -273,7 +273,7 @@ main {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       z-index: 999;
       opacity: 0;
       pointer-events: none;
@@ -284,7 +284,7 @@ main {
       h2 {
         margin-top: 20px;
         font-size: 25px;
-        font-weight: 500;
+        font-weight: 700;
         color: #5e7c60;
         margin-bottom: 60px;
       }
@@ -301,23 +301,26 @@ main {
           /* display: block; */
           background-color: aquamarine;
           padding: 10px 10px;
-          margin-right: 10px;
+          // margin-right: 10px;
           border-radius: 5px;
+          margin-bottom: 20px;
         }
       }
     }
 
     .table-container {
       padding: 20px;
+      // padding-bottom: 100px;
       max-width: 100%;
       margin: 0 auto;
       margin-top: 10px;
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
       overflow-x: auto;
 
       .data-table {
+        // margin-top: 200px;
         width: 100%;
         border-collapse: collapse;
         margin-bottom: 20px;
