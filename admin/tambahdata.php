@@ -18,13 +18,6 @@
             Bersuara
           </h4>
         </div>
-        <label class="burger_menu" for="burger" id="label">
-          <input type="checkbox" name="burger" id="burger" />
-        </label>
-        <ul class="list_link" id="link">
-          <li class="home"><a href="../index.php">Home</a></li>
-          <li class="cara"><a href="../tatacara.php">Tata Cara</a></li>
-        </ul>
       </div>
     </nav>
 
