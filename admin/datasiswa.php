@@ -65,8 +65,8 @@ if ($_SESSION['status_login'] != true) {
                 <span>Pilih File Excel</span>
               </div>
               <div class="buttons">
-                <button type="submit" name="submit" class="submit-btn">Tambah</button>
-                <button class="close-btn">Close</button>
+                <button type="submit" name="submit" class="submit-btn"><i class="fa-solid fa-plus"></i> Tambah</button>
+                <button class="close-btn"><i class="fa-solid fa-arrow-left"></i> Close</button>
               </div>
             </form>
           </div>
