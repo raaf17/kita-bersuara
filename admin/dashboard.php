@@ -61,13 +61,17 @@ if (isset($_POST['export-file'])) {
   $worksheet->getColumnDimension('F')->setAutoSize(true);
 
   $writer = new Xlsx($spreadsheet);
+  ob_clean();
   $filename = 'laporan-excel.xlsx';
-  header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-  header('Content-Disposition: attachment;filename="' . $filename . '"');
-  header('Cache-Control: max-age=0');
+  header("Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+  header("Content-Disposition: attachment; filename=laporan-excel".date('Y-m-d h:i:s').".xlsx");
+  header("Cache-Control: no-cache, must-revalidate");
+  header("Pragma: no-cache");
   $writer->save('php://output');
+  exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
