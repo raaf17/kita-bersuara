@@ -196,12 +196,6 @@ main {
   .active .show-modal {
     display: none
   }
-
-  .buttonTambahDataSiswa{
-    display: flex;
-    column-gap: 10px;
-    margin: 0 auto;
-  }
   .container {
     margin: 120px auto;
     color: $primary-color;
@@ -209,6 +203,11 @@ main {
     box-sizing: border-box;
     @media screen and (max-width: 860px) {
       width: 98%;
+    }
+    .buttonTambahDataSiswa{
+      display: flex;
+      column-gap: 10px;
+      margin: 0 auto;
     }
     button {
       font-size: 10.3px;
@@ -219,7 +218,6 @@ main {
       background-color: #5E7C60;
       border-radius: 6px;
       cursor: pointer;
-      margin-bottom: 20px;
       .show-modal {
         /* position: absolute; */
         /* transform: translate(-50%, -50%); */
@@ -386,7 +384,8 @@ main {
           padding: 15px;
           box-sizing: border-box;
           &>img{
-            width: 90%;
+            width: 220px;
+            height: 170px;
           }
           @media screen and (max-width: 860px) {
             flex-direction: column;
@@ -450,9 +449,19 @@ main {
           }
           .approve {
             background-color: $primary-color;
+
+            span{
+              position: absolute;
+              margin-top: 3px;
+            }
           }
           .delete {
             background-color: red;
+            
+            span{
+              position: absolute;
+              margin-top: 3px;
+            }
           }
         }
         .form {

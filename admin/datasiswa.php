@@ -104,7 +104,7 @@ if ($_SESSION['status_login'] != true) {
                 <td><?= $data['nisn']; ?></td>
                 <td><?= $data['nama']; ?></td>
                 <td>
-                  <a href="datasiswa.php?hapus=<?= $data['nisn']; ?>" onclick="return confirm('Yakin mau hapus?');"><button class="show-modal"><i class="fa-solid fa-trash"></i> Hapus</button></a>
+                  <a href="datasiswa.php?hapus=<?= $data['nisn']; ?>" onclick="return confirm('Yakin mau hapus?');"><button class="hapus" style="background-color: red;"><i class="fa-solid fa-trash"></i> Hapus</button></a>
                 </td>
               </tr>
             <?php endwhile; ?>
