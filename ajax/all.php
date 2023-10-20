@@ -7,7 +7,7 @@ while ($perlaporan = $terkirim->fetch_assoc()) {;
 ?>
   <div>
     <div class="laporan">
-      <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="1~70px" height="170px" />
+      <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="170px" height="170px" />
       <div class="detail_laporan">
         <h4 class="pengusul">Pengusul: <span><?php echo $perlaporan['nama']; ?></span></h3>
             <h4 class="category">&nbsp;&nbsp;&nbsp;&nbsp;#<span><?php echo $perlaporan['nama_kategori']; ?></span></h4>
@@ -20,8 +20,8 @@ while ($perlaporan = $terkirim->fetch_assoc()) {;
       </div>
       <form action="" method="post" class="status">
         <input type="text" name="id_status" value="<?php echo $perlaporan['id_status'];  ?>"  hidden>
-        <button type="submit" name="approve" class="approve">APPROVE</button>
-        <button type="submit" name="unapprove" class="delete">DELETE</button>
+        <button type="submit" name="approve" class="approve"><span>  APPROVE</span></button>
+        <button type="submit" name="unapprove" class="delete"><span>DELETE</span></button>
     </div>
     <div class="form">
       <textarea placeholder="Silahkan ketik feedback disini..." name="feedback" id="feedback" cols="10" rows="1" required></textarea>
