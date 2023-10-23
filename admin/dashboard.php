@@ -115,15 +115,17 @@ if (isset($_POST['export-file'])) {
 
       <div class="buttonTambahDataSiswa">
         <div>
-          <button></i><a href="datasiswa.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-user"></i> Data Semua Siswa</a></button>
+          <button><a href="datasiswa.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-user"></i> Data Semua Siswa</a></button>
         </div>
         <div>
           <form action="" method="post">
             <button type="submit" name="export-file"><i class="fa-solid fa-file-export"></i> Export Laporan</a></button>
           </form>
         </div>
+        <div>
+          <button><a href="filter.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-filter"></i> Filter Laporan</a></button>
+        </div>
       </div>
-
 
       <form action="hasilpencarian.php" method="get">
         <div class="search">
