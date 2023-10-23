@@ -257,10 +257,31 @@ main {
               "deskripsi deskripsi"
               "icon icon";
             align-items: end;
+          } 
+          
+          .foto-laporan{
+            display: flex;
+            width: 40%;
+            justify-items: center;
+          
+          }
+
+          @media screen and (max-width: 1100px) {
+            .foto-laporan{
+              justify-self: center
+            }
+
+            img{
+              display: block;
+            }
           }
           img {
             @media screen and (max-width: 1100px) {
               grid-area: foto !important;
+              margin: auto;
+            }
+
+            @media screen and (min-width: 1100px) {
               margin: auto;
             }
           }

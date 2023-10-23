@@ -366,9 +366,33 @@ main .container .riwayat_laporan .laporan > div {
   }
 }
 
+main .container .riwayat_laporan .laporan > div .foto-laporan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  main .container .riwayat_laporan .laporan > div .foto-laporan {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  main .container .riwayat_laporan .laporan > div img {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   main .container .riwayat_laporan .laporan > div img {
     grid-area: foto !important;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  main .container .riwayat_laporan .laporan > div img {
     margin: auto;
   }
 }
