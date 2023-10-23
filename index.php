@@ -72,31 +72,31 @@ include 'admin/conn.php';
     <h2 data-aos="fade-up" data-aos-duration="1500"> Our Process</h2>
     <div class="container card-our-process"  data-aos="fade-up" data-aos-duration="1500">
       <div class="user">
-        <h3>User</h3>
         <h4><?php
           $query = "SELECT * FROM siswa";
           $result = mysqli_query($conn, $query);
           $totalCount1 = mysqli_num_rows($result);
           echo $totalCount1;
         ?></h4>
+        <h3>User</h3>
       </div>
       <div class="keluhan">
-        <h3>Keluhan</h3>
         <h4><?php 
           $query = "SELECT * FROM laporan";
           $result = mysqli_query($conn, $query);
           $totalCount2 = mysqli_num_rows($result);
           echo $totalCount2;
         ?></h4>
+        <h3>Laporan</h3>
       </div>
       <div class="kategori">
-        <h3>kategori</h3>
         <h4><?php 
           $query = "SELECT * FROM kategori";
           $result = mysqli_query($conn, $query);
           $totalCount3 = mysqli_num_rows($result);
           echo $totalCount3;
         ?></h4>
+        <h3>Kategori</h3>
       </div>
     </div>
   </div>
