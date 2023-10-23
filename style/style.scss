@@ -248,11 +248,51 @@ main {
 }
 // akhir bagian 2 - main
 
+// our process
+.our-process{
+  margin: 50px 0;
+  h2{
+    text-align: center;
+    margin: 50px 0;
+  }
+  .container.card-our-process{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+
+    .user,.keluhan,.kategori{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 150px;
+      height: 150px;
+
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+    
+    
+  }
+}
+@media (max-width: 500px) {
+  .container.card-our-process {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .user, .keluhan, .kategori {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 // bagian 3 - kategori laporan
 .category_laporan {
   h2 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 35px;
     font-size: 36px;
     font-weight: 900;

@@ -62,7 +62,9 @@ if ($_SESSION['nisn'] != true) {
           while ($laporanku = $ambil->fetch_assoc()) {;
           ?>
             <div>
-              <img src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
+              <div class="foto-laporan">
+                <img src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
+              </div>
               <div class="detail_laporan">
                 <h4 class="pengusul">Pengusul: <span>Saya Sendiri</span></h4>
                 <h4 class="category">#<span><?php echo $laporanku['nama_kategori']; ?></span></h4>
