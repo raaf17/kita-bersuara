@@ -65,6 +65,23 @@
   </main>
   <!-- akhir bagian 2 - hero konten -->
 
+  <div class="our-process">
+    <h2 data-aos="fade-up" data-aos-duration="1500"> Our Process</h2>
+    <div class="container card-our-process"  data-aos="fade-up" data-aos-duration="1500">
+      <div class="user">
+        <h3>User</h3>
+        <h4>45</h4>
+      </div>
+      <div class="keluhan">
+        <h3>Keluhan</h3>
+        <h4>150</h4>
+      </div>
+      <div class="kategori">
+        <h3>kategori</h3>
+        <h4>4</h4>
+      </div>
+    </div>
+  </div>
   <!-- bagian 3 - kategori laporan -->
   <div class="category_laporan">
     <h2 style="color: #5E7C60;"  data-aos="fade-up" data-aos-duration="1500">HAL YANG BISA ANDA LAPORKAN</h2>
