@@ -69,7 +69,7 @@ include 'admin/conn.php';
   <!-- akhir bagian 2 - hero konten -->
 
   <div class="our-process">
-    <h2 data-aos="fade-up" data-aos-duration="1500"> Our Process</h2>
+    <h2 data-aos="fade-up" data-aos-duration="1500">Our Process</h2>
     <div class="container card-our-process"  data-aos="fade-up" data-aos-duration="1500">
       <div class="user">
         <h4><?php
@@ -87,7 +87,7 @@ include 'admin/conn.php';
           $totalCount2 = mysqli_num_rows($result);
           echo $totalCount2;
         ?></h4>
-        <h3>Laporan</h3>
+        <h3 style="text-align: center;">Laporan<br>Masuk</h3>
       </div>
       <div class="kategori">
         <h4><?php 
