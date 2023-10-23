@@ -252,13 +252,18 @@ main {
 .our-process{
   margin: 50px 0;
   h2{
+    font-size: 36px;
     text-align: center;
     margin: 50px 0;
+    color: #5e7c60;
+  }
+  h4{
+    font-size: 40px;
   }
   .container.card-our-process{
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 40px;
 
     .user,.keluhan,.kategori{
       display: flex;
@@ -269,11 +274,25 @@ main {
       width: 150px;
       height: 150px;
 
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      background-color: #ffffff;
+      box-shadow: 7px 7px rgba(0, 0, 0, 0.25);
+      background-color: #f2edd7 ;
       border-radius: 5px;
+
+      color: #5e7c60;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    
+    .user:hover {
+      transform: scale(1.1); /* Memperbesar item saat dihover */
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.8); /* Menambahkan bayangan saat dihover */
+    }
+    .keluhan:hover {
+      transform: scale(1.1); /* Memperbesar item saat dihover */
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.8); /* Menambahkan bayangan saat dihover */
+    }
+    .kategori:hover {
+      transform: scale(1.1); /* Memperbesar item saat dihover */
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.8); /* Menambahkan bayangan saat dihover */
+    }
     
   }
 }

@@ -335,8 +335,14 @@ main .container .right img {
 }
 
 .our-process h2 {
+  font-size: 36px;
   text-align: center;
   margin: 50px 0;
+  color: #5e7c60;
+}
+
+.our-process h4 {
+  font-size: 40px;
 }
 
 .our-process .container.card-our-process {
@@ -346,8 +352,8 @@ main .container .right img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
 }
 
 .our-process .container.card-our-process .user, .our-process .container.card-our-process .keluhan, .our-process .container.card-our-process .kategori {
@@ -366,10 +372,42 @@ main .container .right img {
           justify-content: center;
   width: 150px;
   height: 150px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: #ffffff;
+  -webkit-box-shadow: 7px 7px rgba(0, 0, 0, 0.25);
+          box-shadow: 7px 7px rgba(0, 0, 0, 0.25);
+  background-color: #f2edd7;
   border-radius: 5px;
+  color: #5e7c60;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.our-process .container.card-our-process .user:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  /* Memperbesar item saat dihover */
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  /* Menambahkan bayangan saat dihover */
+}
+
+.our-process .container.card-our-process .keluhan:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  /* Memperbesar item saat dihover */
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  /* Menambahkan bayangan saat dihover */
+}
+
+.our-process .container.card-our-process .kategori:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  /* Memperbesar item saat dihover */
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  /* Menambahkan bayangan saat dihover */
 }
 
 @media (max-width: 500px) {
