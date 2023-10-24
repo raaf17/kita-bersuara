@@ -16,9 +16,9 @@ if ($_SESSION['status_login'] != true) {
   <link rel="stylesheet" href="../style/filter.css?version=<?php echo filemtime('../style/filter.css'); ?>">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tabel1').DataTable();
@@ -61,11 +61,14 @@ if ($_SESSION['status_login'] != true) {
           <input type="date" name="tgl-selesai">
           <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i> Filter</button>
         </form>
-      </div>
+        <div>
+          <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-arrow-left"></i> Kembali</a></button>
+        </div>
+    </div>
 
-      <div class="riwayat_laporan">
-        <?php include '../ajax/all_filter.php' ?>
-      </div>
+    <div class="riwayat_laporan">
+      <?php include '../process/all_filter.php' ?>
+    </div>
 
     </div>
   </main>
