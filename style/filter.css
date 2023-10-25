@@ -26,6 +26,42 @@ body {
   }
 }
 
+.icon_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1100px) {
+  .icon_status {
+    grid-area: icon !important;
+  }
+}
+
+.approved {
+  background-color: #5e7c60;
+}
+
+.unapproved {
+  background-color: red;
+}
+
 nav {
   background-color: #5e7c60;
   height: 114px;
@@ -261,8 +297,8 @@ main .container .container-button {
 }
 
 main .container button {
-  font-size: 10.3px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 300;
   color: #fff;
   padding: 10px 18px;
   border: none;
@@ -277,7 +313,7 @@ main .container button:hover {
   color: #5e7c60;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 main .container h2 {
@@ -289,10 +325,36 @@ main .container h2 {
 }
 
 main .container button {
-  /* display: block; */
-  font-size: 14px;
+  font-size: 12px;
   padding: 8px 12px;
   margin: 0;
+}
+
+main .container .filter-laporan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .filter-laporan form {
+  margin-right: 340px;
+}
+
+main .container .filter-laporan form input[type="date"] {
+  background-color: #5e7c60;
+  padding: 6px 12px;
+  color: white;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+main .container .filter-laporan form ::-webkit-calendar-picker-indicator {
+  background-color: white;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 main h1 {
