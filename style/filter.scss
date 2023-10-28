@@ -24,7 +24,7 @@ body {
   margin: auto;
 
   @media screen and (max-width: 1100px) {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -71,7 +71,7 @@ nav {
     @media screen and (max-width: 860px) {
       flex-direction: column;
 
-      &>p {
+      & > p {
         display: none;
       }
 
@@ -86,8 +86,6 @@ nav {
           margin-right: -15px;
         }
       }
-
-
     }
 
     .nav_brand {
@@ -171,7 +169,7 @@ nav {
           cursor: pointer;
           height: 100%;
 
-          &:checked~ul {
+          &:checked ~ ul {
             display: block;
           }
         }
@@ -205,6 +203,11 @@ nav {
             }
           }
         }
+        @media screen and (max-width: 370px) {
+          p {
+            font-size: 4vw;
+          }
+        }
       }
     }
 
@@ -228,7 +231,7 @@ nav {
 
 main {
   @media screen and (max-width: 860px) {
-    width: 98%;
+    width: 100%;
   }
 
   .container {
@@ -236,6 +239,11 @@ main {
     color: $primary-color;
     padding: 0 10%;
     box-sizing: border-box;
+
+    .button-up {
+      position: absolute;
+      margin-top: 15px;
+    }
 
     .container-button {
       display: flex;
@@ -275,23 +283,161 @@ main {
     }
     .filter-laporan {
       display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+      gap: 10px;
+
+
       form {
-        margin-right: 340px;
+        width: 100%;
+        display: flex;
+        position: relative;
+
+        .apply2{
+          display: none;
+        }
+
+        .input-tanggal{
+          display: flex;
+          position: absolute;
+          left: 0;
+          gap: 5px;
+          align-items: center;
+          @media screen and (max-width: 675px){
+            position: static;
+
+            input[type="date"] {
+              background-color: #5e7c60;
+              padding: 6px 8vw;
+              color: white;
+              font-size: 12px;
+              border: none;
+              outline: none;
+              border-radius: 5px;
+            }
+          }
+          @media screen and (max-width: 660px){
+            input[type="date"] {
+              background-color: #5e7c60;
+              padding: 6px 5vw;
+              color: white;
+              font-size: 12px;
+              border: none;
+              outline: none;
+              border-radius: 5px;
+            }
+          }
+          @media screen and (max-width: 485px){
+            input[type="date"] {
+              background-color: #5e7c60;
+              padding: 6px 4vw;
+              color: white;
+              font-size: 12px;
+              border: none;
+              outline: none;
+              border-radius: 5px;
+            }
+          }
+          @media screen and (max-width: 450px){
+            input[type="date"] {
+              background-color: #5e7c60;
+              padding: 6px 2vw;
+              color: white;
+              font-size: 12px;
+              border: none;
+              outline: none;
+              border-radius: 5px;
+            }
+          }
+          @media screen and (max-width: 391px){
+            input[type="date"] {
+              background-color: #5e7c60;
+              padding: 6px 1vw;
+              color: white;
+              font-size: 12px;
+              border: none;
+              outline: none;
+              border-radius: 5px;
+            }
+          }
+          @media screen and (max-width: 358px){
+            input[type="date"] {
+              background-color: #5e7c60;
+              padding: 6px 1vw;
+              color: white;
+              font-size: 11px;
+              border: none;
+              outline: none;
+              border-radius: 5px;
+            }
+          }
+          @media screen and (max-width: 358px){
+            input[type="date"] {
+              background-color: #5e7c60;
+              padding: 7px 1vw;
+              color: white;
+              font-size: 3.1vw;
+              border: none;
+              outline: none;
+              border-radius: 5px;
+            }
+          }
+
+          
+        }
+
+        .pre-apply{
+          display: flex;
+          position: absolute;
+          right: 0;
+          @media screen and (max-width: 675px){
+            position: static;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 200px;
+            display: none;
+            // width: 40px;
+          }
+        }
+
+       
+
         input[type="date"] {
           background-color: #5e7c60;
-          padding: 6px 12px;
+          padding: 6px 6px;
           color: white;
           font-size: 12px;
           border: none;
           outline: none;
           border-radius: 5px;
         }
-        ::-webkit-calendar-picker-indicator{
+        ::-webkit-calendar-picker-indicator {
           background-color: white;
           padding: 2px;
           cursor: pointer;
           border-radius: 3px;
         }
+
+        @media screen and (max-width: 675px){
+          display: block;
+          
+          .apply2{
+            display: block;
+            
+            button{
+              width: 100%;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+
+      .show-modal-2{
+        width: 100%;
+      }
+      @media screen and (max-width: 675px){
+        display: block;
+        position: static;
       }
     }
   }
@@ -309,7 +455,7 @@ main {
   }
 
   .riwayat_laporan {
-    &>div {
+    & > div {
       width: 100%;
 
       .laporan {
@@ -324,7 +470,7 @@ main {
         padding: 15px;
         box-sizing: border-box;
 
-        &>img {
+        & > img {
           width: 220px;
           height: 170px;
         }

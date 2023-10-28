@@ -23,7 +23,7 @@ body {
   margin: auto;
 
   @media screen and (max-width: 860px) {
-    width: 98%;
+    width: 85%;
   }
 }
 
@@ -87,11 +87,13 @@ nav {
       height: 35px;
       background-size: cover;
       position: absolute;
-      top: 10px;
+      top: 17px;
       right: 10px;
-
       @media screen and (min-width: 700px) {
         display: none;
+      }
+      @media screen and (max-width: 340px) {
+        right: -10px;
       }
     }
 

@@ -115,6 +115,12 @@ nav .container .burger_menu {
   }
 }
 
+@media screen and (max-width: 340px) {
+  nav .container .burger_menu {
+    right: -10px;
+  }
+}
+
 nav .container input {
   opacity: 0;
 }
@@ -635,7 +641,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .category_laporan section.category {
     display: -ms-grid;
     display: grid;
@@ -658,10 +664,13 @@ footer p {
         grid-template-columns: repeat(2, minmax(330px, 1fr));
     row-gap: 100px;
     justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .container.tim-expert {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -672,7 +681,9 @@ footer p {
     -ms-grid-columns: (minmax(330px, 1fr))[1];
         grid-template-columns: repeat(1, minmax(330px, 1fr));
     row-gap: 100px;
-    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

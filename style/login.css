@@ -23,7 +23,7 @@ body {
 
 @media screen and (max-width: 860px) {
   .container {
-    width: 98%;
+    width: 85%;
   }
 }
 
@@ -112,13 +112,19 @@ nav .container .burger_menu {
   height: 35px;
   background-size: cover;
   position: absolute;
-  top: 10px;
+  top: 17px;
   right: 10px;
 }
 
 @media screen and (min-width: 700px) {
   nav .container .burger_menu {
     display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  nav .container .burger_menu {
+    right: -10px;
   }
 }
 

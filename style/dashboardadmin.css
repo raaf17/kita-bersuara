@@ -10,7 +10,7 @@
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
@@ -90,7 +90,7 @@ nav .container {
           align-items: center;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 955px) {
   nav .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -200,8 +200,8 @@ nav .container .profile_siswa .name {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
   cursor: pointer;
   position: relative;
 }
@@ -251,6 +251,12 @@ nav .container .profile_siswa .name ul li a:hover {
   color: white;
 }
 
+@media screen and (max-width: 365px) {
+  nav .container .profile_siswa .name p {
+    font-size: 4vw;
+  }
+}
+
 nav .container .btn_login {
   padding: 4px 26px;
   border: 2px solid white;
@@ -285,7 +291,7 @@ main .container {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 955px) {
   main .container {
     width: 98%;
   }
@@ -297,7 +303,12 @@ main .container .buttonTambahDataSiswa {
   display: flex;
   -webkit-column-gap: 10px;
           column-gap: 10px;
-  margin: 0 auto;
+}
+
+@media screen and (max-width: 340px) {
+  main .container .buttonTambahDataSiswa {
+    gap: 3px;
+  }
 }
 
 main .container button {
@@ -309,6 +320,12 @@ main .container button {
   background-color: #5E7C60;
   border-radius: 6px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 395px) {
+  main .container button {
+    font-size: 2.1vw;
+  }
 }
 
 main .container button .show-modal {
@@ -389,7 +406,7 @@ main .container h1 {
   padding: 42px 0 75px;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 955px) {
   main .container h1 {
     font-size: 28px;
   }
@@ -421,9 +438,12 @@ main .container form {
   }
 }
 
-@media screen and (max-width: 860px) {
-  main .container form {
-    font-size: smaller;
+@media screen and (max-width: 1028px) {
+  main .container form .bold {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-size: 15px;
+    width: 90px;
   }
   main .container form .search {
     display: -webkit-box;
@@ -537,7 +557,7 @@ main .container .riwayat_laporan > div .laporan > img {
   height: 170px;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 955px) {
   main .container .riwayat_laporan > div .laporan {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -555,7 +575,7 @@ main .container .riwayat_laporan > div .laporan .detail_laporan {
       grid-template-areas: "left right" "area area";
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 955px) {
   main .container .riwayat_laporan > div .laporan .detail_laporan {
         grid-template-areas: "left left" "right right" "area area";
   }
@@ -611,7 +631,7 @@ main .container .riwayat_laporan > div .laporan .status {
   border-radius: 3px;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 955px) {
   main .container .riwayat_laporan > div .laporan .status {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
