@@ -22,7 +22,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .container {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -259,6 +259,12 @@ nav .container .profile_siswa .name ul li a:hover {
   color: white;
 }
 
+@media screen and (max-width: 370px) {
+  nav .container .profile_siswa .name p {
+    font-size: 4vw;
+  }
+}
+
 nav .container .btn_login {
   padding: 4px 26px;
   border: 2px solid white;
@@ -278,7 +284,7 @@ nav .container .btn_login:hover {
 
 @media screen and (max-width: 860px) {
   main {
-    width: 98%;
+    width: 100%;
   }
 }
 
@@ -288,6 +294,11 @@ main .container {
   padding: 0 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+main .container .button-up {
+  position: absolute;
+  margin-top: 15px;
 }
 
 main .container .container-button {
@@ -334,15 +345,143 @@ main .container .filter-laporan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 10px;
 }
 
 main .container .filter-laporan form {
-  margin-right: 340px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+main .container .filter-laporan form .apply2 {
+  display: none;
+}
+
+main .container .filter-laporan form .input-tanggal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 675px) {
+  main .container .filter-laporan form .input-tanggal {
+    position: static;
+  }
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 6px 8vw;
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 6px 5vw;
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 6px 4vw;
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 6px 2vw;
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 6px 1vw;
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 6px 1vw;
+    color: white;
+    font-size: 11px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 7px 1vw;
+    color: white;
+    font-size: 3.1vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+main .container .filter-laporan form .pre-apply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 675px) {
+  main .container .filter-laporan form .pre-apply {
+    position: static;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 200px;
+    display: none;
+  }
 }
 
 main .container .filter-laporan form input[type="date"] {
   background-color: #5e7c60;
-  padding: 6px 12px;
+  padding: 6px 6px;
   color: white;
   font-size: 12px;
   border: none;
@@ -355,6 +494,30 @@ main .container .filter-laporan form ::-webkit-calendar-picker-indicator {
   padding: 2px;
   cursor: pointer;
   border-radius: 3px;
+}
+
+@media screen and (max-width: 675px) {
+  main .container .filter-laporan form {
+    display: block;
+  }
+  main .container .filter-laporan form .apply2 {
+    display: block;
+  }
+  main .container .filter-laporan form .apply2 button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+main .container .filter-laporan .show-modal-2 {
+  width: 100%;
+}
+
+@media screen and (max-width: 675px) {
+  main .container .filter-laporan {
+    display: block;
+    position: static;
+  }
 }
 
 main h1 {

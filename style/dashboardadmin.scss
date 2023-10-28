@@ -14,7 +14,7 @@ $second-color: #F2EDD7;
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
   @media screen and (max-width: 1100px) {
     width: 85%;
@@ -58,7 +58,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 955px) {
       flex-direction: column;
       & > p {
         display: none;
@@ -127,7 +127,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 10px;
+        column-gap: 5px;
         cursor: pointer;
         position: relative;
         input[type="checkbox"] {
@@ -170,6 +170,11 @@ nav {
             }
           }
         }
+        @media screen and (max-width: 365px) {
+          p{
+            font-size: 4vw;
+          }
+        }
       }
     }
     .btn_login {
@@ -201,13 +206,16 @@ main {
     color: $primary-color;
     padding: 0 10%;
     box-sizing: border-box;
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 955px) {
       width: 98%;
     }
     .buttonTambahDataSiswa{
       display: flex;
       column-gap: 10px;
-      margin: 0 auto;
+
+      @media screen and (max-width:340px){
+        gap: 3px;
+      }
     }
     button {
       font-size: 10.3px;
@@ -218,6 +226,10 @@ main {
       background-color: #5E7C60;
       border-radius: 6px;
       cursor: pointer;
+
+      @media screen and (max-width: 395px) {
+        font-size: 2.1vw;
+      }
       .show-modal {
         /* position: absolute; */
         /* transform: translate(-50%, -50%); */
@@ -279,7 +291,7 @@ main {
       font-weight: 800;
       text-align: center;
       padding: 42px 0 75px;
-      @media screen and (max-width: 860px) {
+      @media screen and (max-width: 955px) {
         font-size: 28px;
       }
     }
@@ -293,7 +305,12 @@ main {
         align-items: flex-start;
         row-gap: 10px;
       }
-      @media screen and (max-width: 860px) {
+      @media screen and (max-width: 1028px) {
+        .bold{
+          align-content: center;
+          font-size: 15px;
+          width: 90px;
+        }
         .search {
           display: flex;
           column-gap: 5px;
@@ -301,7 +318,6 @@ main {
             width: 100%;
           }
         }
-        font-size: smaller;
         .category_search {
           display: flex;
           margin: 0;
@@ -387,7 +403,7 @@ main {
             width: 220px;
             height: 170px;
           }
-          @media screen and (max-width: 860px) {
+          @media screen and (max-width: 955px) {
             flex-direction: column;
           }
           .detail_laporan {
@@ -397,7 +413,7 @@ main {
             grid-template-areas:
               "left right"
               "area area";
-            @media screen and (max-width: 860px) {
+            @media screen and (max-width: 955px) {
               grid-template-areas:
                 "left left"
                 "right right"
@@ -432,7 +448,7 @@ main {
             font-size: 12px;
             padding: 10px 25px;
             border-radius: 3px;
-            @media screen and (max-width: 860px) {
+            @media screen and (max-width: 955px) {
               flex-direction: row;
             }
             button {

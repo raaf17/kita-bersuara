@@ -50,21 +50,41 @@ if ($_SESSION['status_login'] != true) {
       </div>
     </div>
   </nav>
-
+    
   <main>
     <div class="container">
       <h1>FILTER LAPORAN</h1>
 
-      <div class="filter-laporan" style="margin-bottom: 20px;">
+      <div class="filter-laporan">
+
         <form action="" method="post">
-          <input type="date" name="tgl-mulai"> s/d
-          <input type="date" name="tgl-selesai">
-          <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i> Filter</button>
+            <!-- input tanggal -->
+            <div class="input-tanggal">
+             <div class="tgl-mulai">
+                <input type="date" name="tgl-mulai"   placeholder="mulai">
+              </div>
+              <span>sd</span>
+             <div class="tgl-selesai">
+                <input type="date" name="tgl-selesai">
+              </div>
+            </div>
+
+            <div class="pre-apply">
+              <div class="apply">
+                <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
+              </div>
+            </div>
+            <div class="apply2">
+                <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
+              </div>
         </form>
+
         <div>
-          <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-arrow-left"></i> Kembali</a></button>
+          <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
         </div>
-    </div>
+
+      </div>
+      
 
     <div class="riwayat_laporan">
       <?php include '../process/all_filter.php' ?>

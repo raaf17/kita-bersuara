@@ -80,6 +80,9 @@ nav {
       @media screen and (min-width: 700px) {
         display: none;
       }
+      @media screen and (max-width: 340px) {
+        right: -10px;
+      }
     }
     input {
       // display: none;
@@ -500,7 +503,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .category_laporan section.category {
     display: grid;
     grid-template-columns: repeat(1, minmax(210px, 1fr));
@@ -518,16 +521,17 @@ footer {
     grid-template-columns: repeat(2, minmax(330px, 1fr));
     row-gap: 100px;
     justify-items: center;
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .container.tim-expert {
     display: flex;
     margin-bottom: 120px;
     display: grid;
     grid-template-columns: repeat(1, minmax(330px, 1fr));
     row-gap: 100px;
-    justify-items: center;
+    justify-content: center;
   }
 }
