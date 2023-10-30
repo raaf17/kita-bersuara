@@ -55,12 +55,12 @@
         <div class="desc">
           <p style="color: #5E7C60;">Login Akun Siswa:</p>
           <ul>
-            <li style="color: #5E7C60;">Username: NISN Siswa</li>
+            <li style="color: #5E7C60;">NISN: NISN Siswa</li>
             <li style="color: #5E7C60;">Password: Buat Sendiri</li>
           </ul>
           <p style="color: #5E7C60;">Login Akun Admin:</p>
           <ul>
-            <li style="color: #5E7C60;">Username: NISN Admin</li>
+            <li style="color: #5E7C60;">NISN: NISN Admin</li>
             <li style="color: #5E7C60;">Password: Buat Sendiri</li>
           </ul>
         </div>
