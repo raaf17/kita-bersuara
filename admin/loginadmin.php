@@ -35,7 +35,7 @@
       <h2>LOGIN ADMIN</h2>
       <p>Please login with your account</p>
       <form action="" method="post">
-        <label for="username">Username</label>
+        <label for="username">NISN</label>
         <div class="input-form" style="outline: 1px solid #5E7C60">
           <img src="../assets/img/icons8-user-30.png" alt="user-icon" width="24px" />
           <input type="text" style="color: #5E7C60" name="username" id="username" required />

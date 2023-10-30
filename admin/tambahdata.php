@@ -30,7 +30,7 @@
             <img src="../assets/img/icons8-name-24.png" alt="user-icon" width="24px" />
             <input type="text" name="nama" id="nama" />
           </div>
-          <label for="username">Username</label>
+          <label for="username">NISN</label>
           <div class="input-form">
             <img src="../assets/img/icons8-user-30.png" alt="user-icon" width="24px" />
             <input type="text" name="username" id="username" />

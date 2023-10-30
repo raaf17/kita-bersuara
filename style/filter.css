@@ -380,7 +380,7 @@ main .container .filter-laporan form .input-tanggal {
   }
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
-    padding: 6px 8vw;
+    padding: 6px 22px;
     color: white;
     font-size: 12px;
     border: none;
@@ -389,10 +389,10 @@ main .container .filter-laporan form .input-tanggal {
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 545px) {
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
-    padding: 6px 5vw;
+    padding: 6px 13px;
     color: white;
     font-size: 12px;
     border: none;
@@ -404,7 +404,7 @@ main .container .filter-laporan form .input-tanggal {
 @media screen and (max-width: 485px) {
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
-    padding: 6px 4vw;
+    padding: 6px 10px;
     color: white;
     font-size: 12px;
     border: none;
@@ -413,36 +413,36 @@ main .container .filter-laporan form .input-tanggal {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 440px) {
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
-    padding: 6px 2vw;
+    padding: 6px 8px;
     color: white;
-    font-size: 12px;
+    font-size: 2.2vw;
     border: none;
     outline: none;
     border-radius: 5px;
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 437px) {
+  main .container .filter-laporan form .input-tanggal input[type="date"] {
+    background-color: #5e7c60;
+    padding: 6px 4px;
+    color: white;
+    font-size: 2.4vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
     padding: 6px 1vw;
     color: white;
-    font-size: 12px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-  }
-}
-
-@media screen and (max-width: 358px) {
-  main .container .filter-laporan form .input-tanggal input[type="date"] {
-    background-color: #5e7c60;
-    padding: 6px 1vw;
-    color: white;
-    font-size: 11px;
+    font-size: 2.4vw;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -454,7 +454,7 @@ main .container .filter-laporan form .input-tanggal {
     background-color: #5e7c60;
     padding: 7px 1vw;
     color: white;
-    font-size: 3.1vw;
+    font-size: 2.4vw;
     border: none;
     outline: none;
     border-radius: 5px;
