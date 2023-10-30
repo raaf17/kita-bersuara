@@ -50,7 +50,7 @@ if ($_SESSION['status_login'] != true) {
       </div>
     </div>
   </nav>
-    
+
   <main>
     <div class="container">
       <h1>FILTER LAPORAN</h1>
@@ -58,25 +58,25 @@ if ($_SESSION['status_login'] != true) {
       <div class="filter-laporan">
 
         <form action="" method="post">
-            <!-- input tanggal -->
-            <div class="input-tanggal">
-             <div class="tgl-mulai">
-                <input type="date" name="tgl-mulai"   placeholder="mulai">
-              </div>
-              <span>sd</span>
-             <div class="tgl-selesai">
-                <input type="date" name="tgl-selesai">
-              </div>
+          <!-- input tanggal -->
+          <div class="input-tanggal">
+            <div class="tgl-mulai">
+              <input type="date" name="tgl-mulai" placeholder="mulai">
             </div>
+            <span>sd</span>
+            <div class="tgl-selesai">
+              <input type="date" name="tgl-selesai">
+            </div>
+          </div>
 
-            <div class="pre-apply">
-              <div class="apply">
-                <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
-              </div>
+          <div class="pre-apply">
+            <div class="apply">
+              <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
             </div>
-            <div class="apply2">
-                <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
-              </div>
+          </div>
+          <div class="apply2">
+            <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
+          </div>
         </form>
 
         <div>
@@ -84,11 +84,11 @@ if ($_SESSION['status_login'] != true) {
         </div>
 
       </div>
-      
 
-    <div class="riwayat_laporan">
-      <?php include '../process/all_filter.php' ?>
-    </div>
+
+      <div class="riwayat_laporan">
+        <?php include '../process/all_filter.php' ?>
+      </div>
 
     </div>
   </main>

@@ -413,7 +413,7 @@ main .container .filter-laporan form .input-tanggal {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
     padding: 6px 8px;
@@ -425,7 +425,7 @@ main .container .filter-laporan form .input-tanggal {
   }
 }
 
-@media screen and (max-width: 437px) {
+@media screen and (max-width: 391px) {
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
     padding: 6px 4px;
@@ -437,7 +437,7 @@ main .container .filter-laporan form .input-tanggal {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 358px) {
   main .container .filter-laporan form .input-tanggal input[type="date"] {
     background-color: #5e7c60;
     padding: 6px 1vw;
