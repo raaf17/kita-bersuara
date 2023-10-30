@@ -259,9 +259,9 @@ nav .container .profile_siswa .name ul li a:hover {
   color: white;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 475px) {
   nav .container .profile_siswa .name p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
