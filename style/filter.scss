@@ -314,7 +314,7 @@ main {
 
             input[type="date"] {
               background-color: #5e7c60;
-              padding: 6px 8vw;
+              padding: 6px 22px;
               color: white;
               font-size: 12px;
               border: none;
@@ -323,10 +323,10 @@ main {
             }
           }
 
-          @media screen and (max-width: 660px) {
+          @media screen and (max-width: 545px) {
             input[type="date"] {
               background-color: #5e7c60;
-              padding: 6px 5vw;
+              padding: 6px 13px;
               color: white;
               font-size: 12px;
               border: none;
@@ -338,7 +338,7 @@ main {
           @media screen and (max-width: 485px) {
             input[type="date"] {
               background-color: #5e7c60;
-              padding: 6px 4vw;
+              padding: 6px 10px;
               color: white;
               font-size: 12px;
               border: none;
@@ -346,37 +346,34 @@ main {
               border-radius: 5px;
             }
           }
-
-          @media screen and (max-width: 450px) {
+          @media screen and (max-width: 450px){
             input[type="date"] {
               background-color: #5e7c60;
-              padding: 6px 2vw;
+              padding: 6px 8px;
               color: white;
-              font-size: 12px;
+              font-size: 2.2vw;
               border: none;
               outline: none;
               border-radius: 5px;
             }
           }
-
-          @media screen and (max-width: 391px) {
+          @media screen and (max-width: 391px){
             input[type="date"] {
               background-color: #5e7c60;
-              padding: 6px 1vw;
+              padding: 6px 4px;
               color: white;
-              font-size: 12px;
+              font-size: 2.4vw;
               border: none;
               outline: none;
               border-radius: 5px;
             }
           }
-
-          @media screen and (max-width: 358px) {
+          @media screen and (max-width: 358px){
             input[type="date"] {
               background-color: #5e7c60;
               padding: 6px 1vw;
               color: white;
-              font-size: 11px;
+              font-size: 2.4vw;
               border: none;
               outline: none;
               border-radius: 5px;
@@ -388,7 +385,7 @@ main {
               background-color: #5e7c60;
               padding: 7px 1vw;
               color: white;
-              font-size: 3.1vw;
+              font-size: 2.4vw;
               border: none;
               outline: none;
               border-radius: 5px;
