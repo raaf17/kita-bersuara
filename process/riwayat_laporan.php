@@ -32,7 +32,7 @@ if ($keyword == "setuju") { ?>
         <?php      
         }
       } else {?>
-        <h1 style="text-align: center; font-weight: bold; font-size: 16px;">Belum ada laporan yang disetujui</h1>
+        <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 5px; margin-bottom: -50px;">Belum ada laporan yang disetujui</h1>
 <?php }
 }
 
@@ -64,7 +64,7 @@ if ($keyword == "tidakSetuju") { ?>
         <?php      
     }
       } else {?>
-        <h1 style="text-align: center; font-weight: bold; font-size: 16px;">Belum ada laporan yang tidak setujui</h1>
+        <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 5px; margin-bottom: -50px;">Belum ada laporan yang tidak setujui</h1>
 <?php }
 }
 ?>
