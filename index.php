@@ -72,7 +72,7 @@ include 'admin/conn.php';
     <h2 data-aos="fade-up" data-aos-duration="1500">OUR PROCESS</h2>
     <div class="container card-our-process"  data-aos="fade-up" data-aos-duration="1500">
       <div class="user">
-        <h4><?php
+        <h4 id="userCount"><?php
           $query = "SELECT * FROM siswa";
           $result = mysqli_query($conn, $query);
           $totalCount1 = mysqli_num_rows($result);
@@ -81,16 +81,16 @@ include 'admin/conn.php';
         <h3>User</h3>
       </div>
       <div class="keluhan">
-        <h4><?php 
+        <h4 id="keluhanCount"><?php 
           $query = "SELECT * FROM laporan";
           $result = mysqli_query($conn, $query);
           $totalCount2 = mysqli_num_rows($result);
           echo $totalCount2;
         ?></h4>
-        <h3 style="text-align: center;">Laporan<br>Masuk</h3>
+        <h3 style="text-align: center;">Laporan</h3>
       </div>
       <div class="kategori">
-        <h4><?php 
+        <h4 id="kategoriCount"><?php 
           $query = "SELECT * FROM kategori";
           $result = mysqli_query($conn, $query);
           $totalCount3 = mysqli_num_rows($result);
@@ -198,6 +198,56 @@ include 'admin/conn.php';
   <script>
     AOS.init();
   </script>
+
+<script>
+  function animateCount(elementId, endValue) {
+    const element = document.getElementById(elementId);
+    const duration = 1500; // Durasi animasi dalam milidetik
+    const frameDuration = 1000 / 60; // Durasi setiap frame animasi (60 FPS)
+    const totalFrames = Math.round(duration / frameDuration);
+    const step = (endValue - 0) / totalFrames;
+    let currentFrame = 0;
+    
+    const animation = setInterval(() => {
+      currentFrame++;
+      element.innerText = Math.round(0 + step * currentFrame);
+      if (currentFrame === totalFrames) {
+        clearInterval(animation);
+        element.innerText = endValue;
+      }
+    }, frameDuration);
+  }
+
+  // Fungsi untuk mengecek apakah elemen dalam tampilan atau tidak
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Saat elemen masuk dalam tampilan, panggil animateCount
+        if (entry.target.id === "userCount") {
+          animateCount("userCount", <?php echo $totalCount1; ?>);
+        } else if (entry.target.id === "keluhanCount") {
+          animateCount("keluhanCount", <?php echo $totalCount2; ?>);
+        } else if (entry.target.id === "kategoriCount") {
+          animateCount("kategoriCount", <?php echo $totalCount3; ?>);
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  const options = {
+    threshold: 0.1 // Saat elemen terlihat sebagian, panggil handleIntersection
+  };
+
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  // Amati masing-masing elemen h4
+  observer.observe(document.getElementById("userCount"));
+  observer.observe(document.getElementById("keluhanCount"));
+  observer.observe(document.getElementById("kategoriCount"));
+</script>
+
+
   <!-- akhir scroll animation -->
 </body>
 
