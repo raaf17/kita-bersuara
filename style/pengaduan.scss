@@ -16,6 +16,7 @@ $second-color: #F2EDD7;
 .container {
   width: 80%;
   margin: auto;
+
   @media screen and (max-width: 1100px) {
     width: 95%;
   }
@@ -34,31 +35,39 @@ nav {
   z-index: 999;
   padding: 15px 0;
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.205);
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @media screen and (max-width: 860px) {
       flex-direction: column;
-      & > p {
+
+      &>p {
         display: none;
       }
+
       .nav_brand {
         width: 100%;
         margin-bottom: 10px;
+
         h4 br {
           display: none;
         }
       }
     }
+
     .nav_brand {
       display: flex;
       justify-content: center;
       align-items: center;
+
       img {
         width: 55px;
         margin-right: 15px;
       }
+
       h4 {
         font-size: 24px;
         font-weight: 900;
@@ -66,36 +75,43 @@ nav {
         line-height: 113.5%;
       }
     }
+
     .list_link {
       list-style-type: none;
       display: flex;
       justify-content: center;
       align-items: center;
+
       li {
         &:not(:last-child) {
           margin-right: 64px;
         }
+
         a {
           color: white;
           text-decoration: none;
           font-size: 16px;
           transition: all 0.2s ease-in-out;
           font-weight: 500;
+
           &:hover {
             font-weight: 800;
           }
         }
       }
     }
+
     p {
       font-weight: 700;
       color: white;
     }
+
     .profile_siswa {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
+
       img.profile {
         width: 50px;
         height: 50px;
@@ -103,6 +119,7 @@ nav {
         border-radius: 50%;
         border: 3px solid $second-color;
       }
+
       .name {
         display: flex;
         justify-content: center;
@@ -110,6 +127,7 @@ nav {
         column-gap: 10px;
         cursor: pointer;
         position: relative;
+
         input[type="checkbox"] {
           position: absolute;
           top: 0;
@@ -120,10 +138,12 @@ nav {
           opacity: 0;
           cursor: pointer;
           height: 100%;
-          &:checked ~ ul {
+
+          &:checked~ul {
             display: block;
           }
         }
+
         ul {
           display: none;
           position: absolute;
@@ -133,16 +153,19 @@ nav {
           border-radius: 5px;
           border: 2.5px solid $primary-color;
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.413);
+
           li {
             &:not(:last-child) {
               border-bottom: 2.5px solid $primary-color;
             }
+
             a {
               display: block;
               padding: 5px 20px;
               text-decoration: none;
               color: $primary-color;
               font-weight: 600;
+
               &:hover {
                 background-color: $primary-color;
                 color: white;
@@ -152,6 +175,7 @@ nav {
         }
       }
     }
+
     .btn_login {
       padding: 4px 26px;
       border: 2px solid white;
@@ -161,6 +185,7 @@ nav {
       font-size: 22px;
       font-weight: 500;
       transition: all ease-in-out 0.3s;
+
       &:hover {
         background-color: white;
         color: $primary-color;
@@ -173,51 +198,63 @@ main {
   .container {
     margin: 120px auto;
     color: $primary-color;
+
     @media screen and (max-width: 1100px) {
       margin: 160px auto;
     }
+
     h1 {
       text-align: center;
       font-weight: 800;
       font-size: 36px;
+
       @media screen and (max-width: 1100px) {
         font-size: 22px;
       }
     }
+
     p {
       text-align: center;
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 55px;
+
       @media screen and (max-width: 1100px) {
         font-size: 12px;
       }
     }
+
     form {
       margin: 0 20%;
+
       @media screen and (max-width: 1100px) {
         margin: 0;
       }
-      .requirenment{
+
+      .requirenment {
         color: red;
         font-size: 10px;
         margin-top: -5px;
         font-style: italic;
       }
+
       label,
       button {
         display: block;
         width: 100%;
       }
+
       .select,
       input,
       textarea {
         margin-bottom: 15px;
       }
+
       label {
         font-weight: 500;
         margin-bottom: 5px;
       }
+
       .select {
         select {
           // display: none;
@@ -231,6 +268,7 @@ main {
           font-size: 12px;
         }
       }
+
       textarea {
         width: 100%;
         background-color: $second-color;
@@ -241,13 +279,16 @@ main {
         color: $primary-color;
         outline: none;
       }
+
       .bukti {
         font-weight: 600;
         font-size: 12px;
+
         input[type="file"] {
           position: absolute;
           top: -1000px;
         }
+
         & {
           cursor: pointer;
           border: 1px solid $primary-color;
@@ -258,19 +299,24 @@ main {
           background: $second-color;
           display: inline-block;
         }
+
         &:hover {
           background: #f7ce82;
         }
+
         &:active {
           background: $second-color;
         }
-        &:invalid + span {
+
+        &:invalid+span {
           color: #000000;
         }
-        &:valid + span {
+
+        &:valid+span {
           color: #ffffff;
         }
       }
+
       button {
         padding: 12px;
         font-weight: 700px;
@@ -280,10 +326,12 @@ main {
         border: none;
         border-radius: 5px;
         cursor: pointer;
+
         @media screen and (max-width: 1100px) {
           font-size: 14px;
           padding: 7px;
         }
+
         &:hover {
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.205);
         }
@@ -296,12 +344,14 @@ footer {
   background-color: $primary-color;
   overflow-x: hidden;
   margin-top: 100px;
+
   p {
     padding: 14px;
     text-align: center;
     font-size: 15px;
     color: white;
     font-weight: 800;
+
     @media screen and (max-width: 1100px) {
       font-size: 12px;
       font-weight: 600;

@@ -62,10 +62,4 @@ if (isset($_POST['submit'])) {
   }
 }
 
-if (isset($_GET['hapus'])) {
-  $nisn = $_GET['hapus'];
-  $query = "DELETE FROM siswa WHERE nisn = '$nisn'";
-  $q1 = mysqli_query($conn, $query);
-}
-
 ?>
