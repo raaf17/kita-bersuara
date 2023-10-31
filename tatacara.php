@@ -42,13 +42,13 @@
   </nav>
   <main class="container">
     <h2 data-aos="fade-up" data-aos-duration="1500">TATA CARA PENGADUAN</h2>
-    <section  data-aos="fade-right" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">Anda harus Siswa SMKN 1 BOYOLANGU</p>
       </div>
     </section>
-    <section data-aos="fade-left" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">Login Akun</p>
@@ -66,13 +66,13 @@
         </div>
       </div>
     </section>
-    <section data-aos="fade-right" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">Siswa Melapor Dengan Memilih Kategori Pelaporan</p>
       </div>
     </section>
-    <section data-aos="fade-left" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">
@@ -80,25 +80,25 @@
         </p>
       </div>
     </section>
-    <section data-aos="fade-right" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">Upload Foto Bukti Laporan yang Sesuai dengan yang Dilaporkan</p>
       </div>
     </section>
-    <section data-aos="fade-left" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">Submit laporan</p>
       </div>
     </section>
-    <section data-aos="fade-right" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">Jika Admin, Masuk ke halaman Admin</p>
       </div>
     </section>
-    <section data-aos="fade-left" data-aos-duration="1500">
+    <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
         <p class="bold" style="color: #5E7C60;">Admin mengevaluasi laporan</p>
@@ -106,7 +106,8 @@
     </section>
   </main>
   <footer>
-    <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
+    <p class="container">Copyup
+       &copy; 2023 by Kita Bersuara</p>
   </footer>
   <script src="siswa/script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
