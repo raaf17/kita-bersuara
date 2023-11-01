@@ -16,7 +16,7 @@ if ($_SESSION['status_login'] != true) {
   <link rel="stylesheet" href="../style/filter.css?version=<?php echo filemtime('../style/filter.css'); ?>">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/library/fontawesome/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript">
@@ -61,21 +61,21 @@ if ($_SESSION['status_login'] != true) {
           <!-- input tanggal -->
           <div class="input-tanggal">
             <div class="tgl-mulai">
-              <input type="date" name="tgl-mulai" placeholder="mulai">
+              <input type="date" name="tgl-mulai" placeholder="mulai" required>
             </div>
             <span>sd</span>
             <div class="tgl-selesai">
-              <input type="date" name="tgl-selesai">
+              <input type="date" name="tgl-selesai" required>
             </div>
           </div>
 
           <div class="pre-apply">
             <div class="apply">
-              <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
+              <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i> Apply</button>
             </div>
           </div>
           <div class="apply2">
-            <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i>Apply</button>
+            <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i> Apply</button>
           </div>
         </form>
 
@@ -92,6 +92,10 @@ if ($_SESSION['status_login'] != true) {
 
     </div>
   </main>
+
+  <footer>
+    <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
+  </footer>
 
 </body>
 

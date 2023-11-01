@@ -5,6 +5,16 @@ if ($_SESSION['status_login'] != true) {
   echo '<script>window.location="loginadmin.php"</script>';
 }
 ?>
+
+<?php
+if (isset($_GET['hapus'])) {
+  $nisn = $_GET['hapus'];
+  $query = "DELETE FROM siswa WHERE nisn = '$nisn'";
+  $q1 = mysqli_query($conn, $query);
+  header("refresh:1;url=datasiswa.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,11 +24,10 @@ if ($_SESSION['status_login'] != true) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Admin</title>
   <link rel="stylesheet" href="../style/datasiswa.css?version=<?php echo filemtime('../style/datasiswa.css'); ?>">
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/library/fontawesome/css/all.min.css">
+  <link href="../assets/library/DataTables/datatables.min.css" rel="stylesheet">
+  <script src="../assets/library/DataTables/datatables.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tabel1').DataTable();
@@ -58,7 +67,7 @@ if ($_SESSION['status_login'] != true) {
         <div class="group-button-1">
           <button class="show-modal"><i class="fa-solid fa-download"></i> Import Data Siswa</button>
           <div class="modal-box">
-            <h2>Tambah Data Siswa</h2>
+            <h2>Import Data Siswa</h2>
             <form action="" method="post" enctype="multipart/form-data">
               <div class="file-wrapper">
                 <input type="file" name="filexls" id="formFile" required />
@@ -66,7 +75,7 @@ if ($_SESSION['status_login'] != true) {
               </div>
               <div class="buttons">
                 <button type="submit" name="submit" class="submit-btn"><i class="fa-solid fa-plus"></i> Tambah</button>
-                <button class="close-btn"><i class="fa-solid fa-arrow-left"></i> Close</button>
+                <button class="close-btn"><i class="fa-solid fa-xmark"></i> Close</button>
               </div>
             </form>
           </div>
