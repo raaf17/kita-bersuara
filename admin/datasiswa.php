@@ -11,7 +11,7 @@ if (isset($_GET['hapus'])) {
   $nisn = $_GET['hapus'];
   $query = "DELETE FROM siswa WHERE nisn = '$nisn'";
   $q1 = mysqli_query($conn, $query);
-  header("refresh:1;url=datasiswa.php");
+  header("refresh:0.5;url=datasiswa.php");
 }
 
 ?>
@@ -97,6 +97,7 @@ if (isset($_GET['hapus'])) {
               <th>No</th>
               <th>NISN</th>
               <th>Nama</th>
+              <th>Kelas</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -112,6 +113,7 @@ if (isset($_GET['hapus'])) {
                 <td><?= $no++; ?>.</td>
                 <td><?= $data['nisn']; ?></td>
                 <td><?= $data['nama']; ?></td>
+                <td><?= $data['kelas']; ?></td>
                 <td>
                   <a href="datasiswa.php?hapus=<?= $data['nisn']; ?>" onclick="return confirm('Yakin mau hapus?');"><button class="hapus" style="background-color: red;"><i class="fa-solid fa-trash"></i> Hapus</button></a>
                 </td>
