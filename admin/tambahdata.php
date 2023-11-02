@@ -25,10 +25,15 @@
       <main>
         <h2>TAMBAH DATA SISWA</h2>
         <form action="" method="post">
-          <label for="username">Nama Lengkap</label>
+          <label for="nama">Nama Lengkap</label>
           <div class="input-form">
             <img src="../assets/img/icons8-name-24.png" alt="user-icon" width="24px" />
             <input type="text" name="nama" id="nama" />
+          </div>
+          <label for="kelas">Kelas</label>
+          <div class="input-form">
+            <img src="../assets/img/kelas.png" alt="user-icon" width="24px" />
+            <input type="text" name="kelas" id="kelas" />
           </div>
           <label for="username">NISN</label>
           <div class="input-form">
@@ -49,10 +54,11 @@
     include '../admin/conn.php';
     if (isset($_POST['submit'])) {
       $name = $_POST['nama'];
+      $kelas = $_POST['kelas'];
       $username = $_POST['username'];
       $password = $_POST['password'];
 
-      $query = "INSERT INTO siswa (nisn, password, nama) VALUES('$username', '$password', '$name')";
+      $query = "INSERT INTO siswa (nisn, password, nama, kelas) VALUES('$username', '$password', '$name', '$kelas')";
       mysqli_query($conn, $query);
       echo "<script>location='datasiswa.php';</script>";
     }

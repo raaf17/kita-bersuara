@@ -46,6 +46,8 @@ include '../admin/conn.php'
           <input type="hidden" name="nisn" value="<?= $_SESSION['nisn']['nisn']; ?>">
           <label for="nama">Nama Siswa</label>
           <input type="text" name="nama" value="<?php echo $_SESSION['nisn']['nama']; ?>" id="nama" />
+          <label for="kelas">Kelas</label>
+          <input type="text" name="kelas" value="<?php echo $_SESSION['nisn']['kelas']; ?>" id="kelas" />
           <label for="username">Username</label>
           <input type="text" name="username" value="<?php echo $_SESSION['nisn']['nisn']; ?>" id="username" readonly />
           <label for="password">Password</label>
@@ -57,10 +59,11 @@ include '../admin/conn.php'
     <?php
       if (isset($_POST['submit'])) {
       $nama = $_POST['nama'];
+      $kelas = $_POST['kelas'];
       $nisn = $_POST['nisn'];
       $password = $_POST['password'];
 
-      $query = "UPDATE siswa SET nama='$nama', nisn='$nisn', password='$password' WHERE nisn='$nisn'";
+      $query = "UPDATE siswa SET nama='$nama', nisn='$nisn', password='$password', kelas='$kelas' WHERE nisn='$nisn'";
 
       $conn->query($query);
       

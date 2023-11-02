@@ -30,13 +30,14 @@ if (isset($_POST['submit'])) {
       $nisn = $sheetData[$i]['0'];
       $password = $sheetData[$i]['1'];
       $nama = $sheetData[$i]['2'];
+      $kelas = $sheetData[$i]['3'];
 
       $query_check = "SELECT COUNT(*) FROM siswa WHERE nisn = '$nisn'";
       $result_check = mysqli_query($conn, $query_check);
       $row = mysqli_fetch_row($result_check);
 
       if ($row[0] == 0) {
-        $sql1 = "INSERT INTO siswa (nisn, password, nama) VALUES ('$nisn', '$password', '$nama')";
+        $sql1 = "INSERT INTO siswa (nisn, password, nama, kelas) VALUES ('$nisn', '$password', '$nama', '$kelas')";
         mysqli_query($conn, $sql1);
         $jumlahData++;
       } else {

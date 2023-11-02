@@ -16,7 +16,8 @@ if (isset($_POST['export-file'])) {
   $worksheet->setCellValue('C1', 'Kategori');
   $worksheet->setCellValue('D1', 'NISN');
   $worksheet->setCellValue('E1', 'Nama');
-  $worksheet->setCellValue('F1', 'Tanggal');
+  $worksheet->setCellValue('F1', 'Kelas');
+  $worksheet->setCellValue('G1', 'Tanggal');
 
   $column = 2;
   foreach ($result as $laporan) {
@@ -25,14 +26,15 @@ if (isset($_POST['export-file'])) {
     $worksheet->setCellValue('C' . $column, $laporan['nama_kategori']);
     $worksheet->setCellValue('D' . $column, $laporan['nisn']);
     $worksheet->setCellValue('E' . $column, $laporan['nama']);
+    $worksheet->setCellValue('F' . $column, $laporan['kelas']);
     $created_at = $laporan['created_at'];
-    $worksheet->setCellValue('F' . $column, date('Y-m-d H:i:s', strtotime($created_at)));
+    $worksheet->setCellValue('G' . $column, date('Y-m-d H:i:s', strtotime($created_at)));
 
     $column++;
   }
 
-  $worksheet->getStyle('A1:F1')->getFont()->setBold(true);
-  $worksheet->getStyle('A1:F1')->getFill()
+  $worksheet->getStyle('A1:G1')->getFont()->setBold(true);
+  $worksheet->getStyle('A1:G1')->getFill()
     ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
     ->getStartColor()->setARGB('FFFFFF00');
   $styleArray = [
@@ -51,6 +53,7 @@ if (isset($_POST['export-file'])) {
   $worksheet->getColumnDimension('D')->setAutoSize(true);
   $worksheet->getColumnDimension('E')->setAutoSize(true);
   $worksheet->getColumnDimension('F')->setAutoSize(true);
+  $worksheet->getColumnDimension('G')->setAutoSize(true);
 
   $writer = new Xlsx($spreadsheet);
   ob_clean();
