@@ -187,6 +187,12 @@ nav {
             }
           }
         }
+
+        @media screen and (max-width: 470px) {
+          p{
+            font-size: 3vw;
+          }
+        }
       }
     }
 
@@ -226,13 +232,23 @@ main {
         width: 70%;
         display: flex;
         gap: 8px;
+
+        @media screen and (max-width: 414px) {
+          width: 65%;
+        }
       }
 
       .group-button-2 {
         width: 30%;
         display: flex;
         justify-content: flex-end;
+
+        @media screen and (max-width: 414px) {
+          width: 25%;
+        }
       }
+
+      
     }
 
     button {
@@ -306,6 +322,9 @@ main {
           margin-bottom: 20px;
         }
       }
+      @media screen and (max-width:680px) {
+        width: 80%;
+      }
     }
 
     .table-container {
@@ -366,6 +385,8 @@ main {
         font-size: 28px;
       }
     }
+
+    
   }
 }
 
