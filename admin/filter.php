@@ -12,7 +12,7 @@ if ($_SESSION['status_login'] != true) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Admin</title>
+  <title>Filter | KitaBersuara</title>
   <link rel="stylesheet" href="../style/filter.css?version=<?php echo filemtime('../style/filter.css'); ?>">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">

@@ -22,7 +22,7 @@ if (isset($_GET['hapus'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Admin</title>
+  <title>Data Siswa | KitaBersuara</title>
   <link rel="stylesheet" href="../style/datasiswa.css?version=<?php echo filemtime('../style/datasiswa.css'); ?>">
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <link rel="stylesheet" href="../assets/library/fontawesome/css/all.min.css">
@@ -96,6 +96,7 @@ if (isset($_GET['hapus'])) {
             <tr>
               <th>No</th>
               <th>NISN</th>
+              <th>Password</th>
               <th>Nama</th>
               <th>Kelas</th>
               <th>Action</th>
@@ -112,6 +113,7 @@ if (isset($_GET['hapus'])) {
               <tr>
                 <td><?= $no++; ?>.</td>
                 <td><?= $data['nisn']; ?></td>
+                <td><?= $data['password']; ?></td>
                 <td><?= $data['nama']; ?></td>
                 <td><?= $data['kelas']; ?></td>
                 <td>
