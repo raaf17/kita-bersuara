@@ -27,7 +27,7 @@
         <form action="" method="post">
           <label for="nama">Nama Lengkap</label>
           <div class="input-form">
-            <img src="../assets/img/icons8-name-24.png" alt="user-icon" width="24px" />
+            <img src="../assets/img/nama.png" alt="user-icon" width="24px" />
             <input type="text" name="nama" id="nama" />
           </div>
           <label for="kelas">Kelas</label>
@@ -37,12 +37,12 @@
           </div>
           <label for="username">NISN</label>
           <div class="input-form">
-            <img src="../assets/img/icons8-user-30.png" alt="user-icon" width="24px" />
+            <img src="../assets/img/username.png" alt="user-icon" width="24px" />
             <input type="text" name="username" id="username" />
           </div>
           <label for="password">Password</label>
           <div class="input-form">
-            <img src="../assets/img/icons8-lock-24.png" alt="lock-icon" width="24px" />
+            <img src="../assets/img/password.png" alt="lock-icon" width="24px" />
             <input type="password" name="password" id="password" />
           </div>
           <button type="submit" name="submit">Tambah Data</button>

@@ -54,11 +54,14 @@ if ($_SESSION['status_login'] != true) {
         </div>
         <div>
           <form action="" method="post">
-            <button type="submit" name="export-file"><i class="fa-solid fa-file-export"></i> Export Laporan</a></button>
+            <button type="submit" name="export-file"><i class="fa-solid fa-file-export"></i> Export Laporan Dalam Bentuk Excel</a></button>
           </form>
         </div>
         <div>
           <button><a href="filter.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-filter"></i> Filter Laporan</a></button>
+        </div>
+        <div>
+          <button><a href="tabel_laporan.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-table"></i> Lihat Laporan Dalam Bentuk Tabel</a></button>
         </div>
       </div>
 

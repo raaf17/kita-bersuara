@@ -224,18 +224,8 @@ main {
     .container-button {
       display: flex;
 
-      .group-button-1 {
-        width: 70%;
-        display: flex;
-        gap: 8px;
-
-        @media screen and (max-width: 414px) {
-          width: 65%;
-        }
-      }
-
       .group-button-2 {
-        width: 30%;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
 
@@ -257,12 +247,6 @@ main {
       border-radius: 6px;
       cursor: pointer;
       margin: 20px 0;
-
-      .show-modal {
-        /* position: absolute; */
-        /* transform: translate(-50%, -50%); */
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      }
     }
 
     button:hover {
@@ -270,57 +254,6 @@ main {
       color: #5e7c60;
       transition: all 0.3s;
       font-weight: 500;
-    }
-
-    .modal-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 20px;
-      max-width: 600px;
-      width: 100%;
-      border-radius: 10px;
-      background-color: #f2edd7;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-      z-index: 999;
-      opacity: 0;
-      pointer-events: none;
-      transition: all 0.3s ease;
-      transform: translate(-50%, -50%) scale(1.2);
-      position: fixed;
-
-      h2 {
-        margin-top: 20px;
-        font-size: 25px;
-        font-weight: 700;
-        color: #5e7c60;
-        margin-bottom: 60px;
-      }
-
-      button {
-        /* display: block; */
-        font-size: 14px;
-        padding: 8px 12px;
-        margin: 0;
-      }
-
-      form {
-        .file-wrapper {
-          /* display: block; */
-          background-color: aquamarine;
-          padding: 10px 10px;
-          // margin-right: 10px;
-          border-radius: 5px;
-          margin-bottom: 20px;
-        }
-      }
-      @media screen and (max-width:680px) {
-        width: 80%;
-      }
     }
 
     .table-container {
@@ -384,12 +317,6 @@ main {
 
     
   }
-}
-
-main.active .modal-box {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
 }
 
 footer {
