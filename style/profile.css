@@ -366,12 +366,24 @@ main .container .riwayat_laporan .laporan > div {
   }
 }
 
+@media screen and (min-width: 1100px) {
+  main .container .riwayat_laporan .laporan > div .img-side1 {
+    display: none;
+  }
+}
+
 main .container .riwayat_laporan .laporan > div .foto-laporan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 40%;
   justify-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  main .container .riwayat_laporan .laporan > div .foto-laporan {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1100px) {
