@@ -63,8 +63,12 @@ if ($_SESSION['nisn'] != true) {
           ?>
             <div>
               <div class="foto-laporan">
-                <img src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
+                <img class="img-side2" src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
               </div>
+
+              <img class="img-side1" src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
+
+
               <div class="detail_laporan">
                 <h4 class="pengusul">Pengusul: <span>Saya Sendiri</span></h4>
                 <h4 class="category">#<span><?php echo $laporanku['nama_kategori']; ?></span></h4>
