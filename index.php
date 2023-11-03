@@ -139,7 +139,7 @@ include 'admin/conn.php';
   <div class="container tim-expert" data-aos="fade-up" data-aos-duration="1500">
     <!-- rafi -->
     <div class="tim rafi">
-      <img src="./assets/img/1695291664509.jpg" alt="" />
+      <img src="./assets/img/rafi.jpg" alt="" />
       <div class="pre-profil">
         <div class="profil">
           <h6 class="nama">Muhammad Rafi</h6>
