@@ -71,7 +71,7 @@ if ($_SESSION['status_login'] != true) {
           <input type="text" placeholder="cari laporan..." name="search" id="search" name="search">
         </div>
       </form>
-      <form>
+      <form id="search">
         <div class="category_search">
           <label for="category" class="bold">Select Category :</label>
           <span>
