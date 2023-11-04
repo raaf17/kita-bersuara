@@ -212,7 +212,11 @@ main {
     .buttonTambahDataSiswa{
       display: flex;
       column-gap: 10px;
+      margin-bottom: 20px;
 
+      @media screen and (max-width: 720px) {
+        display: block;
+      }
       @media screen and (max-width:340px){
         gap: 3px;
       }
@@ -227,14 +231,16 @@ main {
       border-radius: 6px;
       cursor: pointer;
 
+      @media screen and (max-width: 720px){
+        width: 100%;
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+
       @media screen and (max-width: 395px) {
         font-size: 2.1vw;
       }
-      .show-modal {
-        /* position: absolute; */
-        /* transform: translate(-50%, -50%); */
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      }
+      
     }
     button:hover {
       background-color: #B5CB99;
@@ -299,7 +305,11 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 15px;
+
+      #search{
+        margin-bottom: 15px;
+      }
+      
       @media screen and (max-width: 1414px) {
         flex-direction: column;
         align-items: flex-start;
@@ -323,6 +333,7 @@ main {
           margin: 0;
           gap: 5px;
           flex-wrap: wrap;
+          margin-bottom: 10px;
           .bold {
             display: none;
           }
@@ -342,6 +353,7 @@ main {
         font-weight: 700;
       }
       .category_search {
+        margin-bottom: 10px;
         span {
           border: 1px solid $primary-color;
           position: relative;
