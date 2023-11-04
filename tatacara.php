@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- Header -->
   <nav style="background-color: #5E7C60;">
     <div class="container">
       <div class="nav_brand">
@@ -40,6 +41,9 @@
       <?php } ?>
     </div>
   </nav>
+  <!-- End of Header -->
+
+  <!-- Main Content -->
   <main class="container">
     <h2 data-aos="fade-up" data-aos-duration="1500">TATA CARA PENGADUAN</h2>
     <section data-aos="fade-up" data-aos-duration="1500">
@@ -105,10 +109,16 @@
       </div>
     </section>
   </main>
+  <!-- End of Main Content -->
+
+  <!-- Footer -->
   <footer>
     <p class="container">Copyup
-       &copy; 2023 by Kita Bersuara</p>
+      &copy; 2023 by Kita Bersuara</p>
   </footer>
+  <!-- End of Footer -->
+
+  <!-- External Javascript -->
   <script src="siswa/script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

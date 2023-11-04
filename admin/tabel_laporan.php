@@ -1,9 +1,12 @@
 <?php
+
 include 'conn.php';
 session_start();
+
 if ($_SESSION['status_login'] != true) {
   echo '<script>window.location="loginadmin.php"</script>';
 }
+
 ?>
 
 <?php
@@ -15,6 +18,7 @@ if (isset($_GET['hapus'])) {
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +37,6 @@ if (isset($_GET['hapus'])) {
       $('#tabel1').DataTable();
     });
   </script>
-
 </head>
 
 <body>
@@ -68,7 +71,6 @@ if (isset($_GET['hapus'])) {
           <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-arrow-left"></i> Kembali</a></button>
         </div>
       </div>
-
 
       <div class="table-container">
         <table class="data-table" id="tabel1">
@@ -123,7 +125,6 @@ if (isset($_GET['hapus'])) {
       main.classList.remove("active")
     );
   </script>
-
 </body>
 
 </html>

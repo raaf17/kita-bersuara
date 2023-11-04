@@ -1,11 +1,10 @@
 <?php
 
 if (!isset($_POST['filter-tgl'])) { ?>
-      <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 2px; margin-bottom: -30px">Data masih kosong, <br>Pilih tanggal untuk menemukan data yang anda inginkan</h1>
-<?php }
+  <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 2px; margin-bottom: -30px">Data masih kosong, <br>Pilih tanggal untuk menemukan data yang anda inginkan</h1>
+  <?php }
 
 if (isset($_POST['filter-tgl'])) {
-
   $tgl_mulai = $_POST['tgl-mulai'];
   $tgl_selesai = $_POST['tgl-selesai'];
 
@@ -16,7 +15,6 @@ if (isset($_POST['filter-tgl'])) {
     <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 5px; margin-bottom: -20px">Laporan yang anda cari pada<br>tanggal <?php echo $tgl_mulai ?> sampai dengan tanggal <?php echo $tgl_selesai ?> tidak ada!</h1>
     <?php
   } else {
-
     while ($perlaporan1 = $approve->fetch_assoc()) {; ?>
       <div>
         <div class="laporan">

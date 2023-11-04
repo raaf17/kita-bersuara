@@ -1,7 +1,10 @@
 <?php
+
 session_start();
 include 'admin/conn.php';
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +18,13 @@ include 'admin/conn.php';
 </head>
 
 <body>
-
   <!-- bagian 1 - navbar -->
   <nav>
     <div class="container">
       <div class="nav_brand">
         <img src="assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
         <h4>
-          Kita<br / >Bersuara
+          Kita<br />Bersuara
         </h4>
       </div>
       <label class="burger_menu" for="burger" id="label">
@@ -47,7 +49,7 @@ include 'admin/conn.php';
   <!-- akhir bagian 1 - navbar -->
 
   <!-- bagian 2 - hero konten -->
-  <main >
+  <main>
     <div class="container">
       <!-- hero konten - Kiri -->
       <sect ion class="left" data-aos="fade-up" data-aos-duration="1500">
@@ -70,39 +72,39 @@ include 'admin/conn.php';
 
   <div class="our-process">
     <h2 data-aos="fade-up" data-aos-duration="1500">OUR PROCESS</h2>
-    <div class="container card-our-process"  data-aos="fade-up" data-aos-duration="1500">
+    <div class="container card-our-process" data-aos="fade-up" data-aos-duration="1500">
       <div class="user">
         <h4 id="userCount"><?php
-          $query = "SELECT * FROM siswa";
-          $result = mysqli_query($conn, $query);
-          $totalCount1 = mysqli_num_rows($result);
-          echo $totalCount1;
-        ?></h4>
+                            $query = "SELECT * FROM siswa";
+                            $result = mysqli_query($conn, $query);
+                            $totalCount1 = mysqli_num_rows($result);
+                            echo $totalCount1;
+                            ?></h4>
         <h3>User</h3>
       </div>
       <div class="keluhan">
-        <h4 id="keluhanCount"><?php 
-          $query = "SELECT * FROM laporan";
-          $result = mysqli_query($conn, $query);
-          $totalCount2 = mysqli_num_rows($result);
-          echo $totalCount2;
-        ?></h4>
+        <h4 id="keluhanCount"><?php
+                              $query = "SELECT * FROM laporan";
+                              $result = mysqli_query($conn, $query);
+                              $totalCount2 = mysqli_num_rows($result);
+                              echo $totalCount2;
+                              ?></h4>
         <h3 style="text-align: center;">Laporan</h3>
       </div>
       <div class="kategori">
-        <h4 id="kategoriCount"><?php 
-          $query = "SELECT * FROM kategori";
-          $result = mysqli_query($conn, $query);
-          $totalCount3 = mysqli_num_rows($result);
-          echo $totalCount3;
-        ?></h4>
+        <h4 id="kategoriCount"><?php
+                                $query = "SELECT * FROM kategori";
+                                $result = mysqli_query($conn, $query);
+                                $totalCount3 = mysqli_num_rows($result);
+                                echo $totalCount3;
+                                ?></h4>
         <h3>Kategori</h3>
       </div>
     </div>
   </div>
   <!-- bagian 3 - kategori laporan -->
   <div class="category_laporan">
-    <h2 style="color: #5E7C60;"  data-aos="fade-up" data-aos-duration="1500">HAL YANG BISA ANDA LAPORKAN</h2>
+    <h2 style="color: #5E7C60;" data-aos="fade-up" data-aos-duration="1500">HAL YANG BISA ANDA LAPORKAN</h2>
     <section class="category container" data-aos="fade-up" data-aos-duration="1500">
       <div class="sarpras" style="background-color: F2EDD7;">
         <img src="assets/img/sarpras.png" width="153" alt="" />
@@ -199,53 +201,53 @@ include 'admin/conn.php';
     AOS.init();
   </script>
 
-<script>
-  function animateCount(elementId, endValue) {
-    const element = document.getElementById(elementId);
-    const duration = 1500; // Durasi animasi dalam milidetik
-    const frameDuration = 1000 / 60; // Durasi setiap frame animasi (60 FPS)
-    const totalFrames = Math.round(duration / frameDuration);
-    const step = (endValue - 0) / totalFrames;
-    let currentFrame = 0;
-    
-    const animation = setInterval(() => {
-      currentFrame++;
-      element.innerText = Math.round(0 + step * currentFrame);
-      if (currentFrame === totalFrames) {
-        clearInterval(animation);
-        element.innerText = endValue;
-      }
-    }, frameDuration);
-  }
+  <script>
+    function animateCount(elementId, endValue) {
+      const element = document.getElementById(elementId);
+      const duration = 1500; // Durasi animasi dalam milidetik
+      const frameDuration = 1000 / 60; // Durasi setiap frame animasi (60 FPS)
+      const totalFrames = Math.round(duration / frameDuration);
+      const step = (endValue - 0) / totalFrames;
+      let currentFrame = 0;
 
-  // Fungsi untuk mengecek apakah elemen dalam tampilan atau tidak
-  function handleIntersection(entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Saat elemen masuk dalam tampilan, panggil animateCount
-        if (entry.target.id === "userCount") {
-          animateCount("userCount", <?php echo $totalCount1; ?>);
-        } else if (entry.target.id === "keluhanCount") {
-          animateCount("keluhanCount", <?php echo $totalCount2; ?>);
-        } else if (entry.target.id === "kategoriCount") {
-          animateCount("kategoriCount", <?php echo $totalCount3; ?>);
+      const animation = setInterval(() => {
+        currentFrame++;
+        element.innerText = Math.round(0 + step * currentFrame);
+        if (currentFrame === totalFrames) {
+          clearInterval(animation);
+          element.innerText = endValue;
         }
-        observer.unobserve(entry.target);
-      }
-    });
-  }
+      }, frameDuration);
+    }
 
-  const options = {
-    threshold: 0.1 // Saat elemen terlihat sebagian, panggil handleIntersection
-  };
+    // Fungsi untuk mengecek apakah elemen dalam tampilan atau tidak
+    function handleIntersection(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Saat elemen masuk dalam tampilan, panggil animateCount
+          if (entry.target.id === "userCount") {
+            animateCount("userCount", <?php echo $totalCount1; ?>);
+          } else if (entry.target.id === "keluhanCount") {
+            animateCount("keluhanCount", <?php echo $totalCount2; ?>);
+          } else if (entry.target.id === "kategoriCount") {
+            animateCount("kategoriCount", <?php echo $totalCount3; ?>);
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }
 
-  const observer = new IntersectionObserver(handleIntersection, options);
+    const options = {
+      threshold: 0.1 // Saat elemen terlihat sebagian, panggil handleIntersection
+    };
 
-  // Amati masing-masing elemen h4
-  observer.observe(document.getElementById("userCount"));
-  observer.observe(document.getElementById("keluhanCount"));
-  observer.observe(document.getElementById("kategoriCount"));
-</script>
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    // Amati masing-masing elemen h4
+    observer.observe(document.getElementById("userCount"));
+    observer.observe(document.getElementById("keluhanCount"));
+    observer.observe(document.getElementById("kategoriCount"));
+  </script>
 
 
   <!-- akhir scroll animation -->

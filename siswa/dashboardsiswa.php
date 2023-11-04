@@ -1,9 +1,12 @@
 <?php
+
 session_start();
 include '../admin/conn.php';
+
 if ($_SESSION['nisn'] != true) {
   echo '<script>window.location="loginsiswa.php"</script>';
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,18 +68,17 @@ if ($_SESSION['nisn'] != true) {
               <div class="foto-laporan">
                 <img class="img-side2" src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
               </div>
-
               <img class="img-side1" src="../assets/fotobukti/<?= $laporanku['foto']; ?>" alt="bukti_laporan" width="170" height="170" />
-
-
               <div class="detail_laporan">
                 <h4 class="pengusul">Pengusul: <span>Saya Sendiri</span></h4>
                 <h4 class="category">#<span><?php echo $laporanku['nama_kategori']; ?></span></h4>
-                <p>
-                  Usulan: <br />
-                  <span><?php
-                        $report = htmlspecialchars($laporanku['keluhan']);
-                        echo $report ?>.</span>
+                <p>Usulan: <br />
+                  <span>
+                    <?php
+                    $report = htmlspecialchars($laporanku['keluhan']);
+                    echo $report
+                    ?>.
+                  </span>
                 </p>
               </div>
 

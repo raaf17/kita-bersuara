@@ -1,10 +1,14 @@
 <?php
+
 include 'conn.php';
 session_start();
+
 if ($_SESSION['status_login'] != true) {
   echo '<script>window.location="loginadmin.php"</script>';
 }
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,9 +58,7 @@ if ($_SESSION['status_login'] != true) {
   <main>
     <div class="container">
       <h1>FILTER LAPORAN</h1>
-
       <div class="filter-laporan">
-
         <form action="" method="post">
           <!-- input tanggal -->
           <div class="input-tanggal">
@@ -68,7 +70,6 @@ if ($_SESSION['status_login'] != true) {
               <input type="date" name="tgl-selesai" required>
             </div>
           </div>
-
           <div class="pre-apply">
             <div class="apply">
               <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i> Apply</button>
@@ -78,25 +79,20 @@ if ($_SESSION['status_login'] != true) {
             <button type="submit" name="filter-tgl"><i class="fa-solid fa-filter"></i> Apply</button>
           </div>
         </form>
-
         <div>
           <button class="show-modal-2"><a href="dashboard.php" style="text-decoration: none; color: white;">Kembali</a></button>
         </div>
-
       </div>
-
 
       <div class="riwayat_laporan">
         <?php include '../process/all_filter.php' ?>
       </div>
-
     </div>
   </main>
 
   <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>
   </footer>
-
 </body>
 
 </html>
