@@ -303,6 +303,13 @@ main .container .buttonTambahDataSiswa {
   display: flex;
   -webkit-column-gap: 10px;
           column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  main .container .buttonTambahDataSiswa {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -322,17 +329,18 @@ main .container button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 720px) {
+  main .container button {
+    width: 100%;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 395px) {
   main .container button {
     font-size: 2.1vw;
   }
-}
-
-main .container button .show-modal {
-  /* position: absolute; */
-  /* transform: translate(-50%, -50%); */
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 main .container button:hover {
@@ -422,6 +430,9 @@ main .container form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .container form #search {
   margin-bottom: 15px;
 }
 
@@ -463,6 +474,7 @@ main .container form {
     gap: 5px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 10px;
   }
   main .container form .category_search .bold {
     display: none;
@@ -480,6 +492,10 @@ main .container form .search input {
 
 main .container form .bold {
   font-weight: 700;
+}
+
+main .container form .category_search {
+  margin-bottom: 10px;
 }
 
 main .container form .category_search span {
