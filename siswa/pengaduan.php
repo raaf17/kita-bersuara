@@ -94,6 +94,7 @@ include '../admin/conn.php';
     } else {
       echo "<script>alert('Ekstensi File yang di Upload Tidak Diperbolehkan')</script>";
     }
+
     echo "<script>location='dashboardsiswa.php';</script>";
   }
   ?>

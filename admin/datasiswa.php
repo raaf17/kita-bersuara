@@ -15,6 +15,9 @@ if (isset($_GET['hapus'])) {
 }
 
 ?>
+
+<?php include '../process/import.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -126,8 +129,6 @@ if (isset($_GET['hapus'])) {
       </div>
     </div>
   </main>
-
-  <?php include '../process/import.php' ?>
 
   <footer>
     <p class="container">Copyright &copy; 2023 by Kita Bersuara</p>

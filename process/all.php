@@ -1,10 +1,11 @@
 <?php
+
 $terkirim = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where status_laporan.status='terkirim' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori");
 $approve  = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where status_laporan.status='approve' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori ");
 $unapprove = $conn->query("SELECT * FROM laporan,siswa,kategori,status_laporan where status_laporan.status='unapprove' and status_laporan.id_status=laporan.id_status and laporan.nisn=siswa.nisn and laporan.id_kategori=kategori.id_kategori ");
+
 // kondisi terkirim
-while ($perlaporan = $terkirim->fetch_assoc()) {;
-?>
+while ($perlaporan = $terkirim->fetch_assoc()) { ?>
   <div>
     <div class="laporan">
       <img src="../assets/fotobukti/<?= $perlaporan['foto']; ?>" alt="bukti_laporan" width="170px" height="170px" />
@@ -29,6 +30,7 @@ while ($perlaporan = $terkirim->fetch_assoc()) {;
     </form>
   </div>
 <?php } ?>
+
 <?php
 if (isset($_POST['approve'])) {
   $id_status = $_POST['id_status'];
@@ -38,6 +40,7 @@ if (isset($_POST['approve'])) {
   echo "<script>location='dashboard.php';</script>";
 }
 ?>
+
 <?php
 if (isset($_POST['unapprove'])) {
   $id_status = $_POST['id_status'];
@@ -107,4 +110,6 @@ if (isset($_POST['unapprove'])) {
 <?php
 if (mysqli_num_rows($terkirim) == 0 && mysqli_num_rows($approve) == 0 && mysqli_num_rows($unapprove) == 0) { ?>
   <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 5px; margin-bottom: -76px">Belum ada laporan masuk!<br>Tunggu ya....</h1>
-<?php  } ?>
+<?php  }
+
+?>

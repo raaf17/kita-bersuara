@@ -1,12 +1,15 @@
 <?php
+
 include 'conn.php';
 session_start();
+
 if ($_SESSION['status_login'] != true) {
   echo '<script>window.location="loginadmin.php"</script>';
 }
-?>
 
-<?php include '../process/export.php' ?>
+include '../process/export.php';
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +50,6 @@ if ($_SESSION['status_login'] != true) {
   <main>
     <div class="container">
       <h1>LAPORAN SISWA</h1>
-
       <div class="buttonTambahDataSiswa">
         <div>
           <button><a href="datasiswa.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-user"></i> Data Semua Siswa</a></button>
@@ -71,6 +73,7 @@ if ($_SESSION['status_login'] != true) {
           <input type="text" placeholder="cari laporan..." name="search" id="search" name="search">
         </div>
       </form>
+
       <form id="search">
         <div class="category_search">
           <label for="category" class="bold">Select Category :</label>
@@ -102,7 +105,6 @@ if ($_SESSION['status_login'] != true) {
             <input type="checkbox" name="tidakSetuju" id="tidakSetuju">
             <label for="tidakSetuju" class="tidakSetuju">Tidak Setuju</label>
           </span>
-
         </div>
       </form>
 

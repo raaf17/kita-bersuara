@@ -1,4 +1,5 @@
 <?php
+
 include "../admin/conn.php";
 $keyword = $_GET["keycat"];
 
@@ -31,6 +32,7 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
             </form>
         </div>
     <?php } ?>
+    
     <?php
     if (isset($_POST['approve'])) {
         $id_status = $_POST['id_status'];

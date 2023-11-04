@@ -48,18 +48,15 @@ if (isset($_POST['submit'])) {
     if ($jumlahData > 0) {
       $success = "Jumlah Data Berhasil Dimasukkan";
     }
+    header("refresh:0.5;url=datasiswa.php");
   }
 
   if ($err) {
-?>
-      <?php echo "<script>alert('$err')</script>"; ?>
-    <?php
+    echo "<script>alert('$err')</script>";
   }
 
   if ($success) {
-    ?>
-      <?php echo "<script>alert('$success')</script>"; ?>
-  <?php
+    echo "<script>alert('$success')</script>";
   }
 }
 
