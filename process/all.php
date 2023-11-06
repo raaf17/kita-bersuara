@@ -109,7 +109,7 @@ if (isset($_POST['unapprove'])) {
 
 <?php
 if (mysqli_num_rows($terkirim) == 0 && mysqli_num_rows($approve) == 0 && mysqli_num_rows($unapprove) == 0) { ?>
-  <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 5px; margin-bottom: -76px">Belum ada laporan masuk!<br>Tunggu ya....</h1>
+  <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 15px; margin-bottom: -10px">Belum ada laporan masuk!<br>Tunggu ya....</h1>
 <?php  }
 
 ?>
