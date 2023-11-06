@@ -21,6 +21,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
+  // min-height: 100vh;
 
   @media screen and (max-width: 860px) {
     width: 85%;
@@ -89,9 +90,11 @@ nav {
       position: absolute;
       top: 17px;
       right: 10px;
+
       @media screen and (min-width: 700px) {
         display: none;
       }
+
       @media screen and (max-width: 340px) {
         right: -10px;
       }
@@ -194,7 +197,12 @@ nav {
   }
 }
 
+.login {
+  min-height: 100vh;
+}
+
 main {
+  // min-height: 100vh;
   margin: 214px 0 0;
   background-color: $second-color;
   border-top: 10px solid $primary-color;

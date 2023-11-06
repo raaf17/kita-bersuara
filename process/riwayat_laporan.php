@@ -27,7 +27,7 @@ if ($keyword == "setuju") {
                 <div class="form">
                     <textarea placeholder="feedback anda disini..." <?php if ($perlaporan['feedback']) {
                                                                         echo "readonly";
-                                                                    } ?> name="feedback" id="feedback" cols="10" rows="1"><?php echo $perlaporan['feedback']; ?></textarea>
+                                                                    } ?> name="feedback" id="feedback" cols="10" rows="1" required><?php echo $perlaporan['feedback']; ?></textarea>
                 </div>
                 </form>
             </div>
@@ -40,7 +40,7 @@ if ($keyword == "setuju") {
 }
 
 if ($keyword == "tidakSetuju") {
-    if (mysqli_num_rows($setuju) != 0) {
+    if (mysqli_num_rows($tidak) != 0) {
         while ($perlaporan = $tidak->fetch_assoc()) { ?>
             <div>
                 <div class="laporan">
@@ -61,7 +61,7 @@ if ($keyword == "tidakSetuju") {
                 <div class="form">
                     <textarea placeholder="feedback anda disini..." <?php if ($perlaporan['feedback']) {
                                                                         echo "readonly";
-                                                                    } ?> name="feedback" id="feedback" cols="10" rows="1"><?php echo $perlaporan['feedback']; ?></textarea>
+                                                                    } ?> name="feedback" id="feedback" cols="10" rows="1" required><?php echo $perlaporan['feedback']; ?></textarea>
                 </div>
                 </form>
             </div>

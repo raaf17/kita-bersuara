@@ -32,7 +32,7 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
             </form>
         </div>
     <?php } ?>
-    
+
     <?php
     if (isset($_POST['approve'])) {
         $id_status = $_POST['id_status'];
@@ -104,7 +104,7 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
             </div>
             </form>
         </div>
-    <?php }
+<?php }
 } ?>
 
 <?php if ($keyword == 'all') {
@@ -114,12 +114,3 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
 <?php if ($keyword == 'setuju' or 'tidakSetuju') {
     include 'riwayat_laporan.php';
 } ?>
-
-<?php
-if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") {
-    if (mysqli_num_rows($terkirim) == 0 && mysqli_num_rows($approve) == 0 && mysqli_num_rows($unapprove) == 0) { ?>
-        <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 2px; margin-bottom: -76px; display: none;">Masih kosong semua kack!<br>Harap bersabar....</h1>
-        <br><br><br><br><br><br><br><br><br>
-<?php  }
-}
-?>

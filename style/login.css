@@ -247,6 +247,10 @@ nav .container .btn a:hover {
   color: #5E7C60;
 }
 
+.login {
+  min-height: 100vh;
+}
+
 main {
   margin: 214px 0 0;
   background-color: #F2EDD7;
