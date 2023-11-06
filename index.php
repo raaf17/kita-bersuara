@@ -22,10 +22,14 @@ include 'admin/conn.php';
   <nav>
     <div class="container">
       <div class="nav_brand">
-        <img src="assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
-        <h4>
-          Kita<br />Bersuara
-        </h4>
+        <a href="index.php" style="text-decoration: none; margin-top: 5px;">
+          <img src="assets/img/pre-logo.png" alt="Logo Kita Bersuara" />
+        </a>
+        <a href="index.php" style="text-decoration: none;">
+          <h4>
+            Kita<br />Bersuara
+          </h4>
+        </a>
       </div>
       <label class="burger_menu" for="burger" id="label">
         <input type="checkbox" name="burger" id="burger" />
