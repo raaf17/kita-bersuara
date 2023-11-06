@@ -24,7 +24,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container login">
     <main>
       <h2>TAMBAH DATA SISWA</h2>
       <form action="" method="post">

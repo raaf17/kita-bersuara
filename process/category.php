@@ -32,7 +32,7 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
             </form>
         </div>
     <?php } ?>
-    
+
     <?php
     if (isset($_POST['approve'])) {
         $id_status = $_POST['id_status'];
@@ -104,7 +104,7 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
             </div>
             </form>
         </div>
-    <?php }
+<?php }
 } ?>
 
 <?php if ($keyword == 'all') {

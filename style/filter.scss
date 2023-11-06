@@ -234,6 +234,7 @@ nav {
 }
 
 main {
+  min-height: 100vh;
   @media screen and (max-width: 860px) {
     width: 100%;
   }
