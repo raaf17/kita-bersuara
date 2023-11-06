@@ -19,6 +19,7 @@ if ($_SESSION['nisn'] != true) {
   <link rel="stylesheet" href="../style/profile.css?version=<?php echo filemtime('../style/profile.css'); ?>">
 </head>
 
+<!-- ini body -->
 <body>
   <nav>
     <div class="container">
