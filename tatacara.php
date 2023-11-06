@@ -25,7 +25,7 @@
           </h4>
         </a>
       </div>
-      <label class="burger_menu" for="burger" id="label">
+      <label class="burger_menu" style="top: 22px" for="burger" id="label">
         <input type="checkbox" name="burger" id="burger" />
       </label>
       <ul class="list_link" id="link">

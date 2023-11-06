@@ -75,10 +75,11 @@ nav {
       height: 35px;
       background-size: cover;
       position: absolute;
-      top: 17px;
+      top: 22px;
       right: 10px;
       @media screen and (min-width: 700px) {
         display: none;
+        // top: 20px;
       }
       @media screen and (max-width: 340px) {
         right: -10px;
