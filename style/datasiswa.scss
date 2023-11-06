@@ -49,7 +49,7 @@ nav {
     @media screen and (max-width: 860px) {
       flex-direction: column;
 
-      & > p {
+      &>p {
         display: none;
       }
 
@@ -60,11 +60,11 @@ nav {
           display: none;
         }
 
-        img{
+        img {
           margin-right: -15px;
         }
       }
-      
+
 
     }
 
@@ -149,7 +149,7 @@ nav {
           cursor: pointer;
           height: 100%;
 
-          &:checked ~ ul {
+          &:checked~ul {
             display: block;
           }
         }
@@ -185,7 +185,7 @@ nav {
         }
 
         @media screen and (max-width: 470px) {
-          p{
+          p {
             font-size: 3vw;
           }
         }
@@ -211,6 +211,8 @@ nav {
 }
 
 main {
+  min-height: 100vh;
+
   @media screen and (max-width: 860px) {
     width: 98%;
   }
@@ -244,7 +246,7 @@ main {
         }
       }
 
-      
+
     }
 
     button {
@@ -318,6 +320,7 @@ main {
           margin-bottom: 20px;
         }
       }
+
       @media screen and (max-width:680px) {
         width: 80%;
       }
@@ -382,7 +385,7 @@ main {
       }
     }
 
-    
+
   }
 }
 

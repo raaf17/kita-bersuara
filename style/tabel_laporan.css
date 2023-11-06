@@ -246,6 +246,10 @@ nav .container .btn_login:hover {
   color: #5e7c60;
 }
 
+main {
+  min-height: 100vh;
+}
+
 @media screen and (max-width: 860px) {
   main {
     width: 98%;
