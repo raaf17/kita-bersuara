@@ -48,7 +48,7 @@ include '../admin/conn.php';
         <input type="text" name="nama" value="<?php echo $_SESSION['nisn']['nama']; ?>" id="nama" />
         <label for="kelas">Kelas</label>
         <input type="text" name="kelas" value="<?php echo $_SESSION['nisn']['kelas']; ?>" id="kelas" />
-        <label for="username">Username</label>
+        <label for="username">NISN</label>
         <input type="text" name="username" value="<?php echo $_SESSION['nisn']['nisn']; ?>" id="username" readonly />
         <label for="password">Password</label>
         <input type="password" name="password" value="<?php echo $_SESSION['nisn']['password']; ?>" id="password" />

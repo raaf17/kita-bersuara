@@ -60,12 +60,12 @@
           <p style="color: #5E7C60;">Login Akun Siswa:</p>
           <ul>
             <li style="color: #5E7C60;">NISN: NISN Siswa</li>
-            <li style="color: #5E7C60;">Password: Buat Sendiri</li>
+            <li style="color: #5E7C60;">Password: Password Akun Siswa</li>
           </ul>
           <p style="color: #5E7C60;">Login Akun Admin:</p>
           <ul>
             <li style="color: #5E7C60;">NISN: NISN Admin</li>
-            <li style="color: #5E7C60;">Password: Buat Sendiri</li>
+            <li style="color: #5E7C60;">Password: Password Akun Admin</li>
           </ul>
         </div>
       </div>
@@ -79,15 +79,15 @@
     <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
-        <p class="bold" style="color: #5E7C60;">
-          Siswa Mengisi Laporan Pada Tempat yang Disediakan
-        </p>
+        <p class="bold" style="color: #5E7C60;">Upload Foto Bukti Laporan yang Sesuai dengan yang Dilaporkan</p>
       </div>
     </section>
     <section data-aos="fade-up" data-aos-duration="1500">
       <div class="description" style="background-color: #F2EDD7;">
         <div class="bottom_description"></div>
-        <p class="bold" style="color: #5E7C60;">Upload Foto Bukti Laporan yang Sesuai dengan yang Dilaporkan</p>
+        <p class="bold" style="color: #5E7C60;">
+          Siswa Mengisi Laporan Pada Tempat yang Disediakan
+        </p>
       </div>
     </section>
     <section data-aos="fade-up" data-aos-duration="1500">

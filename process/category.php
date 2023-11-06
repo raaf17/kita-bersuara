@@ -118,7 +118,8 @@ if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") { ?>
 <?php
 if ($keyword == "Kesiswaan" or "Kurikulum" or "Sarpras" or "Humas") {
     if (mysqli_num_rows($terkirim) == 0 && mysqli_num_rows($approve) == 0 && mysqli_num_rows($unapprove) == 0) { ?>
-        <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 2px; margin-bottom: -76px">Masih kosong semua kack!<br>Harap bersabar....</h1>
+        <h1 style="text-align: center; font-weight: bold; font-size: 16px; margin-top: 2px; margin-bottom: -76px; display: none;">Masih kosong semua kack!<br>Harap bersabar....</h1>
+        <br><br><br><br><br><br><br><br><br>
 <?php  }
 }
 ?>

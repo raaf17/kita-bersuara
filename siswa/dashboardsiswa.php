@@ -94,7 +94,7 @@ if ($_SESSION['nisn'] != true) {
             </form>
 
             <!-- laporan di unapprove -->
-          <?php } elseif ($laporanku['status'] == 'unapprove') { ?>
+          <?php } else if ($laporanku['status'] == 'unapprove') { ?>
             <div class="icon_status unapproved">
               <img src="../assets/img/unapproved.png" alt="status-icon">
               <p>UNAPPROVE</p>
@@ -105,7 +105,7 @@ if ($_SESSION['nisn'] != true) {
         </form>
 
         <!-- laporan terkirim -->
-      <?php } elseif ($laporanku['status'] == 'terkirim') { ?>
+      <?php } else if ($laporanku['status'] == 'terkirim') { ?>
         <div class="icon_status approved">
           <img src="../assets/img/approved.png" alt="status-icon">
           <p>TERKIRIM</p>
