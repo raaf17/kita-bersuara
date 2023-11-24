@@ -73,7 +73,7 @@ include '../process/export.php';
         </div>
       </div>
 
-      <form action="hasilpencarian.php" method="get">
+      <form action="" method="get">
         <div class="search">
           <label for="search" class="bold">Search : </label>
           <input type="text" placeholder="cari laporan..." name="search" id="search" name="search">
